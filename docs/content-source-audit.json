@@ -1,0 +1,1206 @@
+{
+  "checked_on": "2026-10-21",
+  "language": "ko",
+  "question_count": 40,
+  "source_count": 44,
+  "evidence_count": 52,
+  "method": "Every adopted URL re-fetched by parent; HTTP 200 and exact supporting Korean evidence checked. Source text hash preserves retrieval identity; not an ecclesiastical publication approval.",
+  "questions": [
+    {
+      "id": "saints-01",
+      "answer": "성 김대건 안드레아",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 매일미사 · 2026-09-20 — 순교 성인 소개",
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260920"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260920",
+          "title": "성 김대건 안드레아 사제와 성 정하상 바오로와 동료 순교자들 대축일",
+          "organization": "한국천주교주교회의",
+          "locator": "2026-09-20 축일 소개 3문단",
+          "excerpt": "한국인 최초의 사제인 김대건 안드레아",
+          "claim_support": {
+            "question": "한국인 최초 사제의 신원",
+            "answer": "성 김대건 안드레아",
+            "explanation": "김대건이 한국인 최초의 사제임을 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8367287cc9d48d9b5df6311784eb4a2e70a20b04c0e82a7379cd9a92c42d29c2"
+        }
+      ]
+    },
+    {
+      "id": "saints-02",
+      "answer": "성 프란치스코",
+      "sources": [
+        {
+          "label": "서울대교구 가톨릭 굿뉴스 · 성 프란치스코 — 생애·로마 순교록 해설",
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?Orggubun=101&ctxtSaintId=2855&menugubun=saint"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?Orggubun=101&ctxtSaintId=2855&menugubun=saint",
+          "title": "프란치스코(10.4) 기본정보",
+          "organization": "서울대교구 가톨릭 굿뉴스",
+          "locator": "생애: 1209/1210년 회칙 인준 문단과 마지막 로마 순교록 해설",
+          "excerpt": "이것이 ‘작은 형제회’(Ordo Fratrum Minorum, O.F.M.), 곧 프란치스코회(Ordo Franciscanus)의 시작이었다.",
+          "claim_support": {
+            "question": "아시시의 프란치스코가 작은형제회를 창립하고 복음적 가난을 선택",
+            "answer": "성 프란치스코",
+            "explanation": "회칙 인준 문단은 창립을, 마지막 로마 순교록 문단은 예수 그리스도를 따르기 위한 자발적 가난을 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "5bcf5572264b0a7c96d12295b00f1e2a65cdf64217a4bf28689c32cad63aa66c"
+        }
+      ]
+    },
+    {
+      "id": "saints-03",
+      "answer": "성녀 클라라",
+      "sources": [
+        {
+          "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 3문단(산 다미아노·가난)",
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20",
+          "title": "클라라(8.11) 기본정보",
+          "organization": "서울대교구 가톨릭 굿뉴스",
+          "locator": "생애 3문단(성 다미아노 공동체·가난의 특전)",
+          "excerpt": "전적으로 하느님과 애긍에 의존해 살아도 좋다는 허락이다.",
+          "claim_support": {
+            "question": "아시시의 성 다미아노를 모원으로 삼은 클라라와 자매 공동체",
+            "answer": "성녀 클라라",
+            "explanation": "같은 문단에 복음적 가난, 무소유, 하느님 의존을 함께 명시. 신뢰는 하느님께 의존한다는 서술의 요약"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "bb61ac05e0e2bb41b897802e73b7957ba35da45e79d4d5146be69c3c4ffd0063"
+        }
+      ]
+    },
+    {
+      "id": "saints-04",
+      "answer": "아기 예수의 성녀 데레사",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 14항(신뢰와 사랑의 작은 길)",
+          "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006",
+          "title": "사랑으로 이끄는 신뢰",
+          "organization": "한국천주교주교회의",
+          "locator": "14항, 소제목 「2. 신뢰와 사랑의 작은 길」",
+          "excerpt": "신뢰와 사랑의 길인 ‘작은 길’입니다.",
+          "claim_support": {
+            "question": "데레사의 작은 길",
+            "answer": "아기 예수의 성녀 데레사",
+            "explanation": "14항에서 신뢰와 사랑의 길이라고 정의; 18-20항은 하느님께 두는 신뢰를 설명"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "4da0b43f61901008987eb5c917a2aad9926ff4edf2e6e4967d8f31f60d75efa8"
+        }
+      ]
+    },
+    {
+      "id": "saints-05",
+      "answer": "성 아우구스티노",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 성 아우구스티노 소개",
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260828",
+          "title": "성 아우구스티노 주교 학자 기념일",
+          "organization": "한국천주교주교회의",
+          "locator": "2026-08-28 성인 소개 문단",
+          "excerpt": "참회의 자서전인 『고백록』 등 수많은 저서를 남겼다.",
+          "claim_support": {
+            "question": "고백록의 저자와 자신의 신앙 여정을 담은 자서전",
+            "answer": "성 아우구스티노",
+            "explanation": "자서전이라는 성격과 저자를 한국어 공식 매일미사에서 확인했다. 해설도 회개와 신앙 여정을 돌아본 자서전으로 정리했다."
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8c746dcff354a4f233862355ca26bb04122fadb083b291b9a97e1441013ec972"
+        }
+      ]
+    },
+    {
+      "id": "saints-06",
+      "answer": "성 베네딕토",
+      "sources": [
+        {
+          "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 사부 성 베네딕도 — 생애 1·4문단",
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%82%ac%eb%b6%80-%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84/"
+        },
+        {
+          "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 1·2문단",
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%82%ac%eb%b6%80-%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84/",
+          "title": "사부 성 베네딕도",
+          "organization": "툿찡 포교 베네딕도 수녀회 서울 수녀원",
+          "locator": "성 베네딕도 St. Benedictus (480~547), 생애 1·4문단",
+          "excerpt": "오랜 경험을 바탕으로 수도자들을 위한 규칙서를 저술하였다.",
+          "claim_support": {
+            "question": "노르치아(누르시아)의 베네딕도와 규칙서",
+            "answer": "성 베네딕토(사이트 표기는 베네딕도)",
+            "explanation": "수도규칙서 저술; 기도와 실천의 내용은 수도규칙 소개로 보완"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "a1320804296552e91c4c347478d1795dbec003bd5dc51596b0f5938ad6e9d156"
+        },
+        {
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/",
+          "title": "성 베네딕도 수도규칙",
+          "organization": "툿찡 포교 베네딕도 수녀회 서울 수녀원",
+          "locator": "수도규칙 소개 1-2문단",
+          "excerpt": "‘기도하고 읽고 일하라 Ora, Lege et Labora’",
+          "claim_support": {
+            "question": "베네딕도 성인의 수도규칙",
+            "answer": "성 베네딕토",
+            "explanation": "성무일도·거룩한 독서·노동을 함께 놓은 수도생활 원리"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "6f4fe61c54aaff1c0e3dc428d441cfb8ee874b058e0e289f133eca14b0d8f91a"
+        }
+      ]
+    },
+    {
+      "id": "saints-07",
+      "answer": "성 마태오",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 마태오 복음서 9장 · 마태 9,9",
+          "url": "https://bible.cbck.or.kr/Knb/Mt/9"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Mt/9",
+          "title": "성경 마태오 복음서 9장",
+          "organization": "한국천주교주교회의",
+          "locator": "마태 9,9",
+          "excerpt": "“나를 따라라.” 그러자 마태오는 일어나 그분을 따랐다.",
+          "claim_support": {
+            "question": "9,9에 마태오가 세관에 앉아 있었다고 명시",
+            "answer": "성 마태오",
+            "explanation": "부르심을 받고 일어나 따름을 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "2f52b08b7391fd5852014b8144cf297d5f88c8955ed56525db5edbb8c421c1be"
+        }
+      ]
+    },
+    {
+      "id": "saints-08",
+      "answer": "성 토마스",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 요한 복음서 20장 · 요한 20,26-29; 특히 28절",
+          "url": "https://bible.cbck.or.kr/Knb/Jn/20"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Jn/20",
+          "title": "성경 요한 복음서 20장",
+          "organization": "한국천주교주교회의",
+          "locator": "요한 20,26-29; 특히 28절",
+          "excerpt": "토마스가 예수님께 대답하였다. “저의 주님, 저의 하느님!”",
+          "claim_support": {
+            "question": "부활하신 예수님에게 고백한 사도 신원",
+            "answer": "성 토마스",
+            "explanation": "주님과 하느님이라는 신앙 고백을 직접 인용"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "60d5a84150562cecfb59ce5bca4c013322018fbc1722643d943ee11b3b21a5ec"
+        }
+      ]
+    },
+    {
+      "id": "saints-09",
+      "answer": "성 바오로",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 사도행전 9장 · 사도 9,1-6.17-22",
+          "url": "https://bible.cbck.or.kr/Knb/Acts/9"
+        },
+        {
+          "label": "한국천주교주교회의 · 성경 사도행전 13장 · 사도 13,9",
+          "url": "https://bible.cbck.or.kr/Knb/Acts/13"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Acts/9",
+          "title": "성경 사도행전 9장",
+          "organization": "한국천주교주교회의",
+          "locator": "사도 9,1-6.17-22",
+          "excerpt": "사울이 길을 떠나 다마스쿠스에 가까이 이르렀을 때,",
+          "claim_support": {
+            "question": "다마스쿠스로 가던 사울이 예수님을 만남",
+            "answer": "사울은 바오로와 같은 인물임을 사도 13,9로 보완",
+            "explanation": "1-2절의 박해자에서 18절의 세례, 20-22절의 예수님 선포자로 변화; 17절은 길에서 나타나신 예수님을 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8e66e0d88c67e37e530e5402d96202dff9e8d41cf44e6b8527ef81ca38dafd9e"
+        },
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Acts/13",
+          "title": "성경 사도행전 13장",
+          "organization": "한국천주교주교회의",
+          "locator": "사도 13,9",
+          "excerpt": "그때에 바오로라고도 하는 사울이",
+          "claim_support": {
+            "question": "사도 9장의 사울과 질문의 바오로를 연결",
+            "answer": "성 바오로",
+            "explanation": "사울/바오로 동일 인물 확인; 회심 사건 자체는 9장"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "4803a0157aabc1cd59d876f82bd6ffd5f5a01fb120bbbb90200556f344e1e21d"
+        }
+      ]
+    },
+    {
+      "id": "saints-10",
+      "answer": "어부",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18-20",
+          "url": "https://bible.cbck.or.kr/Knb/Mt/4"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Mt/4",
+          "title": "성경 마태오 복음서 4장",
+          "organization": "한국천주교주교회의",
+          "locator": "마태 4,18-20",
+          "excerpt": "던지는 것을 보셨다. 그들은 어부였다.",
+          "claim_support": {
+            "question": "예수님을 따르기 전 베드로의 직업",
+            "answer": "어부",
+            "explanation": "18절에 갈릴래아 호수, 베드로와 동생 안드레아, 어망, 어부 모두 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "e22deda6882b2e027f990183c4a92f0a9e106f78d0a292ae50af77dec49ee91d"
+        }
+      ]
+    },
+    {
+      "id": "saints-11",
+      "answer": "O",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 정하상 바오로 약전 — 성직자 영입·순교",
+          "url": "https://cbck.or.kr/koreanmartyrs/103-Saints/2"
+        },
+        {
+          "label": "한국천주교주교회의 매일미사 · 2026-09-20 — 평신도 정하상 소개",
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260920"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/koreanmartyrs/103-Saints/2",
+          "title": "103위 성인 약전: 정하상 바오로",
+          "organization": "한국천주교주교회의 시복시성주교특별위원회",
+          "locator": "약전 본문; 신학생 선발·성직자 영입·상재상서·순교",
+          "excerpt": "성품을 받는 데까지는 이르지 못하였다.",
+          "claim_support": {
+            "question": "신학생이었지만 사제품을 받지 않음",
+            "answer": "O",
+            "explanation": "선교사 영입, 교회 일, 상재상서, 순교가 신앙 증언을 직접 뒷받침"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "03cf7ce0dfd925121c361db1fc75294fa3e228d646c4771d497e418bbd9fdd7e"
+        },
+        {
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260920",
+          "title": "성 김대건 안드레아 사제와 성 정하상 바오로와 동료 순교자들 대축일",
+          "organization": "한국천주교주교회의",
+          "locator": "2026-09-20 축일 소개 3문단",
+          "excerpt": "평신도인 정하상 바오로",
+          "claim_support": {
+            "question": "정하상의 평신도 신분 직접 명시",
+            "answer": "O",
+            "explanation": "평신도 순교 성인 확인"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8367287cc9d48d9b5df6311784eb4a2e70a20b04c0e82a7379cd9a92c42d29c2"
+        }
+      ]
+    },
+    {
+      "id": "saints-12",
+      "answer": "O",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 5·6항(리지외 가르멜 수도원)",
+          "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006",
+          "title": "사랑으로 이끄는 신뢰",
+          "organization": "한국천주교주교회의",
+          "locator": "5-6항",
+          "excerpt": "후반부는 리지외의 가르멜 수도원에서 보냈습니다.",
+          "claim_support": {
+            "question": "아기 예수의 데레사가 가르멜 수도회 수도자였음",
+            "answer": "O",
+            "explanation": "5항이 리지외 가르멜 수도원에서 보낸 삶을, 6항이 가르멜 입회를 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "4da0b43f61901008987eb5c917a2aad9926ff4edf2e6e4967d8f31f60d75efa8"
+        }
+      ]
+    },
+    {
+      "id": "saints-13",
+      "answer": "X",
+      "sources": [
+        {
+          "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 2문단",
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/",
+          "title": "성 베네딕도 수도규칙",
+          "organization": "툿찡 포교 베네딕도 수녀회 서울 수녀원",
+          "locator": "수도규칙 소개 2문단 및 수도규칙 장별 본문",
+          "excerpt": "성무일도와 거룩한 독서 그리고 노동 안에서 하느님을 찾고,",
+          "claim_support": {
+            "question": "일상의 책임이 중요하지 않다는 주장은 수도생활 원리와 반대",
+            "answer": "X",
+            "explanation": "기도·독서·노동을 함께 수행하는 수도생활 원리를 평이하게 요약한 해설. 직접 발언의 인용이 아닌 해석임"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "6f4fe61c54aaff1c0e3dc428d441cfb8ee874b058e0e289f133eca14b0d8f91a"
+        }
+      ]
+    },
+    {
+      "id": "saints-14",
+      "answer": "X",
+      "sources": [
+        {
+          "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 1~4문단(출가·가난의 특전)",
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20",
+          "title": "클라라(8.11) 기본정보",
+          "organization": "서울대교구 가톨릭 굿뉴스",
+          "locator": "생애 1-4문단: 귀족 출신·출가·가난의 특전·겸손한 봉사",
+          "excerpt": "어떠한 소유권이나 재산도 가지지 않고",
+          "claim_support": {
+            "question": "재산을 계속 누리는 삶이 아니라 무소유 수도생활 선택",
+            "answer": "X",
+            "explanation": "귀족 출신, 부모 반대를 무릅쓴 수도생활, 소유권 포기, 겸손한 봉사 모두 명시. 단, 부유하다는 형용사는 이 본문에서 직접 확인되지 않아 귀족으로 좁히는 선택적 수정 제안"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "bb61ac05e0e2bb41b897802e73b7957ba35da45e79d4d5146be69c3c4ffd0063"
+        }
+      ]
+    },
+    {
+      "id": "saints-15",
+      "answer": "O",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18",
+          "url": "https://bible.cbck.or.kr/Knb/Mt/4"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Mt/4",
+          "title": "성경 마태오 복음서 4장",
+          "organization": "한국천주교주교회의",
+          "locator": "마태 4,18",
+          "excerpt": "두 형제, 곧 베드로라는 시몬과 그의 동생",
+          "claim_support": {
+            "question": "안드레아와 베드로의 형제관계",
+            "answer": "O",
+            "explanation": "18절 전체에 안드레아의 이름과 두 사람이 어부였다는 사실이 함께 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "e22deda6882b2e027f990183c4a92f0a9e106f78d0a292ae50af77dec49ee91d"
+        }
+      ]
+    },
+    {
+      "id": "saints-16",
+      "answer": "모니카",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 모니카 성녀 소개",
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://missa.cbck.or.kr/DailyMissa/20260828",
+          "title": "성 아우구스티노 주교 학자 기념일",
+          "organization": "한국천주교주교회의",
+          "locator": "2026-08-28 성인 소개 1-3문장",
+          "excerpt": "모니카 성녀의 맏아들로 태어났다.",
+          "claim_support": {
+            "question": "아우구스티노의 어머니 신원",
+            "answer": "모니카",
+            "explanation": "어머니의 끊임없는 기도와 암브로시오의 영향으로 회개했다고 이어서 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8c746dcff354a4f233862355ca26bb04122fadb083b291b9a97e1441013ec972"
+        }
+      ]
+    },
+    {
+      "id": "saints-17",
+      "answer": "암브로시오",
+      "sources": [
+        {
+          "label": "천주교 수원교구 수원주보 · 성 아우구스티노 — 2024-08-23, 본문 2·3문단",
+          "url": "https://www.casuwon.or.kr/journal/jubo/view/1047"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.casuwon.or.kr/journal/jubo/view/1047",
+          "title": "초대 교회의 위대한 철학자, 성 아우구스티노 (축일 8월 28일)",
+          "organization": "천주교 수원교구",
+          "locator": "수원주보 2024-08-23, 본문 2-3문단",
+          "excerpt": "아우구스티노는 과거의 잘못에 대해 깊이 뉘우치고 암브로시오 주교에게 세례를 받았습니다.",
+          "claim_support": {
+            "question": "밀라노의 암브로시오 주교가 세례를 베풂",
+            "answer": "암브로시오",
+            "explanation": "2문단은 밀라노 주교 신원을, 3문단은 세례 집전을 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "d9882d98a7cb36363dfbed0a8e506f3ca8091eda0ee3569fa922651edd33e71e"
+        }
+      ]
+    },
+    {
+      "id": "saints-18",
+      "answer": "요셉",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「아버지의 마음으로」 · 도입부·1항(요셉과 성가정)",
+          "url": "https://cbck.or.kr/notice/20210030"
+        },
+        {
+          "label": "한국천주교주교회의 성경 · 루카 2,4-5.39-40.48-52",
+          "url": "https://bible.cbck.or.kr/Knb/Lk/2"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/notice/20210030",
+          "title": "아버지의 마음으로",
+          "organization": "한국천주교주교회의",
+          "locator": "도입부(법률적 아버지·나자렛), 1항(성가정에 대한 헌신)",
+          "excerpt": "요셉은 용기 내어 예수님의 법률적 아버지가 되고,",
+          "claim_support": {
+            "question": "요셉은 예수님의 법률적 아버지이며 마리아와 나자렛에서 예수님을 돌봄",
+            "answer": "요셉",
+            "explanation": "도입부는 마리아와의 가족·나자렛 생활, 1항은 삶과 노동으로 성가정에 헌신함을 명시. 양부는 법률적 아버지를 가리키는 전통적 요약"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "f39a58bd0af9549143b965d44d27a2b7fc51fe013441f1977b2a1c808ddc2be8"
+        },
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Lk/2",
+          "title": "성경 루카 복음서 2장",
+          "organization": "한국천주교주교회의",
+          "locator": "루카 2,4-5.39-40.48-52",
+          "excerpt": "예수님은 부모와 함께 나자렛으로 내려가, 그들에게 순종하며 지냈다.",
+          "claim_support": {
+            "question": "요셉·마리아와 예수님의 가족 및 나자렛 생활",
+            "answer": "요셉(4-5절의 인명과 연결)",
+            "explanation": "39-40절과 51-52절의 나자렛 가정생활과 성장"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "901334a5362c9d1c2c22a3702dca0fbd0bf0f01e3acdd867262751fc9788fbf7"
+        }
+      ]
+    },
+    {
+      "id": "saints-19",
+      "answer": "마리아 막달레나",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 요한 복음서 20장 · 요한 20,11-18; 특히 18절",
+          "url": "https://bible.cbck.or.kr/Knb/Jn/20"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Jn/20",
+          "title": "성경 요한 복음서 20장",
+          "organization": "한국천주교주교회의",
+          "locator": "요한 20,11-18; 특히 18절",
+          "excerpt": "마리아 막달레나는 제자들에게 가서 “제가 주님을 뵈었습니다.”",
+          "claim_support": {
+            "question": "부활하신 예수님을 만나 소식을 전한 여성",
+            "answer": "마리아 막달레나",
+            "explanation": "18절에서 예수님을 만났다고 제자들에게 전함. 성경의 수신자 표현은 사도들이 아니라 제자들"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "60d5a84150562cecfb59ce5bca4c013322018fbc1722643d943ee11b3b21a5ec"
+        }
+      ]
+    },
+    {
+      "id": "saints-20",
+      "answer": "세례자 요한",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 · 성경 마태오 복음서 3장 · 마태 3,13-17",
+          "url": "https://bible.cbck.or.kr/Knb/Mt/3"
+        },
+        {
+          "label": "한국천주교주교회의 · 가톨릭 교회 교리서 · 535항 「예수님의 세례」",
+          "url": "https://cbck.or.kr/Documents/Catechism/Read/535"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://bible.cbck.or.kr/Knb/Mt/3",
+          "title": "성경 마태오 복음서 3장",
+          "organization": "한국천주교주교회의",
+          "locator": "마태 3,13-17",
+          "excerpt": "예수님께서는 요한에게 세례를 받으시려고 갈릴래아에서 요르단으로 그를 찾아가셨다.",
+          "claim_support": {
+            "question": "요르단에서 요한에게 세례를 받음",
+            "answer": "세례자 요한",
+            "explanation": "13-17절에서 세례 사건 확인; 공생활의 시작은 교리서 535항으로 보완"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "6c4aac34fcdad26757a03ddc8a378b6be40634d0ec0262481b98875be9775cd2"
+        },
+        {
+          "url": "https://cbck.or.kr/Documents/Catechism/Read/535",
+          "title": "가톨릭 교회 교리서",
+          "organization": "한국천주교주교회의",
+          "locator": "535항 「예수님의 세례」",
+          "excerpt": "예수님의 공생활은 요르단 강에서 요한에게 세례를 받으심으로써",
+          "claim_support": {
+            "question": "요르단 강에서 세례자 요한에게 받으신 세례",
+            "answer": "세례자 요한",
+            "explanation": "535항 첫 문장이 공생활이 세례로 시작되었다고 직접 명시"
+          },
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "9b5ffd0c5603ffe0f5dbda23f6903291c5b6a337339082adf80bb7ec2cb88e32"
+        }
+      ]
+    },
+    {
+      "id": "church-01",
+      "answer": "7가지",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1210항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1210"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1210",
+          "title": "가톨릭 교회 교리서 - 제 1210 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1210항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "세례성사, 견진성사, 성체성사, 고해성사, 병자성사, 성품성사, 혼인성사의 일곱 가지이다.",
+          "claim_support": "정답 7가지 및 해설에 열거된 일곱 성사 전체를 직접 명시한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "cc55d53e95cf94074d5a119304d897140d15aeaf2a0a1e87263050781e25696f"
+        }
+      ]
+    },
+    {
+      "id": "church-02",
+      "answer": "물",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1239항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1239"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1240항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1240"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1239",
+          "title": "가톨릭 교회 교리서 - 제 1239 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1239항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "예비 신자의 머리에 세 번 물을 붓는 방식으로도 베풀 수 있다.",
+          "claim_support": "세례수에 잠기는 방식과 머리에 물을 붓는 핵심 예식을 설명한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "54f27ced619c2d6b5157df9009ff8ffbe8a651eeaead9c5968620de9b7b3e09f"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1240",
+          "title": "가톨릭 교회 교리서 - 제 1240 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1240항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "나는 성부와 성자와 성령의 이름으로",
+          "claim_support": "해설의 삼위일체 이름으로 거행한다는 부분을 직접 확인한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "93c0c29baab7d5dc6ebd90ccfc9923c8652bbc34a564235671ed22aa6326b3c1"
+        }
+      ]
+    },
+    {
+      "id": "church-03",
+      "answer": "세례·견진·성체",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1212항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1212"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1212",
+          "title": "가톨릭 교회 교리서 - 제 1212 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1212항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "세례성사를 통해 새로운 생명으로 태어난 신자들은 견진성사로 굳건하게 되며, 성체성사로 영원한 생명의 음식을 받는다.",
+          "claim_support": "세례·견진·성체라는 입문 성사 조합과 새 생명·굳셈·양육의 해설을 모두 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "2cfa4403784185dba7ec41d3426533d5ba7e936e6a2895a59aae66c9583a1430"
+        }
+      ]
+    },
+    {
+      "id": "church-04",
+      "answer": "말씀 전례와 성찬 전례",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1346항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1346"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1346",
+          "title": "가톨릭 교회 교리서 - 제 1346 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1346항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "말씀 전례와 성찬 전례는 함께 “하나의 예배 행위를”",
+          "claim_support": "정답의 두 부분과 서로 하나의 예배를 이룬다는 해설을 직접 명시한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "bcf11bdb20131ddb95582d7e10bdca765bbf7111e5dec1da0933aa7e90b818a5"
+        }
+      ]
+    },
+    {
+      "id": "church-05",
+      "answer": "밀로 만든 빵과 포도로 만든 포도주",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「교회 법전」 · 제924조 제2·3항",
+          "url": "https://cbck.or.kr/Documents/Canon/Read/924"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/Documents/Canon/Read/924",
+          "title": "교회 법전 - 제 924 조",
+          "organization": "한국천주교주교회의",
+          "locator": "제924조 제2항",
+          "excerpt": "빵은 순수한 밀가루로 빚고",
+          "claim_support": "밀로 만든 빵이라는 정답·해설을 직접 명시한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "b67591271959f4a5b4f7777b1cac446e6e7bd84d83e389133a8231981ee0354e"
+        },
+        {
+          "url": "https://cbck.or.kr/Documents/Canon/Read/924",
+          "title": "교회 법전 - 제 924 조",
+          "organization": "한국천주교주교회의",
+          "locator": "제924조 제3항",
+          "excerpt": "포도주는 포도로 빚은 천연의 것으로",
+          "claim_support": "포도로 만든 포도주라는 정답·해설을 직접 명시한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "b67591271959f4a5b4f7777b1cac446e6e7bd84d83e389133a8231981ee0354e"
+        }
+      ]
+    },
+    {
+      "id": "church-06",
+      "answer": "사도들과 나누신 최후의 만찬",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1323항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1323"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1339항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1339"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1323",
+          "title": "가톨릭 교회 교리서 - 제 1323 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1323항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "최후 만찬에서 당신 몸과 피의 성찬의 희생 제사를 제정하셨다.",
+          "claim_support": "성체성사가 팔리시던 밤 최후 만찬에 제정되었음을 명시한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "640c69dab18cb2f9ab48694f59030df6026653357d54dde422c377531e82ee47"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1339",
+          "title": "가톨릭 교회 교리서 - 제 1339 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1339항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "시간이 되자 예수님께서 사도들과 함께 자리에 앉아",
+          "claim_support": "수난 전 사도들과 함께 나눈 만찬이라는 질문·해설의 세부사항을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "a49e2062df0477e031fb04e7511222a9174f2b772fb3897d9f00f7481c5dede0"
+        }
+      ]
+    },
+    {
+      "id": "church-07",
+      "answer": "주님 부활 대축일",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1169항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1169"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1169",
+          "title": "가톨릭 교회 교리서 - 제 1169 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1169항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "‘축일 중의 축일’, ‘대축일 중의 대축일’이다.",
+          "claim_support": "부활절의 탁월한 위상과 그리스도의 부활 신비를 함께 설명하여 정답과 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "4274807fdcf4bbf238a25b4087186a8a63ae4e620c6610ba46b9d0a5b6bf9f67"
+        }
+      ]
+    },
+    {
+      "id": "church-08",
+      "answer": "삼위일체",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 253항",
+          "url": "https://cbck.or.kr/documents/catechism/read/253"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/253",
+          "title": "가톨릭 교회 교리서 - 제 253 항",
+          "organization": "한국천주교주교회의",
+          "locator": "253항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "세 위격이신 한 분 하느님",
+          "claim_support": "삼위일체, 성부·성자·성령의 세 위격과 한 하느님이라는 정답·해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "c7ba17d07423298a7ee6456771a382eeba9fa88a9ef671c2728b1af0e286f86b"
+        }
+      ]
+    },
+    {
+      "id": "church-09",
+      "answer": "성모 마리아",
+      "sources": [
+        {
+          "label": "천주교 수원교구 남양성모성지 소개 · 성지 소개 첫 문단",
+          "url": "https://www.casuwon.or.kr/holyland/intro/12"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.casuwon.or.kr/holyland/intro/12",
+          "title": "성지소개 — 남양성모성지",
+          "organization": "천주교 수원교구",
+          "locator": "성지 소개 첫 문단, “남양성모성지는 병인(1866년)박해 때”로 시작",
+          "excerpt": "1991년 10월 7일 성모 마리아께 봉헌되고",
+          "claim_support": "첫 문단은 이름 없이 순교한 순교자들을 현양하는 순교성지이며 성모 마리아께 봉헌되었다고 명시한다. 기존 출처·정답·해설 유지 가능.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "397246ee8d86d40f1c99f5a95ef4d7afe181afe01c99450acbf975e71032a6f0"
+        }
+      ]
+    },
+    {
+      "id": "church-10",
+      "answer": "주님의 기도",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 2765항",
+          "url": "https://cbck.or.kr/documents/catechism/read/2765"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/2765",
+          "title": "가톨릭 교회 교리서 - 제 2765 항",
+          "organization": "한국천주교주교회의",
+          "locator": "2765항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "주 예수님께서 우리에게 가르쳐 주시고 전해 주신 우리 아버지께 드리는 기도라는 뜻이다.",
+          "claim_support": "주님의 기도의 명칭과 예수님께서 가르친 아버지께 드리는 기도라는 정답·해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "6005b94cf15d19d1678196e87a9cfa580bad2c502bdacd0f5ec140acbd5a4e53"
+        }
+      ]
+    },
+    {
+      "id": "church-11",
+      "answer": "X",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 971항",
+          "url": "https://cbck.or.kr/documents/catechism/read/971"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/971",
+          "title": "가톨릭 교회 교리서 - 제 971 항",
+          "organization": "한국천주교주교회의",
+          "locator": "971항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "성부와 성령께 보여 드리는 흠숭의 공경과는 본질적으로 다른 것이며",
+          "claim_support": "해당 문장 앞의 강생하신 말씀도 포함하여 성모 공경과 삼위일체 흠숭의 본질적 차이를 명시한다. 정답 X.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "3dd5a646a2cff15c7e14fcc22adc6eb681eba695618816dab2f04f3c52bb221a"
+        }
+      ]
+    },
+    {
+      "id": "church-12",
+      "answer": "O",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1272항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1272"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1272",
+          "title": "가톨릭 교회 교리서 - 제 1272 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1272항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "한 번 받은 세례는 다시 받을 수 없다.",
+          "claim_support": "같은 한국어 항에서 지워지지 않는 인호를 명시하고 세례 반복 불가를 결론으로 내린다. 정답 O와 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "480e42029a7cbec7eac1cd4ce9fcc18676299fdcbc81586e379b484fd2a639bf"
+        }
+      ]
+    },
+    {
+      "id": "church-13",
+      "answer": "O",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1374항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1374"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1374",
+          "title": "가톨릭 교회 교리서 - 제 1374 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1374항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "참으로, 실재적으로, 그리고 실체적으로 담겨 계신다.",
+          "claim_support": "성체 안에 온전한 그리스도께서 현존하신다는 정답 O 및 단순한 상징이 아니라는 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "ba2dba4deaba6faba393c3e686efe5a7d75bdead1d49b86572670da5d259e49a"
+        }
+      ]
+    },
+    {
+      "id": "church-14",
+      "answer": "X",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1514항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1514"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1514",
+          "title": "가톨릭 교회 교리서 - 제 1514 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1514항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "질병이나 노쇠로 죽을 위험이 엿보이는 때",
+          "claim_support": "생명이 위급한 사람들만을 위한 성사가 아니라는 본문과 함께 임종 직전에 한정되지 않음을 직접 지지한다. 정답 X.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "3dc100f6a1e667a5d8e849f939c1eb1cbb756a2a2c7b4b6fdf07321acdb0c969"
+        }
+      ]
+    },
+    {
+      "id": "church-15",
+      "answer": "X",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1179항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1179"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1180항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1180"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1179",
+          "title": "가톨릭 교회 교리서 - 제 1179 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1179항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "신약의 예배는 어느 한 특정 장소에만 매이지 않는다.",
+          "claim_support": "성당 안에서만 예배한다는 주장에 대한 정답 X와 해설 첫 문장을 직접 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "4e6a732e6a2f3be5b717860fe52a211405b99aae6a84e3d47718abeca85850db"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1180",
+          "title": "가톨릭 교회 교리서 - 제 1180 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1180항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "그리스도인들은 하느님께 예배를 드리기 위한 건물을 짓는다.",
+          "claim_support": "예배 장소 및 모임을 위한 교회 건물이라는 해설의 취지를 지지한다. 보편적 필요라는 단정은 아래 제안처럼 완화하면 더 정확하다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "b58ddc7a6186166d73c2eb7ec57df6f6236ac06a4632dcc0e6ff269024d10cdf"
+        }
+      ]
+    },
+    {
+      "id": "church-16",
+      "answer": "감실",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1379항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1379"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1418항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1418"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1379",
+          "title": "가톨릭 교회 교리서 - 제 1379 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1379항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "성체를 품위 있게 보관하기 위한 것이었다.",
+          "claim_support": "감실의 성체 보관 용도와 성당 안의 품위 있는 위치를 설명한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "94e6a95a615deaaba2102158491da0128e310f643fb465f8096b2072f9b5a2e2"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1418",
+          "title": "가톨릭 교회 교리서 - 제 1418 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1418항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "그분을 흠숭의 예로 공경해야 한다.",
+          "claim_support": "성체 조배와 흠숭에 관한 해설을 직접 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8df1b41a7a3acd4e3f125afbcce40b96dd764c2020ed688159d0783376d3e367"
+        }
+      ]
+    },
+    {
+      "id": "church-17",
+      "answer": "아멘",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 2856항",
+          "url": "https://cbck.or.kr/documents/catechism/read/2856"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/2856",
+          "title": "가톨릭 교회 교리서 - 제 2856 항",
+          "organization": "한국천주교주교회의",
+          "locator": "2856항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "의미인 ‘아멘’이라고 말하여 동의를 표합니다.",
+          "claim_support": "같은 문장에 그대로 이루어지소서라는 뜻과 기도를 마치며 동의한다는 의미가 명시되어 정답·해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "c2bbb53e9d84248b7583a49fc9db8e24d896476b4b56050e06516ce707ec9209"
+        }
+      ]
+    },
+    {
+      "id": "church-18",
+      "answer": "고해성사",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1486항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1486"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1448항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1448"
+        },
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1422항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1422"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1486",
+          "title": "가톨릭 교회 교리서 - 제 1486 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1486항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "세례 받은 다음에 지은 죄의 용서는",
+          "claim_support": "고해성사와 화해성사의 명칭 및 세례 후 죄의 용서라는 질문을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "5fc1689ad0cc34f9fe398f1b4face000caf38dd2d8889a347b4f5f6f4d383166"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1448",
+          "title": "가톨릭 교회 교리서 - 제 1448 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1448항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "곧 통회와 고백과 보속이다.",
+          "claim_support": "회개자의 행위와 주교·사제를 통한 그리스도 이름의 죄 용서라는 두 핵심 요소가 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "c2541f172d60d9a5abab475b96a19bc1e431e6b7759c7f6a678f6afdd2bd477f"
+        },
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1422",
+          "title": "가톨릭 교회 교리서 - 제 1422 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1422항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "그분의 자비로 용서를 받으며",
+          "claim_support": "고해성사에서 하느님의 용서와 교회와의 화해라는 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "634528f922b8ef39c1a43dbbd6e5f3ee7e1b926280397667a0d646e73d78fb56"
+        }
+      ]
+    },
+    {
+      "id": "church-19",
+      "answer": "대림 시기",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 524항",
+          "url": "https://cbck.or.kr/documents/catechism/read/524"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/524",
+          "title": "가톨릭 교회 교리서 - 제 524 항",
+          "organization": "한국천주교주교회의",
+          "locator": "524항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "교회는 매년 대림 시기 전례를 거행하면서 실제로 메시아를 기다린다.",
+          "claim_support": "대림이라는 정답과 구세주의 첫 오심에 대한 오랜 준비를 되새긴다는 해설을 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "770edadc79281d87231ab5afab8c1b280b56e6c95a2b989499e2a43e88289874"
+        }
+      ]
+    },
+    {
+      "id": "church-20",
+      "answer": "견진성사",
+      "sources": [
+        {
+          "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1303항",
+          "url": "https://cbck.or.kr/documents/catechism/read/1303"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://cbck.or.kr/documents/catechism/read/1303",
+          "title": "가톨릭 교회 교리서 - 제 1303 항",
+          "organization": "한국천주교주교회의",
+          "locator": "1303항 한국어 본문 (라틴어 본문 앞)",
+          "excerpt": "견진성사는 세례성사의 은총을 증가시키고 심화시킨다.",
+          "claim_support": "같은 항의 성령의 특별한 힘과 그리스도의 참된 증인이라는 설명까지 질문·정답·해설을 모두 지지한다.",
+          "language": "ko",
+          "http_status": 200,
+          "retrieved_text_sha256": "8f1d1676b1bc35e1d0191467edee2511107bd65a3d838c754f08cae53664c256"
+        }
+      ]
+    }
+  ]
+}

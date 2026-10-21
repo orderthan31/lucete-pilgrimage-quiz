@@ -20,8 +20,8 @@
         "explanation": "김대건 안드레아 성인은 한국인 최초로 사제품을 받은 사제입니다.",
         "sources": [
           {
-            "label": "Vatican News 한국 순교 성인 소개 · The priest",
-            "url": "https://www.vaticannews.va/en/saints/09/20/sts--andrew-kim-taegon--paul--chong-hasang-and-companions--korea.html"
+            "label": "한국천주교주교회의 매일미사 · 2026-09-20 — 순교 성인 소개",
+            "url": "https://missa.cbck.or.kr/DailyMissa/20260920"
           }
         ],
         "difficulty": "easy"
@@ -42,8 +42,8 @@
         "explanation": "아시시의 프란치스코 성인은 작은형제회를 세웠고, 가난을 그리스도를 따르는 길로 받아들였습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 아시시의 성 프란치스코 (2010-01-27) · 작은형제회 창립·가난의 영성",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100127.html"
+            "label": "서울대교구 가톨릭 굿뉴스 · 성 프란치스코 — 생애·로마 순교록 해설",
+            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?Orggubun=101&ctxtSaintId=2855&menugubun=saint"
           }
         ],
         "difficulty": "easy"
@@ -64,8 +64,8 @@
         "explanation": "클라라 성녀는 산 다미아노 공동체에서 자매들과 함께 가난과 하느님께 대한 신뢰를 실천했습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 아시시의 성녀 클라라 (2010-09-15) · 산 다미아노 공동체",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100915.html"
+            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 3문단(산 다미아노·가난)",
+            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
           }
         ],
         "difficulty": "medium"
@@ -86,8 +86,8 @@
         "explanation": "아기 예수의 데레사 성녀가 보여 준 작은 길의 중심은 하느님께 대한 신뢰와 사랑입니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 아기 예수의 성녀 데레사 (2011-04-06) · little way of trust and love",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2011/documents/hf_ben-xvi_aud_20110406.html"
+            "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 14항(신뢰와 사랑의 작은 길)",
+            "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
           }
         ],
         "difficulty": "easy"
@@ -105,11 +105,11 @@
         ],
         "answer": "성 아우구스티노",
         "answerIndex": 2,
-        "explanation": "「고백록」은 아우구스티노 성인이 하느님을 찬미하며 자신의 영적 여정을 돌아본 작품입니다.",
+        "explanation": "「고백록」은 아우구스티노 성인이 회개와 신앙의 여정을 돌아본 자서전입니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · Confessions",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+            "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 성 아우구스티노 소개",
+            "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
           }
         ],
         "difficulty": "medium"
@@ -130,8 +130,12 @@
         "explanation": "누르시아의 베네딕토 성인이 남긴 규칙서는 기도와 일상의 실천을 함께 강조합니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 베네딕토 (2008-04-09) · Rule",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080409.html"
+            "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 사부 성 베네딕도 — 생애 1·4문단",
+            "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%82%ac%eb%b6%80-%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84/"
+          },
+          {
+            "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 1·2문단",
+            "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
           }
         ],
         "difficulty": "medium"
@@ -152,8 +156,8 @@
         "explanation": "마태오는 세관에 앉아 있다가 예수님의 부르심을 받고 일어나 그분을 따랐습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 마태오 (2006-08-30) · 마태 9,9 해설",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060830.html"
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 9장 · 마태 9,9",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/9"
           }
         ],
         "difficulty": "easy"
@@ -174,8 +178,8 @@
         "explanation": "토마스 사도는 부활하신 예수님 앞에서 주님과 하느님을 알아보는 신앙을 고백했습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 토마스 사도 (2006-09-27) · 요한 20,27-29 해설",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060927.html"
+            "label": "한국천주교주교회의 · 성경 요한 복음서 20장 · 요한 20,26-29; 특히 28절",
+            "url": "https://bible.cbck.or.kr/Knb/Jn/20"
           }
         ],
         "difficulty": "easy"
@@ -196,8 +200,12 @@
         "explanation": "바오로 사도는 다마스쿠스로 가는 길에서 그리스도를 만난 뒤 삶의 방향이 바뀌었습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 바오로의 회심 (2008-09-03) · 다마스쿠스에서의 회심",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080903.html"
+            "label": "한국천주교주교회의 · 성경 사도행전 9장 · 사도 9,1-6.17-22",
+            "url": "https://bible.cbck.or.kr/Knb/Acts/9"
+          },
+          {
+            "label": "한국천주교주교회의 · 성경 사도행전 13장 · 사도 13,9",
+            "url": "https://bible.cbck.or.kr/Knb/Acts/13"
           }
         ],
         "difficulty": "easy"
@@ -218,8 +226,8 @@
         "explanation": "베드로는 형제 안드레아와 마찬가지로 갈릴래아 호수에서 고기를 잡던 어부였습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 베드로 (2006-05-17) · 베드로의 가족과 생업",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060517.html"
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18-20",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/4"
           }
         ],
         "difficulty": "easy"
@@ -237,8 +245,12 @@
         "explanation": "정하상 바오로 성인은 평신도로서 한국 신자들을 위해 힘쓰며 신앙을 증언했습니다.",
         "sources": [
           {
-            "label": "Vatican News 한국 순교 성인 소개 · The lay apostle",
-            "url": "https://www.vaticannews.va/en/saints/09/20/sts--andrew-kim-taegon--paul--chong-hasang-and-companions--korea.html"
+            "label": "한국천주교주교회의 · 정하상 바오로 약전 — 성직자 영입·순교",
+            "url": "https://cbck.or.kr/koreanmartyrs/103-Saints/2"
+          },
+          {
+            "label": "한국천주교주교회의 매일미사 · 2026-09-20 — 평신도 정하상 소개",
+            "url": "https://missa.cbck.or.kr/DailyMissa/20260920"
           }
         ],
         "difficulty": "easy"
@@ -256,8 +268,8 @@
         "explanation": "아기 예수의 데레사 성녀는 리지외의 가르멜 수도원에 들어가 수도 생활을 했습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 아기 예수의 성녀 데레사 (2011-04-06) · Carmel of Lisieux / Carmelite",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2011/documents/hf_ben-xvi_aud_20110406.html"
+            "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 5·6항(리지외 가르멜 수도원)",
+            "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
           }
         ],
         "difficulty": "easy"
@@ -275,8 +287,8 @@
         "explanation": "베네딕토 성인은 기도가 실천으로 이어져야 한다고 보았습니다. 기도와 일상의 책임은 떨어져 있지 않습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 베네딕토 (2008-04-09) · 기도와 일상의 의무",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080409.html"
+            "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 2문단",
+            "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
           }
         ],
         "difficulty": "medium"
@@ -291,11 +303,11 @@
         ],
         "answer": "X",
         "answerIndex": 1,
-        "explanation": "클라라 성녀는 부유한 집안의 지위와 재산을 내려놓고 겸손과 가난의 길을 선택했습니다.",
+        "explanation": "클라라 성녀는 귀족 집안의 지위와 재산을 내려놓고 겸손과 가난의 길을 선택했습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 아시시의 성녀 클라라 (2010-09-15) · 귀족 신분과 재산의 포기",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100915.html"
+            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 1~4문단(출가·가난의 특전)",
+            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
           }
         ],
         "difficulty": "easy"
@@ -313,8 +325,8 @@
         "explanation": "안드레아는 시몬 베드로의 형제입니다. 두 사람 모두 어부였습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 베드로 (2006-05-17) · Andrew, the brother of Simon",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060517.html"
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/4"
           }
         ],
         "difficulty": "easy"
@@ -332,8 +344,8 @@
         "explanation": "모니카 성녀는 아들 아우구스티노에게 신앙으로 큰 영향을 주었습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · 어머니 Monica",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+            "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 모니카 성녀 소개",
+            "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
           }
         ],
         "difficulty": "easy"
@@ -351,8 +363,8 @@
         "explanation": "밀라노의 암브로시오 주교는 아우구스티노에게 세례를 주었습니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · 밀라노의 세례",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+            "label": "천주교 수원교구 수원주보 · 성 아우구스티노 — 2024-08-23, 본문 2·3문단",
+            "url": "https://www.casuwon.or.kr/journal/jubo/view/1047"
           }
         ],
         "difficulty": "hard"
@@ -370,8 +382,12 @@
         "explanation": "요셉 성인은 예수님의 양부로서 성모 마리아와 함께 성가정의 일상을 살았습니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 104항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「아버지의 마음으로」 · 도입부·1항(요셉과 성가정)",
+            "url": "https://cbck.or.kr/notice/20210030"
+          },
+          {
+            "label": "한국천주교주교회의 성경 · 루카 2,4-5.39-40.48-52",
+            "url": "https://bible.cbck.or.kr/Knb/Lk/2"
           }
         ],
         "difficulty": "easy"
@@ -379,7 +395,7 @@
       {
         "id": "saints-19",
         "type": "short-answer",
-        "question": "요한 복음 20장에서 부활하신 예수님을 만나 사도들에게 소식을 전한 성녀는?",
+        "question": "요한 복음 20장에서 부활하신 예수님을 만나 제자들에게 소식을 전한 성녀는?",
         "answer": "마리아 막달레나",
         "acceptedAnswers": [
           "마리아 막달레나",
@@ -391,8 +407,8 @@
         "explanation": "마리아 막달레나 성녀는 부활하신 주님을 만나 그 소식을 전한 증인입니다.",
         "sources": [
           {
-            "label": "교황청 일반 알현: 복음을 섬긴 여성들 (2007-02-14) · 요한 20,1.11-18 해설",
-            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2007/documents/hf_ben-xvi_aud_20070214.html"
+            "label": "한국천주교주교회의 · 성경 요한 복음서 20장 · 요한 20,11-18; 특히 18절",
+            "url": "https://bible.cbck.or.kr/Knb/Jn/20"
           }
         ],
         "difficulty": "medium"
@@ -412,8 +428,12 @@
         "explanation": "예수님은 공생활을 시작하시며 요르단강에서 세례자 요한에게 세례를 받으셨습니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 254항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 3장 · 마태 3,13-17",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/3"
+          },
+          {
+            "label": "한국천주교주교회의 · 가톨릭 교회 교리서 · 535항 「예수님의 세례」",
+            "url": "https://cbck.or.kr/Documents/Catechism/Read/535"
           }
         ],
         "difficulty": "easy"
@@ -441,8 +461,8 @@
         "explanation": "교회의 일곱 성사는 세례, 견진, 성체, 고해, 병자, 성품, 혼인성사입니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 224항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1210항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1210"
           }
         ],
         "difficulty": "easy"
@@ -463,8 +483,12 @@
         "explanation": "세례는 물에 담그거나 머리에 물을 부으며 성부와 성자와 성령의 이름으로 거행합니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 256항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1239항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1239"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1240항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1240"
           }
         ],
         "difficulty": "easy"
@@ -485,8 +509,8 @@
         "explanation": "세례로 새로 태어나고, 견진으로 굳세어지며, 성체로 양육됩니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 251항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1212항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1212"
           }
         ],
         "difficulty": "medium"
@@ -507,8 +531,8 @@
         "explanation": "말씀 전례와 성찬 전례는 서로 연결되어 하나의 예배를 이룹니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 277항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1346항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1346"
           }
         ],
         "difficulty": "easy"
@@ -529,8 +553,8 @@
         "explanation": "교회는 성체성사에 밀로 만든 빵과 포도로 만든 포도주를 사용합니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 279항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「교회 법전」 · 제924조 제2·3항",
+            "url": "https://cbck.or.kr/Documents/Canon/Read/924"
           }
         ],
         "difficulty": "medium"
@@ -551,8 +575,12 @@
         "explanation": "예수님은 수난 전날 사도들과 나누신 최후의 만찬에서 성체성사를 제정하셨습니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 272-273항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1323항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1323"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1339항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1339"
           }
         ],
         "difficulty": "easy"
@@ -573,8 +601,8 @@
         "explanation": "주님 부활 대축일은 전례주년의 절정을 이루며 예수님의 부활을 기념합니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 241항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1169항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1169"
           }
         ],
         "difficulty": "easy"
@@ -595,8 +623,8 @@
         "explanation": "교회는 성부·성자·성령의 세 위격이 한 분 하느님이심을 고백합니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 44·48항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 253항",
+            "url": "https://cbck.or.kr/documents/catechism/read/253"
           }
         ],
         "difficulty": "easy"
@@ -639,8 +667,8 @@
         "explanation": "주님의 기도는 예수님께서 제자들에게 직접 가르쳐 주신 기도입니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 580항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 2765항",
+            "url": "https://cbck.or.kr/documents/catechism/read/2765"
           }
         ],
         "difficulty": "easy"
@@ -658,8 +686,8 @@
         "explanation": "성모님께 드리는 특별한 공경은 오직 삼위일체 하느님께 드리는 흠숭과 본질적으로 다릅니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 198항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 971항",
+            "url": "https://cbck.or.kr/documents/catechism/read/971"
           }
         ],
         "difficulty": "medium"
@@ -677,8 +705,8 @@
         "explanation": "세례성사는 지워지지 않는 인호를 남기므로 반복해서 받지 않습니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 227항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1272항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1272"
           }
         ],
         "difficulty": "easy"
@@ -693,11 +721,11 @@
         ],
         "answer": "O",
         "answerIndex": 0,
-        "explanation": "성체 안에는 그리스도께서 참으로, 실제로, 실체적으로 현존하십니다. 단순한 상징만은 아닙니다.",
+        "explanation": "성체 안에는 그리스도께서 참으로, 실재적으로, 실체적으로 현존하십니다. 단순한 상징만은 아닙니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 282항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1374항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1374"
           }
         ],
         "difficulty": "medium"
@@ -715,8 +743,8 @@
         "explanation": "병이나 노쇠로 죽음의 위험에 놓이기 시작한 신자는 병자성사를 받을 수 있습니다. 임종 직전에만 한정되지 않습니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 316항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1514항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1514"
           }
         ],
         "difficulty": "medium"
@@ -731,11 +759,15 @@
         ],
         "answer": "X",
         "answerIndex": 1,
-        "explanation": "새 계약의 예배는 어느 한 장소에만 묶이지 않습니다. 다만 공동체가 모여 전례를 거행할 장소는 필요합니다.",
+        "explanation": "새 계약의 예배는 어느 한 장소에만 묶이지 않습니다. 성당은 공동체가 모여 하느님께 예배드리는 장소입니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 244항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1179항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1179"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1180항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1180"
           }
         ],
         "difficulty": "hard"
@@ -752,8 +784,12 @@
         "explanation": "감실에는 성체가 모셔져 있습니다. 교회는 감실에 계신 성체께 흠숭을 드리도록 권고합니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 286항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1379항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1379"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1418항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1418"
           }
         ],
         "difficulty": "easy"
@@ -771,8 +807,8 @@
         "explanation": "아멘은 바친 기도의 내용에 동의하고 그것이 이루어지기를 바라는 응답입니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 598항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 2856항",
+            "url": "https://cbck.or.kr/documents/catechism/read/2856"
           }
         ],
         "difficulty": "easy"
@@ -791,8 +827,16 @@
         "explanation": "고해성사는 회개하는 이의 행위와 사제의 사죄를 통해 하느님과 화해하는 성사입니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 296-297·302항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1486항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1486"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1448항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1448"
+          },
+          {
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1422항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1422"
           }
         ],
         "difficulty": "easy"
@@ -811,8 +855,8 @@
         "explanation": "대림 시기에 교회는 하느님께서 아드님의 오심을 준비하신 긴 기다림을 되새깁니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 102항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 524항",
+            "url": "https://cbck.or.kr/documents/catechism/read/524"
           }
         ],
         "difficulty": "easy"
@@ -830,8 +874,8 @@
         "explanation": "견진성사는 세례의 은총을 굳세게 하며 그리스도교 신앙을 증언할 힘을 줍니다.",
         "sources": [
           {
-            "label": "교황청 「가톨릭 교회 교리서 요약」 · 266·268항",
-            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+            "label": "한국천주교주교회의 「가톨릭 교회 교리서」 · 1303항",
+            "url": "https://cbck.or.kr/documents/catechism/read/1303"
           }
         ],
         "difficulty": "medium"

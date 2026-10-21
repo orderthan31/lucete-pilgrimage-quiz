@@ -1,205 +1,125 @@
-# 루체테 퀴즈 — 문항 근거와 진행자 검토 안내
+# 루체테 퀴즈 — 한국어 문항 근거와 진행자 검토
 
-## 범위와 사용 전 확인
+## 출처 기준과 검증 범위
 
-- 성인 퀴즈 20문항, 성당 상식 퀴즈 20문항. 각 범주는 5지선다 10개, OX 5개, 주관식 5개로 구성했다. 이 비율은 조정 가능한 초기 구성이다.
-- 청년회 공동 화면에서 문제·정답·해설을 함께 보는 진행용 콘텐츠다. 점수, 답안 입력, 자동 채점을 전제로 하지 않는다. `acceptedAnswers`는 진행자가 참고할 수 있는 표현 예시이며, 실제 답변의 의미를 판단하는 기준을 대신하지 않는다.
-- **행사 전 담당 진행자가 질문·선택지·정답·해설을 모두 검토해야 한다. 필요하면 본당 사제나 교리 담당자에게 검토를 요청한다. 이 자료는 주교·사제의 승인이나 교회의 공식 출판 인가를 받았다고 주장하지 않는다.**
-- 한국어 질문과 설명은 아래 자료를 바탕으로 직접 작성한 요약이다. 영어 문헌의 한국어 표현은 공인 번역문 인용이 아니다. 영어 성경 인용을 한국천주교주교회의 공식 번역문처럼 제시하지 않았다.
-- 성인 호칭은 인물을 존중하는 표기이며, 확인하지 않은 축일·수호 분야·직접 발언·현재 교황 정보는 문항에 넣지 않았다. 토마스 아퀴나스의 도미니코회 소속 단서도 사용하지 않았다.
-- 난도는 진행 편의를 위한 편집 판단이다: 쉬움 27개, 보통 11개, 어려움 2개. 종교 지식이나 신앙의 깊이를 평가하는 등급이 아니다.
+- 40문항 모두 한국어 본문으로 정답·해설을 확인할 수 있는 국내 가톨릭 자료를 연결했다. 성인·성당 상식 각 20문항이며, 각 범주의 5지선다 10 / OX 5 / 주관식 5 구성을 유지했다.
+- 교리·성경은 한국천주교주교회의의 한국어 교리서·교회 법전·성경·매일미사·공식 문헌 번역을 우선한다. 성인 전기는 수원교구, 해당 수도회 공식 자료, 서울대교구 가톨릭 굿뉴스 성인 사전으로 보완한다. 일반 블로그·위키·이용자 게시판 재전재물은 최종 출처로 채택하지 않았다.
+- 교황 문헌도 주교회의에 게시된 한국어 번역본을 연결한다. 교리서 개별 항 페이지에는 한국어 뒤에 라틴어가 병기되지만, 문항의 근거는 앞쪽 한국어 본문이다. 영어·라틴어만 있는 바티칸 링크를 한국어 제목으로 포장하지 않았다.
+- 링크 이름에 기관·자료명과 항 번호, 성경 장절 또는 전기 위치를 적었다. 홈페이지나 책 전체 안내 대신 직접 확인할 수 있는 해당 항·장·게시물을 연결했다.
+- 2026-10-21: 고유 URL 44개를 부모 작업자가 직접 다시 취득했다. HTTP 200 및 문항별 한국어 근거 52건이 본문에 실제 포함되는지 검사했고, 40/40 문항을 대조했다. 원문 취득 해시·짧은 확인 구절·주장 대응은 `content-source-audit.json`에 있다.
+- 수원교구는 쿠키 없는 단순 요청에서 302 반복이 발생했다. 쿠키를 유지하는 일반 브라우저 방식으로 다시 요청해 본문과 근거를 확인했다. 취득 성공은 당시의 확인 결과이며 장기 가용성을 보장하지 않는다.
 
-## 실제 자료 취득 및 한계
+## 기존 문구의 최소 정리
 
-- 최종 문항이 참조하는 서로 다른 13개 URL은 이번 작업에서 모두 HTTP 200으로 본문을 직접 취득했다. 페이지 제목·본문과 문항별 핵심 구절을 확인했다. 모든 문항의 근거 구절 40개가 취득 본문에 실제 포함되는지도 코드로 검사했다.
-- 사용 자료는 교황청 문헌 11개, 교황청 소통부 Vatican News 1개, 천주교 수원교구 1개다. 아래 출처 목록은 실제 취득된 URL에서 생성했다. 번호가 연속되지 않는 것은 취득에 실패한 후보를 제외했기 때문이다.
-- USCCB 성경 장별 페이지는 직접 요청에서 HTTP 403을 반환했다. 일부 검색 결과에 본문이 나타났으나 최종 근거로 채택하지 않았다. 해당 문항은 본문 취득에 성공한 교황청의 성경 해설로 대체했다.
-- CBCK 교리서 안내 페이지는 열렸으나 이 경로에서 문항에 필요한 개별 항목의 전체 본문을 확보하지 못했다. 따라서 CBCK 개별 교리 항목을 직접 확인했다고 표시하지 않고, 교황청 「가톨릭 교회 교리서 요약」의 항 번호를 명시했다.
-- 앞선 작업에서 남양성모성지 자체 사이트는 429로 제한되었다는 인계가 있어 재요청하지 않았다. 남양 문항은 수원교구 공식 성지 소개 본문을 근거로 삼았다. 미사 시간·교통편 등 변동 정보는 출제하지 않았다.
-- Vatican News 한국 순교 성인 소개는 김대건의 최초 한국인 사제 신분과 정하상의 평신도 신분에 한해서 사용했다. 페이지의 다른 연대·통계까지 검증한 것으로 보아서는 안 된다.
-- 최종 40문항의 핵심 정답에 미확인 사실을 남기지는 않았다. 다만 한국어 용어, 청년회 대상 난도, 현장 답변 인정 범위에 대한 진행자 검토는 남아 있다. URL의 장기 가용성은 보장하지 않는다.
+- saints-05: 「고백록」 해설을 공식 매일미사의 자서전 설명에 맞췄다. 찬미 표현만 뒷받침하기 위한 이용자 게시판 재전재 출처는 제외했다.
+- saints-14: 해설의 ‘부유한 집안’을 전기의 직접 표현인 ‘귀족 집안’으로 정리했다.
+- saints-19: 요한 20,18에 맞춰 질문의 ‘사도들에게’를 ‘제자들에게’로 정리했다.
+- church-13: 교리서 1374항의 용어 ‘실재적으로’를 사용했다.
+- church-15: 장소에 매이지 않는 예배와 성당의 공동체적 역할을 구별하도록 해설을 다듬었다.
+- 문항 ID·순서·유형·보기·정답·허용 답안·난도는 바꾸지 않았다. 화면 구조·진행·배경 영상도 변경하지 않았다.
 
-## 문항별 주장 → 근거
+## 문항별 주장과 확인 위치
 
-각 행은 질문의 정답과 해설이 기대는 핵심 사실을 요약한다. OX의 거짓 문장은 아래 근거와 반대되므로 X다. 객관식 오답은 해당 질문 조건을 충족하지 않는 선택지다.
+OX의 거짓 문장은 아래 근거와 반대이므로 X다. 아래 문장은 원문을 바탕으로 작성한 요약이며 공식 번역문의 직접 인용으로 표시하지 않는다.
 
-| ID | 정답 | 검증한 핵심 주장 | 본문 위치 | 출처 |
+| ID | 정답 | 확인한 핵심 주장 | 한국어 원문 위치 | 출처 |
 |---|---|---|---|---|
-| saints-01 | 성 김대건 안드레아 | 김대건을 한국인 최초의 사제로 명시한다. | The priest | [3] |
-| saints-02 | 성 프란치스코 | 작은형제회 창립자와 가난의 영성을 설명한다. | 작은형제회 창립·가난의 영성 | [4] |
-| saints-03 | 성녀 클라라 | 클라라가 첫 동료들과 산 다미아노에 정착했고 가난을 실천했다고 설명한다. | 산 다미아노 공동체 | [5] |
-| saints-04 | 아기 예수의 성녀 데레사 | 데레사의 영성을 신뢰와 사랑의 작은 길이라고 설명한다. | little way of trust and love | [6] |
-| saints-05 | 성 아우구스티노 | 고백록을 아우구스티노의 영적 자서전으로 설명한다. | Confessions | [7] |
-| saints-06 | 성 베네딕토 | 베네딕토의 규칙서와 기도·실천의 관계를 설명한다. | Rule | [8] |
-| saints-07 | 성 마태오 | 마태 9,9의 세관과 마태오의 부르심을 직접 설명한다. | 마태 9,9 해설 | [13] |
-| saints-08 | 성 토마스 | 토마스의 주님·하느님 고백을 인용하고 해설한다. | 요한 20,27-29 해설 | [14] |
-| saints-09 | 성 바오로 | 다마스쿠스 길의 사건을 바오로의 삶을 변화시킨 그리스도와의 만남으로 설명한다. | 다마스쿠스에서의 회심 | [17] |
-| saints-10 | 어부 | 베드로와 안드레아를 어부로 소개한다. | 베드로의 가족과 생업 | [15] |
-| saints-11 | O | 정하상 바오로를 평신도 사도로 소개한다. | The lay apostle | [3] |
-| saints-12 | O | 리지외의 가르멜 입회와 가르멜 수녀가 된 사실을 설명한다. | Carmel of Lisieux / Carmelite | [6] |
-| saints-13 | X | 기도가 행동으로 표현되어야 하며 일상의 의무를 놓치지 않았다고 설명한다. | 기도와 일상의 의무 | [8] |
-| saints-14 | X | 클라라가 귀족 신분과 부를 포기했다고 명시한다. | 귀족 신분과 재산의 포기 | [5] |
-| saints-15 | O | 안드레아를 시몬의 형제로 명시한다. | Andrew, the brother of Simon | [15] |
-| saints-16 | 모니카 | 모니카를 아우구스티노의 어머니이며 성녀로 소개한다. | 어머니 Monica | [7] |
-| saints-17 | 암브로시오 | 아우구스티노가 밀라노 대성당에서 암브로시오에게 세례를 받았다고 명시한다. | 밀라노의 세례 | [7] |
-| saints-18 | 요셉 | 예수님의 나자렛 생활과 양부 요셉, 마리아에 대한 순종을 설명한다. | 104항 | [1] |
-| saints-19 | 마리아 막달레나 | 마리아 막달레나를 부활하신 주님의 증인이며 소식을 전한 이로 설명한다. | 요한 20,1.11-18 해설 | [16] |
-| saints-20 | 세례자 요한 | 예수님이 공생활 시작에 요르단강에서 세례자 요한에게 세례를 받았다고 설명한다. | 254항 | [1] |
-| church-01 | 7가지 | 일곱 성사의 수와 이름을 열거한다. | 224항 | [1] |
-| church-02 | 물 | 세례의 핵심 예식인 물과 삼위일체의 이름을 설명한다. | 256항 | [1] |
-| church-03 | 세례·견진·성체 | 그리스도교 입문이 세례·견진·성체성사로 이루어진다고 설명한다. | 251항 | [1] |
-| church-04 | 말씀 전례와 성찬 전례 | 말씀 전례와 성찬 전례를 하나의 예배를 이루는 두 주요 부분으로 설명한다. | 277항 | [1] |
-| church-05 | 밀로 만든 빵과 포도로 만든 포도주 | 성체성사에 필요한 요소를 wheat bread와 grape wine으로 명시한다. | 279항 | [1] |
-| church-06 | 사도들과 나누신 최후의 만찬 | 성목요일 최후의 만찬에서 성체성사를 제정하셨다고 설명한다. | 272-273항 | [1] |
-| church-07 | 주님 부활 대축일 | 부활절을 연중 전례의 절정이자 feast of feasts라고 설명한다. | 241항 | [1] |
-| church-08 | 삼위일체 | 삼위일체의 세 위격과 하느님의 단일성을 설명한다. | 44·48항 | [1] |
-| church-09 | 성모 마리아 | 남양성모성지가 성모 마리아께 봉헌된 순교성지라고 명시한다. | 성지 소개 첫 문단 | [2] |
-| church-10 | 주님의 기도 | Our Father가 예수님께서 직접 가르쳐 주신 기도라서 Lord’s Prayer라고 불린다고 설명한다. | 580항 | [1] |
-| church-11 | X | 마리아 공경과 삼위일체 하느님께만 드리는 흠숭을 구별한다. | 198항 | [1] |
-| church-12 | O | 세례·견진·성품의 인호와 일생에 한 번 받는 성사라는 점을 명시한다. | 227항 | [1] |
-| church-13 | O | 성체 안의 참되고 실제적이며 실체적인 현존을 설명한다. | 282항 | [1] |
-| church-14 | X | 질병이나 노령으로 죽음의 위험에 놓이기 시작할 때 받을 수 있다고 명시한다. | 316항 | [1] |
-| church-15 | X | 새 계약의 예배는 특정 장소에만 매이지 않으며 공동체 모임 장소의 필요성도 설명한다. | 244항 | [1] |
-| church-16 | 감실 | 감실에 보존된 성체를 찾아 흠숭할 것을 권고한다. | 286항 | [1] |
-| church-17 | 아멘 | 마지막 Amen을 so be it으로 설명하며 기도에 대한 동의라고 풀이한다. | 598항 | [1] |
-| church-18 | 고해성사 | 세례 후 회개를 위한 화해의 성사와 회개자의 행위·사제의 사죄를 설명한다. | 296-297·302항 | [1] |
-| church-19 | 대림 시기 | 그리스도 오심을 기다린 시간을 해마다 대림 시기의 전례로 되살린다고 설명한다. | 102항 | [1] |
-| church-20 | 견진성사 | 견진이 세례 은총을 확고히 하며 성령의 특별한 부어 주심과 증언의 힘을 준다고 설명한다. | 266·268항 | [1] |
+| saints-01 | 성 김대건 안드레아 | 김대건이 한국인 최초의 사제임을 명시 | 2026-09-20 축일 소개 3문단 | [2] |
+| saints-02 | 성 프란치스코 | 회칙 인준 문단은 창립을, 마지막 로마 순교록 문단은 예수 그리스도를 따르기 위한 자발적 가난을 명시 | 생애: 1209/1210년 회칙 인준 문단과 마지막 로마 순교록 해설 | [3] |
+| saints-03 | 성녀 클라라 | 같은 문단에 복음적 가난, 무소유, 하느님 의존을 함께 명시. 신뢰는 하느님께 의존한다는 서술의 요약 | 생애 3문단(성 다미아노 공동체·가난의 특전) | [4] |
+| saints-04 | 아기 예수의 성녀 데레사 | 14항에서 신뢰와 사랑의 길이라고 정의; 18-20항은 하느님께 두는 신뢰를 설명 | 14항, 소제목 「2. 신뢰와 사랑의 작은 길」 | [5] |
+| saints-05 | 성 아우구스티노 | 자서전이라는 성격과 저자를 한국어 공식 매일미사에서 확인했다. 해설도 회개와 신앙 여정을 돌아본 자서전으로 정리했다. | 2026-08-28 성인 소개 문단 | [6] |
+| saints-06 | 성 베네딕토 | 수도규칙서 저술; 기도와 실천의 내용은 수도규칙 소개로 보완 / 성무일도·거룩한 독서·노동을 함께 놓은 수도생활 원리 | 성 베네딕도 St. Benedictus (480~547), 생애 1·4문단 / 수도규칙 소개 1-2문단 | [7][8] |
+| saints-07 | 성 마태오 | 부르심을 받고 일어나 따름을 명시 | 마태 9,9 | [9] |
+| saints-08 | 성 토마스 | 주님과 하느님이라는 신앙 고백을 직접 인용 | 요한 20,26-29; 특히 28절 | [10] |
+| saints-09 | 성 바오로 | 1-2절의 박해자에서 18절의 세례, 20-22절의 예수님 선포자로 변화; 17절은 길에서 나타나신 예수님을 명시 / 사울/바오로 동일 인물 확인; 회심 사건 자체는 9장 | 사도 9,1-6.17-22 / 사도 13,9 | [11][12] |
+| saints-10 | 어부 | 18절에 갈릴래아 호수, 베드로와 동생 안드레아, 어망, 어부 모두 명시 | 마태 4,18-20 | [13] |
+| saints-11 | O | 선교사 영입, 교회 일, 상재상서, 순교가 신앙 증언을 직접 뒷받침 / 평신도 순교 성인 확인 | 약전 본문; 신학생 선발·성직자 영입·상재상서·순교 / 2026-09-20 축일 소개 3문단 | [14][2] |
+| saints-12 | O | 5항이 리지외 가르멜 수도원에서 보낸 삶을, 6항이 가르멜 입회를 명시 | 5-6항 | [5] |
+| saints-13 | X | 기도·독서·노동을 함께 수행하는 수도생활 원리를 평이하게 요약한 해설. 직접 발언의 인용이 아닌 해석임 | 수도규칙 소개 2문단 및 수도규칙 장별 본문 | [8] |
+| saints-14 | X | 귀족 출신, 부모 반대를 무릅쓴 수도생활, 소유권 포기, 겸손한 봉사 모두 명시. 단, 부유하다는 형용사는 이 본문에서 직접 확인되지 않아 귀족으로 좁히는 선택적 수정 제안 | 생애 1-4문단: 귀족 출신·출가·가난의 특전·겸손한 봉사 | [4] |
+| saints-15 | O | 18절 전체에 안드레아의 이름과 두 사람이 어부였다는 사실이 함께 명시 | 마태 4,18 | [13] |
+| saints-16 | 모니카 | 어머니의 끊임없는 기도와 암브로시오의 영향으로 회개했다고 이어서 명시 | 2026-08-28 성인 소개 1-3문장 | [6] |
+| saints-17 | 암브로시오 | 2문단은 밀라노 주교 신원을, 3문단은 세례 집전을 명시 | 수원주보 2024-08-23, 본문 2-3문단 | [15] |
+| saints-18 | 요셉 | 도입부는 마리아와의 가족·나자렛 생활, 1항은 삶과 노동으로 성가정에 헌신함을 명시. 양부는 법률적 아버지를 가리키는 전통적 요약 / 39-40절과 51-52절의 나자렛 가정생활과 성장 | 도입부(법률적 아버지·나자렛), 1항(성가정에 대한 헌신) / 루카 2,4-5.39-40.48-52 | [16][17] |
+| saints-19 | 마리아 막달레나 | 18절에서 예수님을 만났다고 제자들에게 전함. 성경의 수신자 표현은 사도들이 아니라 제자들 | 요한 20,11-18; 특히 18절 | [10] |
+| saints-20 | 세례자 요한 | 13-17절에서 세례 사건 확인; 공생활의 시작은 교리서 535항으로 보완 / 535항 첫 문장이 공생활이 세례로 시작되었다고 직접 명시 | 마태 3,13-17 / 535항 「예수님의 세례」 | [18][19] |
+| church-01 | 7가지 | 정답 7가지 및 해설에 열거된 일곱 성사 전체를 직접 명시한다. | 1210항 한국어 본문 (라틴어 본문 앞) | [1] |
+| church-02 | 물 | 세례수에 잠기는 방식과 머리에 물을 붓는 핵심 예식을 설명한다. / 해설의 삼위일체 이름으로 거행한다는 부분을 직접 확인한다. | 1239항 한국어 본문 (라틴어 본문 앞) / 1240항 한국어 본문 (라틴어 본문 앞) | [20][21] |
+| church-03 | 세례·견진·성체 | 세례·견진·성체라는 입문 성사 조합과 새 생명·굳셈·양육의 해설을 모두 지지한다. | 1212항 한국어 본문 (라틴어 본문 앞) | [22] |
+| church-04 | 말씀 전례와 성찬 전례 | 정답의 두 부분과 서로 하나의 예배를 이룬다는 해설을 직접 명시한다. | 1346항 한국어 본문 (라틴어 본문 앞) | [23] |
+| church-05 | 밀로 만든 빵과 포도로 만든 포도주 | 밀로 만든 빵이라는 정답·해설을 직접 명시한다. / 포도로 만든 포도주라는 정답·해설을 직접 명시한다. | 제924조 제2항 / 제924조 제3항 | [24] |
+| church-06 | 사도들과 나누신 최후의 만찬 | 성체성사가 팔리시던 밤 최후 만찬에 제정되었음을 명시한다. / 수난 전 사도들과 함께 나눈 만찬이라는 질문·해설의 세부사항을 지지한다. | 1323항 한국어 본문 (라틴어 본문 앞) / 1339항 한국어 본문 (라틴어 본문 앞) | [25][26] |
+| church-07 | 주님 부활 대축일 | 부활절의 탁월한 위상과 그리스도의 부활 신비를 함께 설명하여 정답과 해설을 지지한다. | 1169항 한국어 본문 (라틴어 본문 앞) | [27] |
+| church-08 | 삼위일체 | 삼위일체, 성부·성자·성령의 세 위격과 한 하느님이라는 정답·해설을 지지한다. | 253항 한국어 본문 (라틴어 본문 앞) | [28] |
+| church-09 | 성모 마리아 | 첫 문단은 이름 없이 순교한 순교자들을 현양하는 순교성지이며 성모 마리아께 봉헌되었다고 명시한다. 기존 출처·정답·해설 유지 가능. | 성지 소개 첫 문단, “남양성모성지는 병인(1866년)박해 때”로 시작 | [29] |
+| church-10 | 주님의 기도 | 주님의 기도의 명칭과 예수님께서 가르친 아버지께 드리는 기도라는 정답·해설을 지지한다. | 2765항 한국어 본문 (라틴어 본문 앞) | [30] |
+| church-11 | X | 해당 문장 앞의 강생하신 말씀도 포함하여 성모 공경과 삼위일체 흠숭의 본질적 차이를 명시한다. 정답 X. | 971항 한국어 본문 (라틴어 본문 앞) | [31] |
+| church-12 | O | 같은 한국어 항에서 지워지지 않는 인호를 명시하고 세례 반복 불가를 결론으로 내린다. 정답 O와 해설을 지지한다. | 1272항 한국어 본문 (라틴어 본문 앞) | [32] |
+| church-13 | O | 성체 안에 온전한 그리스도께서 현존하신다는 정답 O 및 단순한 상징이 아니라는 해설을 지지한다. | 1374항 한국어 본문 (라틴어 본문 앞) | [33] |
+| church-14 | X | 생명이 위급한 사람들만을 위한 성사가 아니라는 본문과 함께 임종 직전에 한정되지 않음을 직접 지지한다. 정답 X. | 1514항 한국어 본문 (라틴어 본문 앞) | [34] |
+| church-15 | X | 성당 안에서만 예배한다는 주장에 대한 정답 X와 해설 첫 문장을 직접 지지한다. / 예배 장소 및 모임을 위한 교회 건물이라는 해설의 취지를 지지한다. 보편적 필요라는 단정은 아래 제안처럼 완화하면 더 정확하다. | 1179항 한국어 본문 (라틴어 본문 앞) / 1180항 한국어 본문 (라틴어 본문 앞) | [35][36] |
+| church-16 | 감실 | 감실의 성체 보관 용도와 성당 안의 품위 있는 위치를 설명한다. / 성체 조배와 흠숭에 관한 해설을 직접 지지한다. | 1379항 한국어 본문 (라틴어 본문 앞) / 1418항 한국어 본문 (라틴어 본문 앞) | [37][38] |
+| church-17 | 아멘 | 같은 문장에 그대로 이루어지소서라는 뜻과 기도를 마치며 동의한다는 의미가 명시되어 정답·해설을 지지한다. | 2856항 한국어 본문 (라틴어 본문 앞) | [39] |
+| church-18 | 고해성사 | 고해성사와 화해성사의 명칭 및 세례 후 죄의 용서라는 질문을 지지한다. / 회개자의 행위와 주교·사제를 통한 그리스도 이름의 죄 용서라는 두 핵심 요소가 해설을 지지한다. / 고해성사에서 하느님의 용서와 교회와의 화해라는 해설을 지지한다. | 1486항 한국어 본문 (라틴어 본문 앞) / 1448항 한국어 본문 (라틴어 본문 앞) / 1422항 한국어 본문 (라틴어 본문 앞) | [40][41][42] |
+| church-19 | 대림 시기 | 대림이라는 정답과 구세주의 첫 오심에 대한 오랜 준비를 되새긴다는 해설을 지지한다. | 524항 한국어 본문 (라틴어 본문 앞) | [43] |
+| church-20 | 견진성사 | 같은 항의 성령의 특별한 힘과 그리스도의 참된 증인이라는 설명까지 질문·정답·해설을 모두 지지한다. | 1303항 한국어 본문 (라틴어 본문 앞) | [44] |
+
+## 직접 실행한 검증
+
+- 40문항의 구조·출처 계약 검증 통과. Vitest 22개 / 3파일, TypeScript와 Vite 프로덕션 빌드, 작성 파일 diff 검사 통과.
+- 근거 장부와 앱의 문항 ID·정답·출처 배열이 일치하고, 채택한 한국어 출처 도메인·HTTPS·근거 위치·본문 취득 해시를 검사하는 회귀 테스트를 추가했다. 이 테스트는 기록된 근거의 일관성 검사이며 미래의 사이트 접근 가능성이나 교리 승인을 보장하지 않는다.
+- 실제 개발 페이지에서 1920×1080, 1280×720, 390×844, 320×720 각각 40문항의 정답 공개와 출처 펼치기를 실행했다. 총 160회 모두 출처 URL·한국어 라벨 일치, 새 탭 설정, 정답의 선공개 없음, 가로 넘침 없음, 프로젝터 패널 잘림 없음, 단일 배경 비디오를 확인했다. 이는 출처 표시 중심 검수이며 기존 전체 UI 검수나 현장 프로젝터 검증을 새로 했다는 뜻은 아니다.
+
+## 행사 전 확인
+
+- 진행자가 질문·보기·정답·해설을 사전에 검토하고, 필요하면 본당 사제나 교리 담당자의 검토를 받는다. 이 자료가 교회의 공식 출판 인가나 별도 사목 승인을 받았다는 뜻은 아니다.
+- 주관식의 허용 답안은 표현 예시다. 점수·답안 판단은 진행자가 담당한다.
+- 원문의 전체 번역문·성경·전기를 재배포하지 않는다. 짧은 근거 구절만 검증 장부에 남기며 전문은 각 기관의 링크에서 확인한다.
 
 ## Sources
 
-### [1] 교황청 「가톨릭 교회 교리서 요약」
-- URL: https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “There are seven sacraments”
-
-### [2] 천주교 수원교구 남양성모성지 소개
-- URL: https://www.casuwon.or.kr/holyland/intro/12
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “성모 마리아께 봉헌되고”
-
-### [3] Vatican News 한국 순교 성인 소개
-- URL: https://www.vaticannews.va/en/saints/09/20/sts--andrew-kim-taegon--paul--chong-hasang-and-companions--korea.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “the first native Korean priest”
-
-### [4] 교황청 일반 알현: 아시시의 성 프란치스코 (2010-01-27)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100127.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “Orders of Friars Minor”
-
-### [5] 교황청 일반 알현: 아시시의 성녀 클라라 (2010-09-15)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100915.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “Clare settled with her first companions”
-
-### [6] 교황청 일반 알현: 아기 예수의 성녀 데레사 (2011-04-06)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2011/documents/hf_ben-xvi_aud_20110406.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “little way of trust and love”
-
-### [7] 교황청 일반 알현: 성 아우구스티노 (2008-01-09)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “Monica, a fervent Christian”
-
-### [8] 교황청 일반 알현: 성 베네딕토 (2008-04-09)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080409.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “duties of daily life”
-
-### [13] 교황청 일반 알현: 성 마태오 (2006-08-30)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060830.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “sitting at the tax office”
-
-### [14] 교황청 일반 알현: 성 토마스 사도 (2006-09-27)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060927.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “My Lord and my God!”
-
-### [15] 교황청 일반 알현: 성 베드로 (2006-05-17)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060517.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “Andrew, the brother of Simon”
-
-### [16] 교황청 일반 알현: 복음을 섬긴 여성들 (2007-02-14)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2007/documents/hf_ben-xvi_aud_20070214.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “first witness and herald of the Risen One”
-
-### [17] 교황청 일반 알현: 성 바오로의 회심 (2008-09-03)
-- URL: https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080903.html
-- 취득: 직접 HTTP GET 200, 본문 확인.
-- 본문 확인용 짧은 구절: “road to Damascus”
-
-## 프로그램 검증 결과
-
-작성 후 저장된 JSON을 다시 파싱하여 다음을 확인한다. 아래 검증 코드는 표준 라이브러리만 사용하며 저장된 데이터를 검사할 때 그대로 실행할 수 있다. 원문 구절 포함 여부는 작성 세션에서 직접 취득한 본문과 대조하여 별도 확인했다.
-
-- 범주 2개 / 문항 40개 / 고유 문항 ID 40개 / 정규화한 중복 질문 0개.
-- 각 범주: `multiple-choice` 10개 / `ox` 5개 / `short-answer` 5개.
-- 5지선다 선택지 5개와 정규화 기준 선택지 고유성, 정답 인덱스 0–4, 정답 문자열 일치.
-- OX 선택지는 정확히 `["O", "X"]`, 인덱스와 정답 일치.
-- 주관식은 `answerIndex`와 `choices`가 없고, 모든 `acceptedAnswers`에 대표 정답 포함.
-- 필수·허용 필드, 난도 열거형, 출처 객체 구조, HTTPS 공식 도메인 및 본문 취득 URL 일치.
-- 각 문항의 근거 행과 출처 번호 존재, 서로 다른 출처 URL 13개, 원문 근거 구절 40/40 일치.
-
-```python
-import json, re, unicodedata
-from collections import Counter
-from pathlib import Path
-from urllib.parse import urlparse
-
-root = Path("/home/hg121500/dev/lucete-pilgrimage-quiz")
-data = json.loads((root / "src/data/quizzes.json").read_text())
-doc = (root / "docs/content-sources.md").read_text()
-norm = lambda x: re.sub(r"[^\w]", "", unicodedata.normalize("NFKC", x).casefold())
-assert [(c["id"], c["title"]) for c in data] == [
-    ("saints", "성인 퀴즈"), ("church", "성당 상식 퀴즈")]
-required = {"id", "type", "question", "answer", "explanation", "sources", "difficulty"}
-allowed = required | {"choices", "answerIndex", "acceptedAnswers"}
-ids, prompts, urls = set(), set(), set()
-for c in data:
-    assert set(c) == {"id", "title", "description", "questions"}
-    assert c["description"].strip() and len(c["questions"]) == 20
-    assert Counter(q["type"] for q in c["questions"]) == {
-        "multiple-choice": 10, "ox": 5, "short-answer": 5}
-    for i, q in enumerate(c["questions"], 1):
-        assert required <= set(q) <= allowed
-        assert q["id"] == f"{c['id']}-{i:02}" and q["id"] not in ids
-        ids.add(q["id"])
-        assert norm(q["question"]) not in prompts
-        prompts.add(norm(q["question"]))
-        assert all(isinstance(q[k], str) and q[k].strip()
-                   for k in ("question", "answer", "explanation"))
-        assert q["difficulty"] in {"easy", "medium", "hard"}
-        if q["type"] == "short-answer":
-            assert "answerIndex" not in q and "choices" not in q
-            assert isinstance(q["acceptedAnswers"], list)
-            assert q["answer"] in q["acceptedAnswers"]
-            assert all(isinstance(a, str) and a.strip() for a in q["acceptedAnswers"])
-        else:
-            assert q["type"] in {"multiple-choice", "ox"}
-            assert "acceptedAnswers" not in q
-            opts = q["choices"]
-            assert len(opts) == (5 if q["type"] == "multiple-choice" else 2)
-            assert all(isinstance(a, str) and a.strip() for a in opts)
-            assert len(set(map(norm, opts))) == len(opts)
-            idx = q["answerIndex"]
-            assert type(idx) is int and 0 <= idx < len(opts)
-            assert q["answer"] == opts[idx]
-            if q["type"] == "ox":
-                assert opts == ["O", "X"]
-        assert isinstance(q["sources"], list) and q["sources"]
-        for s in q["sources"]:
-            assert set(s) == {"label", "url"} and s["label"].strip()
-            u = urlparse(s["url"])
-            assert u.scheme == "https" and u.netloc in {
-                "www.vatican.va", "www.vaticannews.va", "www.casuwon.or.kr"}
-            assert s["url"] in doc
-            urls.add(s["url"])
-        assert f"| {q['id']} |" in doc
-assert len(ids) == len(prompts) == 40 and len(urls) == 13
-print("PASS: 40 questions; 20 per category; 10/5/5 each; 13 source URLs")
-```
+[1] https://cbck.or.kr/documents/catechism/read/1210 — 한국천주교주교회의 가톨릭 교회 교리서 제1210항
+[2] https://missa.cbck.or.kr/DailyMissa/20260920 — 오늘의 미사 | 매일미사 | 한국천주교주교회의
+[3] https://maria.catholic.or.kr/sa_ho/list/view.asp?Orggubun=101&ctxtSaintId=2855&menugubun=saint — GoodNews 가톨릭정보
+[4] https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20 — GoodNews 가톨릭정보
+[5] https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006 — 교황 권고 「사랑으로 이끄는 신뢰」(C’est la Confiance) | 교황 문헌 | 문헌마당 | 한국천주교주교회의
+[6] https://missa.cbck.or.kr/DailyMissa/20260828 — 오늘의 미사 | 매일미사 | 한국천주교주교회의
+[7] https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%82%ac%eb%b6%80-%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84 — 툿찡 포교 베네딕도 수녀회 서울 수녀원 | 사부 성 베네딕도
+[8] https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99 — 툿찡 포교 베네딕도 수녀회 서울 수녀원 | 성 베네딕도 수도규칙
+[9] https://bible.cbck.or.kr/Knb/Mt/9 — 성경 - 한국천주교주교회의
+[10] https://bible.cbck.or.kr/Knb/Jn/20 — 성경 - 한국천주교주교회의
+[11] https://bible.cbck.or.kr/Knb/Acts/9 — 성경 - 한국천주교주교회의
+[12] https://bible.cbck.or.kr/Knb/Acts/13 — 성경 - 한국천주교주교회의
+[13] https://bible.cbck.or.kr/Knb/Mt/4 — 성경 - 한국천주교주교회의
+[14] https://cbck.or.kr/koreanmartyrs/103-Saints/2 — 103위 성인 약전 | 시복시성주교특별위원회
+[15] https://www.casuwon.or.kr/journal/jubo/view/1047 — 천주교 수원교구 수원주보
+[16] https://cbck.or.kr/notice/20210030 — [성 요셉의 해] 교황 교서 ｢아버지의 마음으로｣ (Patris Corde) | 한국천주교주교회의
+[17] https://bible.cbck.or.kr/Knb/Lk/2 — 성경 - 한국천주교주교회의
+[18] https://bible.cbck.or.kr/Knb/Mt/3 — 성경 - 한국천주교주교회의
+[19] https://cbck.or.kr/Documents/Catechism/Read/535 — 가톨릭 교회 교리서 - 제 535 항 | 문헌 | 한국천주교주교회의
+[20] https://cbck.or.kr/documents/catechism/read/1239 — 가톨릭 교회 교리서 - 제 1239 항 | 문헌 | 한국천주교주교회의
+[21] https://cbck.or.kr/documents/catechism/read/1240 — 가톨릭 교회 교리서 - 제 1240 항 | 문헌 | 한국천주교주교회의
+[22] https://cbck.or.kr/documents/catechism/read/1212 — 가톨릭 교회 교리서 - 제 1212 항 | 문헌 | 한국천주교주교회의
+[23] https://cbck.or.kr/documents/catechism/read/1346 — 가톨릭 교회 교리서 - 제 1346 항 | 문헌 | 한국천주교주교회의
+[24] https://cbck.or.kr/Documents/Canon/Read/924 — 교회법전 - 제 924 조 | 문헌 | 한국천주교주교회의
+[25] https://cbck.or.kr/documents/catechism/read/1323 — 가톨릭 교회 교리서 - 제 1323 항 | 문헌 | 한국천주교주교회의
+[26] https://cbck.or.kr/documents/catechism/read/1339 — 가톨릭 교회 교리서 - 제 1339 항 | 문헌 | 한국천주교주교회의
+[27] https://cbck.or.kr/documents/catechism/read/1169 — 가톨릭 교회 교리서 - 제 1169 항 | 문헌 | 한국천주교주교회의
+[28] https://cbck.or.kr/documents/catechism/read/253 — 가톨릭 교회 교리서 - 제 253 항 | 문헌 | 한국천주교주교회의
+[29] https://www.casuwon.or.kr/holyland/intro/12 — 천주교 수원교구 성지소개
+[30] https://cbck.or.kr/documents/catechism/read/2765 — 가톨릭 교회 교리서 - 제 2765 항 | 문헌 | 한국천주교주교회의
+[31] https://cbck.or.kr/documents/catechism/read/971 — 가톨릭 교회 교리서 - 제 971 항 | 문헌 | 한국천주교주교회의
+[32] https://cbck.or.kr/documents/catechism/read/1272 — 가톨릭 교회 교리서 - 제 1272 항 | 문헌 | 한국천주교주교회의
+[33] https://cbck.or.kr/documents/catechism/read/1374 — 가톨릭 교회 교리서 - 제 1374 항 | 문헌 | 한국천주교주교회의
+[34] https://cbck.or.kr/documents/catechism/read/1514 — 가톨릭 교회 교리서 - 제 1514 항 | 문헌 | 한국천주교주교회의
+[35] https://cbck.or.kr/documents/catechism/read/1179 — 가톨릭 교회 교리서 - 제 1179 항 | 문헌 | 한국천주교주교회의
+[36] https://cbck.or.kr/documents/catechism/read/1180 — 가톨릭 교회 교리서 - 제 1180 항 | 문헌 | 한국천주교주교회의
+[37] https://cbck.or.kr/documents/catechism/read/1379 — 가톨릭 교회 교리서 - 제 1379 항 | 문헌 | 한국천주교주교회의
+[38] https://cbck.or.kr/documents/catechism/read/1418 — 가톨릭 교회 교리서 - 제 1418 항 | 문헌 | 한국천주교주교회의
+[39] https://cbck.or.kr/documents/catechism/read/2856 — 가톨릭 교회 교리서 - 제 2856 항 | 문헌 | 한국천주교주교회의
+[40] https://cbck.or.kr/documents/catechism/read/1486 — 가톨릭 교회 교리서 - 제 1486 항 | 문헌 | 한국천주교주교회의
+[41] https://cbck.or.kr/documents/catechism/read/1448 — 가톨릭 교회 교리서 - 제 1448 항 | 문헌 | 한국천주교주교회의
+[42] https://cbck.or.kr/documents/catechism/read/1422 — 가톨릭 교회 교리서 - 제 1422 항 | 문헌 | 한국천주교주교회의
+[43] https://cbck.or.kr/documents/catechism/read/524 — 가톨릭 교회 교리서 - 제 524 항 | 문헌 | 한국천주교주교회의
+[44] https://cbck.or.kr/documents/catechism/read/1303 — 가톨릭 교회 교리서 - 제 1303 항 | 문헌 | 한국천주교주교회의

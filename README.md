@@ -51,6 +51,8 @@ Vite 프로젝트로 import하고 Install `npm ci`, Build `npm run build`, Outpu
 
 `src/data/quizzes.json`과 `docs/content-sources.md`가 콘텐츠 원본입니다. 카테고리는 `saints`, `church`이며 각 20문항입니다. 문제 `id`는 배포 뒤 변경하지 마세요. ID/순서가 바뀌어 저장값과 맞지 않으면 이어가기를 안전하게 무효화합니다.
 
+문항 근거는 한국어로 확인 가능한 한국천주교주교회의·교구·수도회 자료를 우선합니다. 화면의 출처에는 기관명과 교리서 항 번호·성경 장절·전기 위치를 표시합니다. 문항별 근거와 취득 검증 기록은 `docs/content-sources.md`, `docs/content-source-audit.json`에 함께 유지하세요. 출처를 바꾸면 앱 데이터와 근거 장부도 같이 갱신해야 합니다.
+
 - 공통: `id`, `type`, `question`, `answer`, `explanation`, `sources: [{label,url}]`, `difficulty: easy|medium|hard`.
 - `multiple-choice`: 서로 다른 `choices` 정확히 5개. 0부터 시작하는 `answerIndex`가 `answer`와 일치.
 - `ox`: `choices: ["O","X"]` 및 일치하는 `answerIndex`.
