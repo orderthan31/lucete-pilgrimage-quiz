@@ -1,0 +1,32 @@
+:root {
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #173e35;
+  background: #f7f5ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+button { font: inherit; }
+.landing { width: min(1080px, 100%); margin: 0 auto; padding: clamp(24px, 5vw, 72px); }
+.hero { padding-block: 24px 48px; }
+.eyebrow { font-weight: 700; letter-spacing: .06em; }
+h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.25; margin: 16px 0; }
+.destination { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0; }
+.welcome, .status-note { color: #4d625a; }
+h2 { font-size: 1.5rem; }
+.category-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.category-card { padding: 28px; border: 1px solid #cbd4c9; border-radius: 20px; background: #fffef9; }
+.question-count { margin: 0; color: #53654b; font-weight: 700; }
+h3 { margin: 12px 0; font-size: 1.8rem; }
+.category-card button { width: 100%; min-height: 48px; margin-top: 16px; border: 1px solid #ccd4c8; border-radius: 10px; background: #e8ece3; color: #4d625a; cursor: not-allowed; }
+.status-note { margin-top: 24px; }
+footer { padding-top: 40px; font-size: .875rem; color: #53654b; }
+@media (max-width: 640px) {
+  .category-grid { grid-template-columns: 1fr; }
+  .hero { padding-bottom: 24px; }
+  .category-card { padding: 24px; }
+}
