@@ -1,31 +1,175 @@
 {
-  "verified_from": "Official source articles and official KOGL Type 1 terms in real browser; original Commons metadata retained separately.",
+  "verified_from": "Official enclosing articles and KOGL Type1 terms; live 2021 article badge and exact image credit rechecked. Original Commons metadata retained separately.",
   "verified_on": "2026-10-21",
-  "scope": "KOGL1 notices on enclosing articles; no separately obtained photo-specific certificate. Exact published credits retained.",
+  "scope": "Article-level permission, not separately issued photo-specific certificates. Exact image credit distinguished from article byline.",
   "sources": [
     {
       "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
-      "credit": "경기도블로그 / 2021 경기도민기자단 이재형 기자",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
       "license": "KOGL Type 1",
       "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
       "original_sha256": "b69551d4af3db307832dc605d35839a7406eaee57e101b717d40acae141e8486",
-      "subject": "Tree-lined autumn entrance path / 숲 터널"
+      "selected_photo_sha256": "b69551d4af3db307832dc605d35839a7406eaee57e101b717d40acae141e8486",
+      "subject": "Tree-lined autumn entrance path / 숲 터널",
+      "extraction": null
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "f571d6a896cbb01f398fa0d6ec5a7d6312bd37f2e838e413b1925a197ef78a9b",
+      "selected_photo_sha256": "43352a37e3760752acb96f2a59aa16fcc1c3c9e32378e20cf9ad51aa7801017d",
+      "subject": "Garden building exterior and approach",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219637140479.jpg",
+        "original_sha256": "f571d6a896cbb01f398fa0d6ec5a7d6312bd37f2e838e413b1925a197ef78a9b",
+        "original_dimensions": [
+          1389,
+          927
+        ],
+        "crop_box_pixels": [
+          699,
+          468,
+          1384,
+          923
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "ec8d6e834a8e32098bb4cb2c6af61fb994f86e8358f8b898cc4d66ddfcde5879",
+      "selected_photo_sha256": "5f8ed1b57eeedb13f516b256f0ca1550661c33af2c3ac6b85b1bb949af43eea4",
+      "subject": "Central Marian statue and circular garden",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219644368798.jpg",
+        "original_sha256": "ec8d6e834a8e32098bb4cb2c6af61fb994f86e8358f8b898cc4d66ddfcde5879",
+        "original_dimensions": [
+          1498,
+          503
+        ],
+        "crop_box_pixels": [
+          3,
+          3,
+          740,
+          500
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "26a2c91176a9c5bf9f58f1b1885bde4deca5c580265323d03d3d44aeca0182e4",
+      "selected_photo_sha256": "1163058b02e547fb5665c9f851c131f932f1bf4d46b9fa26175418819f4f95c6",
+      "subject": "Open autumn garden and red maple",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219651882483.jpg",
+        "original_sha256": "26a2c91176a9c5bf9f58f1b1885bde4deca5c580265323d03d3d44aeca0182e4",
+        "original_dimensions": [
+          1390,
+          924
+        ],
+        "crop_box_pixels": [
+          699,
+          3,
+          1386,
+          456
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
     },
     {
       "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=201810311638527055C059&s_code=C059",
       "credit": "G-Life",
+      "author_status": "Exact published image credit is G-Life; individual photographer is not identified.",
       "license": "KOGL Type 1",
       "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
       "original_sha256": "ea76119bc5657f2e89d4ac7f1478f3e4c5130bcb26a5d3baff8f75c75def34cd",
-      "subject": "Golden autumn grove, sunbeams and walking path"
+      "selected_photo_sha256": "ea76119bc5657f2e89d4ac7f1478f3e4c5130bcb26a5d3baff8f75c75def34cd",
+      "subject": "Golden autumn grove, sunbeams and walking path",
+      "extraction": null
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "e54e44db565dcab0005826d3cdbe85ed147845e0034d69f782c105c09b866400",
+      "selected_photo_sha256": "83022fc3a26a9aa0b79ac919ade3a177edee100bc06a2ecb9289997e7756f3ee",
+      "subject": "Stepping-stone approach to Namyang Marian statue",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219658198143.JPG",
+        "original_sha256": "e54e44db565dcab0005826d3cdbe85ed147845e0034d69f782c105c09b866400",
+        "original_dimensions": [
+          1434,
+          787
+        ],
+        "crop_box_pixels": [
+          3,
+          3,
+          711,
+          474
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "e9a58731ebf3a4b9a4444accaab1367fa711524637a6fe6cc9efdaee7b24a9bd",
+      "selected_photo_sha256": "bba950056393b20d485f172a91b745b89233f1e3f42d96444ca078b9b2327f82",
+      "subject": "Leaf-strewn lawn and autumn tree canopy",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219674370280.JPG",
+        "original_sha256": "e9a58731ebf3a4b9a4444accaab1367fa711524637a6fe6cc9efdaee7b24a9bd",
+        "original_dimensions": [
+          1388,
+          922
+        ],
+        "crop_box_pixels": [
+          3,
+          478,
+          687,
+          918
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
     },
     {
       "source_page": "https://commons.wikimedia.org/wiki/File:Hwaseong-Namyang,_The_Shrine_of_our_Lady_the_Rosary_-_interior.jpg",
       "credit": "Alexander Ortmann",
+      "author_status": "Commons explicitly names Alexander Ortmann",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "original_sha256": "5d50de1018bd5b3c4b26208a3377dbadbfca8f92977d53829bd9caef0c64ee69",
-      "subject": "File:Hwaseong-Namyang, The Shrine of our Lady the Rosary - interior.jpg"
+      "selected_photo_sha256": "5d50de1018bd5b3c4b26208a3377dbadbfca8f92977d53829bd9caef0c64ee69",
+      "subject": "File:Hwaseong-Namyang, The Shrine of our Lady the Rosary - interior.jpg",
+      "extraction": null
     }
   ]
 }

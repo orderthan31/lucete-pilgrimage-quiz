@@ -1,13 +1,13 @@
 {
-  "title": "Namyang Shrine — wide grounds and sanctuary photo motion",
+  "title": "Namyang Shrine — eight distinct grounds, garden, statue, exterior and sanctuary photographs",
   "kind": "photo-motion montage, not location-shot video or drone footage",
   "video": "namyang-background.mp4",
   "poster": "namyang-poster.webp",
   "license": "Adaptation CC BY-SA 4.0; original photographs retain their individually listed KOGL Type 1 / CC BY-SA 4.0 terms",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
   "adaptation_credit": "Lucete quiz media adaptation",
-  "changes": "Two native landscape grounds photographs plus one upper-anchored sanctuary view; subject-safe 16:9 cropping, maximum 2.2% additional zoom, restrained pan, cross-dissolves, H.264 encoding and poster extraction. Removed repetitive organ/ceiling close-ups.",
-  "duration_seconds": 24,
+  "changes": "Eight distinct photographs (seven outdoor scenes and one upper-anchored sanctuary); five independent landscape panels extracted from five archived article collages. No mosaic shown, no repeated photograph counted via alternate crops. Subject-safe wide 16:9 cropping, maximum 2.2% additional zoom, restrained pan, 1.5-second dissolves including seamless loop, H.264 encoding and poster extraction. No baked-in dim.",
+  "duration_seconds": 56,
   "fps": 24,
   "width": 1920,
   "height": 1080,
@@ -15,8 +15,8 @@
     {
       "file": "sources/namyang-autumn-path.jpg",
       "title": "Tree-lined autumn entrance path / 숲 터널",
-      "author": "경기도블로그 / 2021 경기도민기자단 이재형 기자",
-      "author_status": "Article explicitly names 이재형; image caption credits 경기도블로그.",
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
       "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
       "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219626867004.jpg",
       "license": "KOGL Type 1",
@@ -35,7 +35,141 @@
         0.5,
         0.53
       ],
-      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD."
+      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD.",
+      "photo_date": "Historical photograph; exact shutter date not verified in this revision.",
+      "publication_date": "2021-11-09"
+    },
+    {
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "file": "sources/namyang-garden-building.png",
+      "title": "Garden building exterior and approach",
+      "width": 685,
+      "height": 455,
+      "sha256": "43352a37e3760752acb96f2a59aa16fcc1c3c9e32378e20cf9ad51aa7801017d",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219637140479.jpg",
+      "subject_bbox": [
+        0.2,
+        0.27,
+        0.81,
+        0.77
+      ],
+      "focal_point": [
+        0.51,
+        0.53
+      ],
+      "publication_date": "2021-11-09",
+      "photo_date": "Article describes visit in early November 2021; exact shutter date unavailable.",
+      "resolution_note": "One visually verified independent photograph extracted losslessly from a published JPEG collage; not a camera original, below native Full HD.",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219637140479.jpg",
+        "original_sha256": "f571d6a896cbb01f398fa0d6ec5a7d6312bd37f2e838e413b1925a197ef78a9b",
+        "original_dimensions": [
+          1389,
+          927
+        ],
+        "crop_box_pixels": [
+          699,
+          468,
+          1384,
+          923
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "file": "sources/namyang-central-statue.png",
+      "title": "Central Marian statue and circular garden",
+      "width": 737,
+      "height": 497,
+      "sha256": "5f8ed1b57eeedb13f516b256f0ca1550661c33af2c3ac6b85b1bb949af43eea4",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219644368798.jpg",
+      "subject_bbox": [
+        0.25,
+        0.22,
+        0.78,
+        0.91
+      ],
+      "focal_point": [
+        0.5,
+        0.56
+      ],
+      "publication_date": "2021-11-09",
+      "photo_date": "Article describes visit in early November 2021; exact shutter date unavailable.",
+      "resolution_note": "One visually verified independent photograph extracted losslessly from a published JPEG collage; not a camera original, below native Full HD.",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219644368798.jpg",
+        "original_sha256": "ec8d6e834a8e32098bb4cb2c6af61fb994f86e8358f8b898cc4d66ddfcde5879",
+        "original_dimensions": [
+          1498,
+          503
+        ],
+        "crop_box_pixels": [
+          3,
+          3,
+          740,
+          500
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "file": "sources/namyang-autumn-garden.png",
+      "title": "Open autumn garden and red maple",
+      "width": 687,
+      "height": 453,
+      "sha256": "1163058b02e547fb5665c9f851c131f932f1bf4d46b9fa26175418819f4f95c6",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219651882483.jpg",
+      "subject_bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.87
+      ],
+      "focal_point": [
+        0.5,
+        0.51
+      ],
+      "publication_date": "2021-11-09",
+      "photo_date": "Article describes visit in early November 2021; exact shutter date unavailable.",
+      "resolution_note": "One visually verified independent photograph extracted losslessly from a published JPEG collage; not a camera original, below native Full HD.",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219651882483.jpg",
+        "original_sha256": "26a2c91176a9c5bf9f58f1b1885bde4deca5c580265323d03d3d44aeca0182e4",
+        "original_dimensions": [
+          1390,
+          924
+        ],
+        "crop_box_pixels": [
+          699,
+          3,
+          1386,
+          456
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
     },
     {
       "file": "sources/namyang-golden-grove.jpg",
@@ -60,7 +194,97 @@
         0.5,
         0.51
       ],
-      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD."
+      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD.",
+      "photo_date": "Historical photograph; exact shutter date not verified in this revision.",
+      "publication_date": "2018-10-31"
+    },
+    {
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "file": "sources/namyang-statue-approach.png",
+      "title": "Stepping-stone approach to Namyang Marian statue",
+      "width": 708,
+      "height": 471,
+      "sha256": "83022fc3a26a9aa0b79ac919ade3a177edee100bc06a2ecb9289997e7756f3ee",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219658198143.JPG",
+      "subject_bbox": [
+        0.24,
+        0.22,
+        0.77,
+        0.89
+      ],
+      "focal_point": [
+        0.5,
+        0.54
+      ],
+      "publication_date": "2021-11-09",
+      "photo_date": "Article describes visit in early November 2021; exact shutter date unavailable.",
+      "resolution_note": "One visually verified independent photograph extracted losslessly from a published JPEG collage; not a camera original, below native Full HD.",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219658198143.JPG",
+        "original_sha256": "e54e44db565dcab0005826d3cdbe85ed147845e0034d69f782c105c09b866400",
+        "original_dimensions": [
+          1434,
+          787
+        ],
+        "crop_box_pixels": [
+          3,
+          3,
+          711,
+          474
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
+    },
+    {
+      "author": "경기도블로그",
+      "author_status": "Exact image credit: 경기도블로그. Article byline: 2021 경기도민기자단 이재형 기자; not a separately established photographer attribution.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "file": "sources/namyang-leaf-lawn.png",
+      "title": "Leaf-strewn lawn and autumn tree canopy",
+      "width": 684,
+      "height": 440,
+      "sha256": "bba950056393b20d485f172a91b745b89233f1e3f42d96444ca078b9b2327f82",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219674370280.JPG",
+      "subject_bbox": [
+        0.03,
+        0.09,
+        0.97,
+        0.85
+      ],
+      "focal_point": [
+        0.5,
+        0.47
+      ],
+      "publication_date": "2021-11-09",
+      "photo_date": "Article describes visit in early November 2021; exact shutter date unavailable.",
+      "resolution_note": "One visually verified independent photograph extracted losslessly from a published JPEG collage; not a camera original, below native Full HD.",
+      "extraction": {
+        "original_file": "sources/originals/20211109094219674370280.JPG",
+        "original_sha256": "e9a58731ebf3a4b9a4444accaab1367fa711524637a6fe6cc9efdaee7b24a9bd",
+        "original_dimensions": [
+          1388,
+          922
+        ],
+        "crop_box_pixels": [
+          3,
+          478,
+          687,
+          918
+        ],
+        "coordinate_convention": "Pillow (left, upper, right, lower); right/lower exclusive; before any motion crop",
+        "operation": "Pillow RGB decode, integer pixel crop, lossless PNG save; no resize, retouching or watermark removal",
+        "visual_review": "Independent photograph confirmed; seams excluded. Different photograph, not an alternate crop of another selected photograph."
+      }
     },
     {
       "file": "sources/namyang-sanctuary.jpg",
@@ -84,20 +308,22 @@
       "focal_point": [
         0.58,
         0.25
-      ]
+      ],
+      "photo_date": "Historical photograph; exact shutter date not verified in this revision."
     }
   ],
   "license_scope": "CC BY-SA applies to the combined edited media and adaptation contributions, not a relicensing of KOGL source originals. Preserve each source credit, terms and change notice; no institutional endorsement is implied.",
   "render_settings": {
-    "duration_seconds": 24,
+    "duration_seconds": 56,
     "fps": 24,
-    "scene_count": 3,
-    "seconds_per_scene": 8,
+    "scene_count": 8,
+    "seconds_per_scene": 7,
     "dissolve_seconds": 1.5,
     "extra_zoom_range": [
       1.002,
       1.022
     ],
     "crop_contract": "Every approved subject_bbox must remain entirely in each animated crop; reduce zoom or reject impossible geometry."
-  }
+  },
+  "unique_photo_count": 8
 }

@@ -45,7 +45,10 @@ class SubjectCropTests(unittest.TestCase):
     def test_live_manifest_subjects_are_safe_at_all_rendered_phases(self):
         manifest = json.loads((Path(__file__).resolve().parents[1] / 'public/media/namyang-background.sources.json').read_text())
         frames = manifest['fps'] * manifest['duration_seconds']
-        self.assertEqual(len(manifest['sources']), 3)
+        self.assertGreaterEqual(len(manifest['sources']), 8)
+        self.assertEqual(len(manifest['sources']), manifest['unique_photo_count'])
+        self.assertEqual(len(manifest['sources']), manifest['render_settings']['scene_count'])
+        self.assertEqual(len({s['sha256'] for s in manifest['sources']}), len(manifest['sources']))
         for index, source in enumerate(manifest['sources']):
             for frame in range(frames):
                 phase = math.tau * frame / frames + index * .8

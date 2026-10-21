@@ -1,6 +1,6 @@
 # Lighter content panels and fresh-start UX checkpoint
 
-This supersedes the old global 72%/84% video-dim and resumable-start presentation contract. Media expansion is a separate pending asset checkpoint; no new photograph count is claimed here.
+This supersedes the old global 72%/84% video-dim and resumable-start presentation contract. Media expansion is recorded separately in `eight-photo-background-checkpoint.md`; no new photograph count is claimed by this historical UI checkpoint.
 
 ## Changes
 
