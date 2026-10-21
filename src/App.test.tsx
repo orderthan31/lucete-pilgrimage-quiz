@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import App from './App';
 import { fixture } from './test-fixture';
@@ -6,7 +6,6 @@ import { progressKey, readProgress, saveProgress } from './progress';
 const start = () => {
   render(<App categories={fixture} />);
   fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
-  fireEvent.click(screen.getByRole('button', { name: '시작' }));
 };
 const reveal = () => fireEvent.click(screen.getByRole('button', { name: '정답 공개' }));
 describe('presenter flow', () => {
@@ -25,7 +24,6 @@ describe('presenter flow', () => {
     expect((container.querySelector('.stage-backdrop') as HTMLElement).style.backgroundImage).toContain('/media/namyang-poster.webp');
     expect(screen.queryByRole('button', { name: /배경 영상/ })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
-    fireEvent.click(screen.getByRole('button', { name: '시작' }));
     reveal();
     expect(screen.getByText('공개 뒤에만 보이는 해설 1')).toBeTruthy();
   });
@@ -49,7 +47,6 @@ describe('presenter flow', () => {
     expect(background.playsInline).toBe(true);
     fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
     expect(container.querySelector('video')).toBe(background);
-    fireEvent.click(screen.getByRole('button', { name: '시작' }));
     reveal();
     fireEvent.click(screen.getByRole('button', { name: '다음 문제' }));
     expect(container.querySelector('video')).toBe(background);
@@ -58,7 +55,8 @@ describe('presenter flow', () => {
     reveal();
     fireEvent.click(screen.getByRole('button', { name: '종료' }));
     expect(container.querySelector('video')).toBe(background);
-    expect(container.querySelectorAll('.stage-dim')).toHaveLength(1);
+    expect(container.querySelectorAll('.stage-dim')).toHaveLength(0);
+    expect(container.querySelector('.scene.content-panel')).toBeTruthy();
   });
   it('renders the exact event identity and two concise category choices', () => {
     render(<App categories={fixture} />);
@@ -67,11 +65,13 @@ describe('presenter flow', () => {
     expect(screen.getByRole('button', { name: '성당 상식 퀴즈' })).toBeTruthy();
     expect(screen.queryByText(/20문항 · 시작하기|이어가기|만나기/)).toBeNull();
   });
-  it('omits instructional descriptions from ready and all question formats', () => {
+  it('opens question one immediately without a ready screen or instructional descriptions', () => {
     render(<App categories={fixture} />);
     fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+    expect(screen.getByRole('heading', { name: '1번째 테스트 질문' })).toBeTruthy();
+    expect(window.location.pathname).toBe('/quiz/saints/question/saints-1');
+    expect(screen.queryByRole('button', { name: '시작' })).toBeNull();
     expect(screen.queryByText(/한 문제|1분|함께 답|준비되셨나요|객관식 \/ OX|성인 이야기/)).toBeNull();
-    fireEvent.click(screen.getByRole('button', { name: '시작' }));
     expect(screen.queryByText(/다섯 가지|O 또는 X|함께 말해/)).toBeNull();
     act(() => { window.history.replaceState(null, '', '/quiz/saints/question/saints-3'); window.dispatchEvent(new PopStateEvent('popstate')); });
     expect(screen.queryByText(/함께 말해|떠오르는 답|함께 나눠/)).toBeNull();
@@ -98,7 +98,7 @@ describe('presenter flow', () => {
     reveal(); expect(screen.getByRole('heading', { name: '정답 · 숨겨진 단답' })).toBeTruthy();
     expect(screen.getByText(/허용 표현/)).toBeTruthy();
   });
-  it('refresh restores the same question unrevealed; home preserves resume', () => {
+  it('refresh keeps the URL question hidden, but category start always opens question one', () => {
     window.history.replaceState(null, '', '/quiz/saints/question/saints-5');
     const app = render(<App categories={fixture} />);
     reveal(); app.unmount(); render(<App categories={fixture} />);
@@ -107,17 +107,26 @@ describe('presenter flow', () => {
     fireEvent.click(screen.getByRole('button', { name: '처음으로' }));
     fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
     expect(screen.queryByText(/이어가기/)).toBeNull();
-    fireEvent.click(screen.getByRole('button', { name: '시작' }));
-    expect(screen.getByRole('heading', { name: '5번째 테스트 질문' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: '처음부터' })).toBeNull();
+    expect(screen.getByRole('heading', { name: '1번째 테스트 질문' })).toBeTruthy();
   });
-  it('reset requires confirmation and only resets the current category', () => {
+  it('canonicalizes old category addresses directly to question one', () => {
+    window.history.replaceState(null, '', '/quiz/church');
+    render(<App categories={fixture} />);
+    expect(window.location.pathname).toBe('/quiz/church/question/church-1');
+    expect(screen.getByRole('heading', { name: '1번째 테스트 질문' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: '시작' })).toBeNull();
+    expect(screen.getByRole('button', { name: '정답 공개' })).toBeTruthy();
+  });
+  it('uses question jump instead of reset or resume choices', () => {
     saveProgress(fixture[1], 8); start(); reveal();
-    fireEvent.click(screen.getByRole('button', { name: '다시 시작' }));
-    const dialog = screen.getByRole('dialog');
-    fireEvent.click(within(dialog).getByRole('button', { name: '취소' }));
-    expect(screen.getByText('공개 뒤에만 보이는 해설 1')).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: '다시 시작' }));
-    fireEvent.click(screen.getByRole('button', { name: '처음부터 시작' }));
+    expect(screen.queryByRole('button', { name: '다시 시작' })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: '문제 목록' }));
+    fireEvent.click(screen.getByRole('button', { name: '9번 문제' }));
+    expect(screen.getByRole('heading', { name: '9번째 테스트 질문' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: '문제 목록' }));
+    fireEvent.click(screen.getByRole('button', { name: '1번 문제' }));
+    expect(screen.getByRole('heading', { name: '1번째 테스트 질문' })).toBeTruthy();
     expect(screen.queryByText('공개 뒤에만 보이는 해설 1')).toBeNull();
     expect(readProgress(fixture[0])?.index).toBe(0);
     expect(readProgress(fixture[1])?.index).toBe(8);
@@ -146,6 +155,10 @@ describe('presenter flow', () => {
     reveal(); fireEvent.click(screen.getByRole('button', { name: '종료' }));
     expect(screen.getByRole('heading', { name: '퀴즈 종료' })).toBeTruthy();
     expect(readProgress(fixture[0])?.completed).toBe(true);
+    fireEvent.click(screen.getByRole('button', { name: '다른 퀴즈' }));
+    expect(window.location.pathname).toBe('/quiz/church/question/church-1');
+    expect(screen.getByRole('heading', { name: '1번째 테스트 질문' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: '시작' })).toBeNull();
   });
   it('handles corrupt storage, blocked storage, unsupported fullscreen and unknown routes', () => {
     localStorage.setItem(progressKey('saints'), '{bad');

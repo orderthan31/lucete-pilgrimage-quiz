@@ -1,5 +1,7 @@
 # Global photo-motion background — verified preview checkpoint
 
+> Historical three-photo checkpoint. The current UI contract is documented in `content-panel-checkpoint.md`: bounded 62% content panels replace global 72%/84% video dim, and category start always opens question 1. This file preserves the earlier media/checkpoint evidence, not the latest design requirement.
+
 ## Delivered changes
 
 - All presentation scenes use one persistent muted, inline looping video. Route changes, answer reveal and completion do not replace or reset the video node.
