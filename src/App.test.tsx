@@ -5,16 +5,77 @@ import { fixture } from './test-fixture';
 import { progressKey, readProgress, saveProgress } from './progress';
 const start = () => {
   render(<App categories={fixture} />);
-  fireEvent.click(screen.getAllByRole('button', { name: /퀴즈 만나기/ })[0]);
-  fireEvent.click(screen.getByRole('button', { name: /첫 문제 시작하기/ }));
+  fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+  fireEvent.click(screen.getByRole('button', { name: '시작' }));
 };
-const reveal = () => fireEvent.click(screen.getByRole('button', { name: /정답 공개하기/ }));
+const reveal = () => fireEvent.click(screen.getByRole('button', { name: '정답 공개' }));
 describe('presenter flow', () => {
-  it('renders the exact event identity and two entry cards', () => {
+  it('offers manual playback when muted autoplay is rejected', async () => {
+    vi.mocked(HTMLMediaElement.prototype.play).mockRejectedValueOnce(new Error('NotAllowedError'));
+    render(<App categories={fixture} />);
+    fireEvent.click(await screen.findByRole('button', { name: '배경 영상 재생' }));
+    expect(await screen.findByRole('button', { name: '배경 영상 일시정지' })).toBeTruthy();
+    expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(2);
+  });
+  it('retains the poster and quiz controls on a video load error', () => {
+    const { container } = render(<App categories={fixture} />);
+    const background = container.querySelector('video')!;
+    fireEvent.error(background);
+    expect(background.classList.contains('is-failed')).toBe(true);
+    expect((container.querySelector('.stage-backdrop') as HTMLElement).style.backgroundImage).toContain('/media/namyang-poster.webp');
+    expect(screen.queryByRole('button', { name: /배경 영상/ })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+    fireEvent.click(screen.getByRole('button', { name: '시작' }));
+    reveal();
+    expect(screen.getByText('공개 뒤에만 보이는 해설 1')).toBeTruthy();
+  });
+  it('uses the static poster without autoplay for reduced motion', () => {
+    vi.stubGlobal('matchMedia', vi.fn(() => ({ matches: true, addEventListener: vi.fn(), removeEventListener: vi.fn() })));
+    try {
+      const { container } = render(<App categories={fixture} />);
+      const background = container.querySelector('video')!;
+      expect(background.autoplay).toBe(false);
+      expect(background.preload).toBe('none');
+      expect(HTMLMediaElement.prototype.play).not.toHaveBeenCalled();
+      expect(screen.queryByRole('button', { name: /배경 영상/ })).toBeNull();
+    } finally { vi.unstubAllGlobals(); }
+  });
+  it('keeps a single muted background video mounted across every scene', () => {
+    const { container } = render(<App categories={fixture} />);
+    const background = container.querySelector('video')!;
+    expect(background.getAttribute('src')).toBe('/media/namyang-background.mp4');
+    expect(background.muted).toBe(true);
+    expect(background.loop).toBe(true);
+    expect(background.playsInline).toBe(true);
+    fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+    expect(container.querySelector('video')).toBe(background);
+    fireEvent.click(screen.getByRole('button', { name: '시작' }));
+    reveal();
+    fireEvent.click(screen.getByRole('button', { name: '다음 문제' }));
+    expect(container.querySelector('video')).toBe(background);
+    fireEvent.click(screen.getByRole('button', { name: '문제 목록' }));
+    fireEvent.click(screen.getByRole('button', { name: '20번 문제' }));
+    reveal();
+    fireEvent.click(screen.getByRole('button', { name: '종료' }));
+    expect(container.querySelector('video')).toBe(background);
+    expect(container.querySelectorAll('.stage-dim')).toHaveLength(1);
+  });
+  it('renders the exact event identity and two concise category choices', () => {
     render(<App categories={fixture} />);
     expect(screen.getByRole('heading', { name: '2026 루체테 성지순례' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: /성당 상식 퀴즈 만나기/ })).toBeTruthy();
-    expect(screen.getAllByRole('button', { name: /퀴즈 만나기/ })).toHaveLength(2);
+    expect(screen.getByRole('button', { name: '성인 퀴즈' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: '성당 상식 퀴즈' })).toBeTruthy();
+    expect(screen.queryByText(/20문항 · 시작하기|이어가기|만나기/)).toBeNull();
+  });
+  it('omits instructional descriptions from ready and all question formats', () => {
+    render(<App categories={fixture} />);
+    fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+    expect(screen.queryByText(/한 문제|1분|함께 답|준비되셨나요|객관식 \/ OX|성인 이야기/)).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: '시작' }));
+    expect(screen.queryByText(/다섯 가지|O 또는 X|함께 말해/)).toBeNull();
+    act(() => { window.history.replaceState(null, '', '/quiz/saints/question/saints-3'); window.dispatchEvent(new PopStateEvent('popstate')); });
+    expect(screen.queryByText(/함께 말해|떠오르는 답|함께 나눠/)).toBeNull();
+    expect(screen.getByRole('heading', { name: '3번째 테스트 질문' })).toBeTruthy();
   });
   it('requires explicit reveal; advances and previous hides answers', () => {
     start();
@@ -44,8 +105,9 @@ describe('presenter flow', () => {
     expect(screen.getByRole('heading', { name: '5번째 테스트 질문' })).toBeTruthy();
     expect(screen.queryByText('공개 뒤에만 보이는 해설 5')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: '처음으로' }));
-    fireEvent.click(screen.getByRole('button', { name: /5번부터 이어가기/ }));
-    fireEvent.click(screen.getByRole('button', { name: /5번부터 이어가기/ }));
+    fireEvent.click(screen.getByRole('button', { name: '성인 퀴즈' }));
+    expect(screen.queryByText(/이어가기/)).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: '시작' }));
     expect(screen.getByRole('heading', { name: '5번째 테스트 질문' })).toBeTruthy();
   });
   it('reset requires confirmation and only resets the current category', () => {
@@ -64,7 +126,7 @@ describe('presenter flow', () => {
     start();
     fireEvent.keyDown(window, { key: ' ', repeat: true });
     fireEvent.keyDown(window, { key: 'ArrowRight', ctrlKey: true });
-    fireEvent.keyDown(screen.getByRole('button', { name: /정답 공개하기/ }), { key: 'ArrowRight' });
+    fireEvent.keyDown(screen.getByRole('button', { name: '정답 공개' }), { key: 'ArrowRight' });
     expect(screen.queryByText('공개 뒤에만 보이는 해설 1')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: '문제 목록' }));
     fireEvent.keyDown(window, { key: 'ArrowRight' });
@@ -81,8 +143,8 @@ describe('presenter flow', () => {
     start(); fireEvent.click(screen.getByRole('button', { name: '문제 목록' }));
     fireEvent.click(screen.getByRole('button', { name: '20번 문제' }));
     expect(screen.getByRole('heading', { name: '20번째 테스트 질문' })).toBeTruthy();
-    reveal(); fireEvent.click(screen.getByRole('button', { name: /퀴즈 마치기/ }));
-    expect(screen.getByRole('heading', { name: /함께해서 더 빛나는/ })).toBeTruthy();
+    reveal(); fireEvent.click(screen.getByRole('button', { name: '종료' }));
+    expect(screen.getByRole('heading', { name: '퀴즈 종료' })).toBeTruthy();
     expect(readProgress(fixture[0])?.completed).toBe(true);
   });
   it('handles corrupt storage, blocked storage, unsupported fullscreen and unknown routes', () => {

@@ -29,7 +29,7 @@
 
 ## Media constraint
 
-No licensed local Namyang video file has been supplied. Do not download/rehost arbitrary YouTube material, hide YouTube controls/branding, or place visual overlays over a YouTube embedded player. Implement an owned/authorized MP4 background integration with a reliable poster fallback. Find and attribute an authentic legally reusable Namyang image if possible. An ordinary unobscured official video player/link may be offered separately. Record the unresolved background-video asset clearly rather than substituting a generic or generated location and claiming it is Namyang.
+No licensed local Namyang video file has been supplied. The user subsequently approved creating a slow pan/zoom/crossfade MP4 from multiple real, reusable Namyang shrine photographs; this is photo-motion, not live/drone footage. Use actual author/license metadata, preserve attribution and derivative-license obligations, and provide a local poster fallback. The latest requirement is a single persistent video behind ALL scenes, including questions and answers, with a stronger readable dim layer outside the opening scene. This supersedes the earlier landing-only/still-question backdrop direction. Do not download/rehost arbitrary YouTube material, hide YouTube controls/branding, overlay a YouTube player, or substitute a generic/generated venue.
 
 ## Data contract (shared between independent writers)
 

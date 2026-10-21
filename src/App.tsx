@@ -3,8 +3,7 @@ import { categories as defaultCategories, contentUnavailable } from './data/cont
 import type { Category } from './data/types';
 import { readProgress, saveProgress } from './progress';
 
-const labels = { 'multiple-choice': '다섯 가지 중 하나', ox: 'O 또는 X', 'short-answer': '함께 말해 보세요' };
-function HeroMedia() {
+function StageBackground() {
   const [failed, setFailed] = useState(false);
   const [paused, setPaused] = useState(false);
   const [reduced, setReduced] = useState(() => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false);
@@ -15,12 +14,26 @@ function HeroMedia() {
     query?.addEventListener('change', update);
     return () => query?.removeEventListener('change', update);
   }, []);
-  const url = import.meta.env.VITE_HERO_VIDEO_URL;
+  const url = import.meta.env.VITE_HERO_VIDEO_URL || '/media/namyang-background.mp4';
+  const poster = import.meta.env.VITE_HERO_POSTER_URL || '/media/namyang-poster.webp';
   useEffect(() => {
-    if (video.current && !paused && !reduced) video.current.play().catch(() => setFailed(true));
-    else video.current?.pause();
-  }, [paused, reduced, url]);
-  return <>{url && !failed && !reduced && <><video ref={video} className="hero-video" src={url} poster={import.meta.env.VITE_HERO_POSTER_URL} muted loop playsInline onError={() => setFailed(true)} aria-hidden="true" /><button className="media-control" onClick={() => setPaused(!paused)}>{paused ? '배경 영상 재생' : '배경 영상 멈춤'}</button></>}</>;
+    const media = video.current;
+    let active = true;
+    if (!media) return;
+    if (paused || reduced || failed) media.pause();
+    else {
+      try { media.play()?.catch(() => { if (active) setPaused(true); }); }
+      catch { setPaused(true); }
+    }
+    return () => { active = false; };
+  }, [paused, reduced, failed, url]);
+  return <>
+    <div className="stage-backdrop" style={{ backgroundImage: `url("${poster}")` }} aria-hidden="true">
+      <video ref={video} className={`stage-video${failed ? ' is-failed' : ''}`} src={url} poster={poster} muted loop playsInline autoPlay={!reduced} preload={reduced ? 'none' : 'metadata'} onError={() => setFailed(true)} />
+    </div>
+    <div className="stage-dim" aria-hidden="true" />
+    {!reduced && !failed && <button className="media-control" onClick={() => setPaused(!paused)} aria-label={paused ? '배경 영상 재생' : '배경 영상 일시정지'} aria-pressed={!paused}><span aria-hidden="true">{paused ? '▶' : 'Ⅱ'}</span></button>}
+  </>;
 }
 
 export default function App({ categories = defaultCategories }: { categories?: Category[] }) {
@@ -96,6 +109,7 @@ export default function App({ categories = defaultCategories }: { categories?: C
   });
 
   return <div className={`stage ${isHome ? 'stage-home' : ''}`}>
+    <StageBackground />
     <a className="skip-link" href="#main">본문으로 건너뛰기</a>
     <div className="stage-tools" aria-label="진행 도구">
       {!isHome && <button className="quiet" onClick={() => navigate('/')}>처음으로</button>}
@@ -105,7 +119,6 @@ export default function App({ categories = defaultCategories }: { categories?: C
     {notice && <div role="status" className="notice">{notice}<button onClick={() => setNotice('')} aria-label="안내 닫기">×</button></div>}
     <main id="main" className="stage-main">
       {isHome ? <section className="scene welcome-scene">
-        <HeroMedia />
         <div className="welcome-content">
           <img className="event-logo" src={import.meta.env.VITE_LOGO_URL || '/brand/lucete-profile.png'} alt="영통영덕성당 루체테 CI" />
           <p className="organizer">영통영덕성당 루체테</p>
@@ -113,70 +126,62 @@ export default function App({ categories = defaultCategories }: { categories?: C
           <p className="destination">남양성모성지</p>
           <div className="start-choices" aria-label="퀴즈 선택">
             {(['saints', 'church'] as const).map(id => {
-              const c = categories.find(item => item.id === id); const p = c && readProgress(c);
+              const c = categories.find(item => item.id === id);
               const title = c?.title || (id === 'saints' ? '성인 퀴즈' : '성당 상식 퀴즈');
-              return <button className="start-choice" key={id} disabled={!c} aria-label={`${title} 만나기${p && !p.completed ? ` · ${p.index + 1}번부터 이어가기` : ''}`} onClick={() => c && navigate(`/quiz/${c.id}`)}>
+              return <button className="start-choice" key={id} disabled={!c} aria-label={title} onClick={() => c && navigate(`/quiz/${c.id}`)}>
                 <strong>{title}</strong>
-                <span>{!c ? '준비 중' : p ? p.completed ? '완료한 퀴즈 다시 보기' : `${p.index + 1}번부터 이어가기` : '20문항 · 시작하기'} <span aria-hidden="true">→</span></span>
+                <span aria-hidden="true">→</span>
               </button>;
             })}
           </div>
           {!categories.length && <p role="status">{contentUnavailable}</p>}
         </div>
       </section> : isIntro && category ? <section className="scene ready-scene">
-        <p className="scene-kicker">20문항 · 객관식 / OX / 단답형</p>
         <h1 ref={heading} tabIndex={-1}>{category.title}</h1>
-        <p className="scene-description">{category.description}</p>
-        <p className="ready-guidance">함께 답을 생각한 뒤, 진행자가 정답을 공개해요.<br />한 문제에 약 1분. 준비되셨나요?</p>
         <div className="actions">
-          {saved && <button className="primary" onClick={() => saved.completed ? navigate(`/quiz/${category.id}/complete`) : goQuestion(category, saved.index)}>{saved.completed ? '완료 화면 보기' : `${saved.index + 1}번부터 이어가기`} →</button>}
-          <button className={saved ? 'secondary' : 'primary'} onClick={() => saved ? setModal('reset') : goQuestion(category, 0)}>{saved ? '처음부터 다시 시작' : '첫 문제 시작하기'} →</button>
+          <button className="primary" onClick={() => goQuestion(category, saved && !saved.completed ? saved.index : 0)}>시작</button>
+          {saved && !saved.completed && <button className="secondary" onClick={() => setModal('reset')}>처음부터</button>}
         </div>
       </section> : isQuestion && category && question ? <section className={`scene question-scene ${revealed ? 'is-revealed' : ''}`}>
-        <div className="question-meta"><span>{category.title}</span><span><strong>{String(index + 1).padStart(2, '0')}</strong> / {category.questions.length}</span><span>{labels[question.type]}</span></div>
+        <div className="question-meta"><span>{category.title}</span><span><strong>{String(index + 1).padStart(2, '0')}</strong> / {category.questions.length}</span></div>
         <div className="progress-track" role="progressbar" aria-label="현재 문제 위치" aria-valuemin={1} aria-valuemax={category.questions.length} aria-valuenow={index + 1}><span style={{ width: `${((index + 1) / category.questions.length) * 100}%` }} /></div>
         <div className="question-body" key={`${question.id}-${revealed}`}>
           <h1 className="question-title" ref={heading} tabIndex={-1}>{question.question}</h1>
-          {!revealed && (question.type === 'short-answer' ? <div className="short-prompt"><span aria-hidden="true">“ ”</span><p>떠오르는 답을 함께 나눠 주세요.</p></div> : <ol className={`choices ${question.type === 'ox' ? 'ox-choices' : ''}`} aria-label="보기">
+          {!revealed && question.type !== 'short-answer' && <ol className={`choices ${question.type === 'ox' ? 'ox-choices' : ''}`} aria-label="보기">
             {question.choices?.map((choice, n) => <li key={choice}>{question.type === 'multiple-choice' && <span className="choice-number">{n + 1}</span>}<span>{choice}</span></li>)}
-          </ol>)}
+          </ol>}
           {revealed && <section className="answer" aria-labelledby="answer-heading">
-            <p className="scene-kicker">정답을 확인해요</p>
             <h2 id="answer-heading" ref={answerHeading} tabIndex={-1}>정답 · {question.answer}</h2>
             <div className="answer-reading" tabIndex={0} role="region" aria-label="정답 해설">
-              {question.type === 'short-answer' && question.acceptedAnswers && <p className="accepted">이런 답도 좋아요 · {question.acceptedAnswers.join(' / ')}</p>}
+              {question.type === 'short-answer' && question.acceptedAnswers && <p className="accepted">인정 답안: {question.acceptedAnswers.join(' / ')}</p>}
               <p className="explanation">{question.explanation}</p>
-              <details><summary>이야기의 출처</summary><ul>{question.sources.map(s => <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.label} ↗</a></li>)}</ul></details>
+              <details><summary>출처</summary><ul>{question.sources.map(s => <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.label} ↗</a></li>)}</ul></details>
             </div>
           </section>}
         </div>
         <div className="presenter-actions">
           <button className="secondary" disabled={index === 0} onClick={() => goQuestion(category, index - 1)}>← 이전 문제</button>
           <div className="question-tools"><button className="quiet" onClick={() => setModal('overview')}>문제 목록</button><button className="quiet" onClick={() => setModal('reset')}>다시 시작</button></div>
-          <button className="primary" onClick={advance}>{!revealed ? '정답 공개하기' : index === category.questions.length - 1 ? '퀴즈 마치기' : '다음 문제'} →</button>
+          <button className="primary" onClick={advance}>{!revealed ? '정답 공개' : index === category.questions.length - 1 ? '종료' : '다음 문제'}</button>
         </div>
         <p className="sr-only" aria-live="polite">{revealed ? '정답과 해설을 공개했습니다.' : `${index + 1}번 문제. 정답은 아직 공개되지 않았습니다.`}</p>
       </section> : isComplete && category ? <section className="scene completion-scene">
-        <p className="scene-kicker">{category.title} · 20문항 완료</p>
-        <h1 ref={heading} tabIndex={-1}>함께해서 더 빛나는<br />우리의 믿음</h1>
-        <p className="scene-description">모든 문제를 함께 살펴보았어요.</p>
-        <div className="actions"><button className="primary" onClick={() => navigate(`/quiz/${category.id === 'saints' ? 'church' : 'saints'}`)}>다른 퀴즈 만나기 →</button><button className="secondary" onClick={() => navigate('/')}>처음으로 돌아가기</button><button className="quiet" onClick={() => setModal('reset')}>이 퀴즈 다시 시작</button></div>
-      </section> : <section className="scene ready-scene"><h1 ref={heading} tabIndex={-1}>이 페이지를 찾을 수 없어요.</h1><p className="scene-description">저장된 진행 위치는 그대로예요.</p><button className="primary" onClick={() => navigate('/')}>퀴즈 선택으로</button></section>}
+        <p className="scene-kicker">{category.title}</p>
+        <h1 ref={heading} tabIndex={-1}>퀴즈 종료</h1>
+        <div className="actions"><button className="primary" onClick={() => navigate(`/quiz/${category.id === 'saints' ? 'church' : 'saints'}`)}>다른 퀴즈</button><button className="secondary" onClick={() => navigate('/')}>처음으로</button><button className="quiet" onClick={() => setModal('reset')}>다시 시작</button></div>
+      </section> : <section className="scene ready-scene"><h1 ref={heading} tabIndex={-1}>이 페이지를 찾을 수 없어요.</h1><button className="primary" onClick={() => navigate('/')}>처음으로</button></section>}
     </main>
     <dialog ref={dialog} aria-labelledby="dialog-title" onCancel={() => setModal(null)} onClose={() => setModal(null)}>
       {modal === 'overview' && category ? <>
         <div className="dialog-heading"><h2 id="dialog-title">문제 바로가기</h2><button className="quiet" onClick={() => setModal(null)} aria-label="문제 목록 닫기">닫기 ×</button></div>
-        <p>선택한 문제로 이동해요. 정답은 다시 숨겨져요.</p>
         <div className="question-grid">{category.questions.map((q, n) => <button key={q.id} aria-label={`${n + 1}번 문제`} aria-current={index === n ? 'step' : undefined} onClick={() => goQuestion(category, n)}>{String(n + 1).padStart(2, '0')}</button>)}</div>
       </> : modal === 'reset' && category ? <>
-        <h2 id="dialog-title">처음부터 다시 시작할까요?</h2><p>{category.title}의 저장된 진행 위치를 지우고 1번 문제로 돌아가요. 다른 퀴즈의 기록은 유지돼요.</p>
+        <h2 id="dialog-title">처음부터 시작할까요?</h2><p>현재 퀴즈의 진행 위치가 초기화됩니다.</p>
         <div className="actions"><button className="secondary" autoFocus onClick={() => setModal(null)}>취소</button><button className="primary" onClick={() => goQuestion(category, 0)}>처음부터 시작</button></div>
       </> : modal === 'help' ? <>
-        <div className="dialog-heading"><h2 id="dialog-title">진행 도움말</h2><button className="quiet" onClick={() => setModal(null)}>닫기 ×</button></div>
-        <p>입력 없이 말이나 종이로 답해 주세요. 점수는 기록하지 않으며, 자동으로 넘어가지 않아요.</p>
+        <div className="dialog-heading"><h2 id="dialog-title">조작법</h2><button className="quiet" onClick={() => setModal(null)}>닫기 ×</button></div>
         <ul className="help-list"><li>Space / → : 정답 공개 · 다음 문제</li><li>← : 이전 문제</li><li>F : 전체 화면</li></ul>
-        <p>버튼에 초점이 있으면 Enter 또는 Space로 그 버튼을 실행해요. 새로고침해도 같은 문제로 돌아오며 정답은 숨겨져요.</p>
-        <p className="media-note">{import.meta.env.VITE_HERO_VIDEO_URL ? '설정된 배경 영상은 첫 화면에서만 재생됩니다. 동작 줄이기 설정이나 재생 오류 시 정적 배경을 표시합니다.' : '현재 실제 남양성모성지 배경 영상은 연결되지 않았습니다. 영상 원본 확보 전에는 정적인 Silver 배경을 표시합니다.'}</p>
+        <a className="media-credit" href="/media/credits.html" target="_blank" rel="noreferrer">사진 출처</a>
       </> : null}
     </dialog>
   </div>;

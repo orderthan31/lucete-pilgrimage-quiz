@@ -1,0 +1,31 @@
+{
+  "verified_from": "Official source articles and official KOGL Type 1 terms in real browser; original Commons metadata retained separately.",
+  "verified_on": "2026-10-21",
+  "scope": "KOGL1 notices on enclosing articles; no separately obtained photo-specific certificate. Exact published credits retained.",
+  "sources": [
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "credit": "경기도블로그 / 2021 경기도민기자단 이재형 기자",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "b69551d4af3db307832dc605d35839a7406eaee57e101b717d40acae141e8486",
+      "subject": "Tree-lined autumn entrance path / 숲 터널"
+    },
+    {
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=201810311638527055C059&s_code=C059",
+      "credit": "G-Life",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "original_sha256": "ea76119bc5657f2e89d4ac7f1478f3e4c5130bcb26a5d3baff8f75c75def34cd",
+      "subject": "Golden autumn grove, sunbeams and walking path"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hwaseong-Namyang,_The_Shrine_of_our_Lady_the_Rosary_-_interior.jpg",
+      "credit": "Alexander Ortmann",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "original_sha256": "5d50de1018bd5b3c4b26208a3377dbadbfca8f92977d53829bd9caef0c64ee69",
+      "subject": "File:Hwaseong-Namyang, The Shrine of our Lady the Rosary - interior.jpg"
+    }
+  ]
+}

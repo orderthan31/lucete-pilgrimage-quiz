@@ -1,0 +1,103 @@
+{
+  "title": "Namyang Shrine — wide grounds and sanctuary photo motion",
+  "kind": "photo-motion montage, not location-shot video or drone footage",
+  "video": "namyang-background.mp4",
+  "poster": "namyang-poster.webp",
+  "license": "Adaptation CC BY-SA 4.0; original photographs retain their individually listed KOGL Type 1 / CC BY-SA 4.0 terms",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "adaptation_credit": "Lucete quiz media adaptation",
+  "changes": "Two native landscape grounds photographs plus one upper-anchored sanctuary view; subject-safe 16:9 cropping, maximum 2.2% additional zoom, restrained pan, cross-dissolves, H.264 encoding and poster extraction. Removed repetitive organ/ceiling close-ups.",
+  "duration_seconds": 24,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "sources": [
+    {
+      "file": "sources/namyang-autumn-path.jpg",
+      "title": "Tree-lined autumn entrance path / 숲 터널",
+      "author": "경기도블로그 / 2021 경기도민기자단 이재형 기자",
+      "author_status": "Article explicitly names 이재형; image caption credits 경기도블로그.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=202111090942195746C094&s_code=C094",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202111/20211109094219626867004.jpg",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "width": 966,
+      "height": 644,
+      "sha256": "b69551d4af3db307832dc605d35839a7406eaee57e101b717d40acae141e8486",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "subject_bbox": [
+        0.04,
+        0.18,
+        0.96,
+        0.88
+      ],
+      "focal_point": [
+        0.5,
+        0.53
+      ],
+      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD."
+    },
+    {
+      "file": "sources/namyang-golden-grove.jpg",
+      "title": "Golden autumn grove, sunbeams and walking path",
+      "author": "G-Life",
+      "author_status": "Exact published image credit is G-Life; individual photographer is not identified.",
+      "source_page": "https://gnews.gg.go.kr/news/news_detail.do?number=201810311638527055C059&s_code=C059",
+      "original_url": "https://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/201810/20181031164510381565214.jpg",
+      "license": "KOGL Type 1",
+      "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+      "width": 1000,
+      "height": 666,
+      "sha256": "ea76119bc5657f2e89d4ac7f1478f3e4c5130bcb26a5d3baff8f75c75def34cd",
+      "permission": "Explicit enclosing article KOGL1 notice plus official Type1 adaptation grant. Not a separately photo-specific license certificate. Preserve exact image credit and source URL; do not imply endorsement.",
+      "subject_bbox": [
+        0.04,
+        0.16,
+        0.96,
+        0.88
+      ],
+      "focal_point": [
+        0.5,
+        0.51
+      ],
+      "resolution_note": "Unmodified published web image, not a camera original; below native Full HD."
+    },
+    {
+      "file": "sources/namyang-sanctuary.jpg",
+      "title": "File:Hwaseong-Namyang, The Shrine of our Lady the Rosary - interior.jpg",
+      "author": "Alexander Ortmann",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hwaseong-Namyang,_The_Shrine_of_our_Lady_the_Rosary_-_interior.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hwaseong-Namyang%2C_The_Shrine_of_our_Lady_the_Rosary_-_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "width": 1194,
+      "height": 1085,
+      "sha256": "5d50de1018bd5b3c4b26208a3377dbadbfca8f92977d53829bd9caef0c64ee69",
+      "commons_sha1": "6cdae855419c45966ce518da4cf2433afb47d865",
+      "permission": "License explicitly declared in Commons metadata",
+      "subject_bbox": [
+        0.34,
+        0.005,
+        0.84,
+        0.45
+      ],
+      "focal_point": [
+        0.58,
+        0.25
+      ]
+    }
+  ],
+  "license_scope": "CC BY-SA applies to the combined edited media and adaptation contributions, not a relicensing of KOGL source originals. Preserve each source credit, terms and change notice; no institutional endorsement is implied.",
+  "render_settings": {
+    "duration_seconds": 24,
+    "fps": 24,
+    "scene_count": 3,
+    "seconds_per_scene": 8,
+    "dissolve_seconds": 1.5,
+    "extra_zoom_range": [
+      1.002,
+      1.022
+    ],
+    "crop_contract": "Every approved subject_bbox must remain entirely in each animated crop; reduce zoom or reject impossible geometry."
+  }
+}

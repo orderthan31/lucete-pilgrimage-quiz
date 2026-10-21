@@ -21,12 +21,13 @@ npm run dev
 
 ## 진행 방법
 
-- 첫 화면 → 카테고리 준비 화면 → 첫 문제 또는 이어가기. 모든 화면은 하나의 PPT/Flash 퀴즈형 stage로 이어집니다. 웹사이트 헤더·GNB·푸터·별도 마케팅 섹션은 없습니다.
+- 첫 화면 → 카테고리 제목과 시작 버튼 → 문제. 모든 화면은 하나의 PPT/Flash 퀴즈형 stage로 이어집니다. 웹사이트 헤더·GNB·푸터·별도 마케팅 섹션은 없습니다. 문제 형식·시간·참여 방법을 반복 설명하는 안내 문구는 표시하지 않습니다.
 - 프로젝터 1280×720 / 1920×1080은 한 화면에 하나의 장면이 들어갑니다. 긴 해설·출처는 필요할 때 해설 영역 안에서 스크롤할 수 있고, 모바일은 세로 장면에서 필요한 만큼 페이지 스크롤을 허용합니다.
-- 보기는 누르는 버튼이 아닙니다. **정답 공개하기**로만 정답·허용 답안·해설을 표시합니다.
+- 보기는 누르는 버튼이 아닙니다. **정답 공개**로만 정답·허용 답안·해설을 표시합니다.
 - 단답형에는 입력 칸이 없습니다. 말이나 종이로 답하고 진행자가 판단합니다.
 - 한 문제 약 1분은 진행 참고일 뿐입니다. 자동 타이머·자동 전환은 없습니다.
-- 정답 공개 뒤 **다음 문제**, 20번 뒤 **퀴즈 마치기**. 완료 화면에서 다른 카테고리로 이동할 수 있습니다.
+- 정답 공개 뒤 **다음 문제**, 20번 뒤 **종료**. 완료 화면에서 다른 카테고리로 이동할 수 있습니다.
+- 진행 위치는 내부적으로 보존하지만 `N번부터 이어가기` 같은 문구는 노출하지 않습니다. 준비 화면의 **시작**은 미완료 위치를 복구하고, 완료한 퀴즈는 첫 문제를 엽니다. **처음부터**는 확인 후 현재 카테고리를 초기화합니다.
 - **문제 목록**으로 번호를 선택해 이동할 수 있으며, **다시 시작**은 확인 후 현재 카테고리만 초기화합니다.
 - **처음으로**는 진행을 지우지 않습니다. 브라우저 뒤로/앞으로와 직접 문제 주소도 지원합니다.
 
@@ -66,12 +67,13 @@ Vite 프로젝트로 import하고 Install `npm ci`, Build `npm run build`, Outpu
 
 실제 설치 CLI `--version`은 0.0.1, `inspect`는 `integrity: verified`였습니다. `init --dry-run`과 `add theme button --dry-run`은 현재 `npm run typecheck && vite build` 호스트 스크립트에 대해 `Unsupported Vite host script`로 거부했습니다. 호스트 버전이나 스크립트를 억지로 바꾸지 않았고 지원되는 전체 source-install이라고 주장하지 않습니다.
 
-현재 적용은 **canonical-token-only**입니다. `npm run theme:sync`가 설치 패키지 `foundation/theme.css`의 실제 `@layer base` 블록을 그대로 복사하고 Tailwind 전용 `@theme` 등록만 생략합니다. 원본 SHA256 `c05f2de9c8f44026cd87bd3f9f336e29d281e93ddc205ac7edee6ed15e544e7f` 및 폰트 해시는 `src/theme/provenance.json`에 기록합니다. 실제 HTML 루트에 `data-hangyeol data-palette="Silver" data-theme="light"`를 적용합니다. UI는 canonical `--g-*` 변수를 사용합니다. Pretendard 400/500/600/700 실제 woff2와 원래 SIL OFL LICENSE/provenance는 `public/fonts/hangyeol/`에 포함합니다. 외부 Google Fonts 요청은 없습니다. 패키지 원본은 UNLICENSED이므로 패키지 설치가 일반 재배포 권리를 부여하지 않으며 별도의 프로젝트 라이선스를 선언하지 않습니다.
+현재 적용은 **canonical-token-only**입니다. `npm run theme:sync`가 설치 패키지 `foundation/theme.css`의 실제 `@layer base` 블록을 그대로 복사하고 Tailwind 전용 `@theme` 등록만 생략합니다. 원본 SHA256 `c05f2de9c8f44026cd87bd3f9f336e29d281e93ddc205ac7edee6ed15e544e7f` 및 폰트 해시는 `src/theme/provenance.json`에 기록합니다. 영상 위 가독성을 위해 실제 HTML 루트에 `data-hangyeol data-palette="Silver" data-theme="dark"`를 적용합니다. UI는 canonical `--g-*` 변수를 사용합니다. Pretendard 400/500/600/700 실제 woff2와 원래 SIL OFL LICENSE/provenance는 `public/fonts/hangyeol/`에 포함합니다. 외부 Google Fonts 요청은 없습니다. 패키지 원본은 UNLICENSED이므로 패키지 설치가 일반 재배포 권리를 부여하지 않으며 별도의 프로젝트 라이선스를 선언하지 않습니다.
 
 ## CI 및 미디어
 
 - 첫 장면은 `/brand/lucete-profile.png`의 사용자 제공 스크린샷 CI 크롭을 사용합니다. 원본 마스터/벡터라는 주장은 하지 않습니다. 출처는 `docs/brand-assets.md`에 기록합니다. `VITE_LOGO_URL`로 경로를 바꿀 수 있고 원래 색상·형태를 유지하며 recolor/filter를 적용하지 않습니다.
-- 실제 남양성모성지 배경 영상 원본은 아직 제공되지 않았습니다. 현재는 단색 Silver 배경이며, 가짜 성지 영상이나 추상 풍경을 실제 촬영물처럼 표시하지 않습니다.
-- 사용 허가를 확인한 원본만 `VITE_HERO_VIDEO_URL`, 선택적으로 `VITE_HERO_POSTER_URL`에 설정하세요. `.env.local` 또는 Vercel 환경 변수로 설정하고 다시 빌드합니다.
-- 영상은 무음 반복, 멈춤/재생 버튼을 제공하고 재생 거부·로드 오류·동작 줄이기 환경에서는 정적 장식으로 돌아갑니다. 무단 영상 다운로드/YouTube 재호스팅을 하지 않습니다. YouTube iframe을 배경으로 덮거나 그 위에 글자를 올리지 않습니다.
-- 실제 영상·원본 CI 최종 확보, 현장 프로젝터 가독성 및 전체 화면의 기기별 지원은 별도 확인 대상입니다.
+- 실촬영 영상 대신 실제 남양성모성지 사진을 천천히 이동·확대하고 교차 전환하는 **사진 기반 모션 영상**을 사용합니다. 숲 터널·햇살 조경의 가로 사진 두 장과 십자가·제대가 잘리지 않는 내부 사진 한 장을 사용하며, 오르간 클로즈업 반복은 제외했습니다. 드론·현장 촬영 영상으로 표시하지 않습니다. 사진·파생 영상의 출처와 사용 조건은 `docs/media-sources.md` 및 앱 도움말의 **사진 출처**에 기록합니다. 원본은 네이티브 Full HD 미만이므로 1080p 출력이 원본에 없는 디테일을 복원하지는 않습니다.
+- 기본 자산은 `/media/namyang-background.mp4`, 포스터는 `/media/namyang-poster.webp`입니다. 사용 허가된 대체 원본은 `VITE_HERO_VIDEO_URL`, `VITE_HERO_POSTER_URL`로 지정할 수 있습니다. `.env.local` 또는 Vercel 환경 변수로 설정하고 다시 빌드합니다.
+- 배경은 첫 화면·준비·문제·정답·종료에 공통이며, 장면 전환 시 비디오 요소를 교체하거나 처음부터 재생하지 않습니다. Silver Dark canvas 기반 딤드는 첫 화면 72%, 그 외 화면 84%로 밝은 사진 구간의 대비를 유지합니다. 선택지는 불투명한 표면으로 분리합니다.
+- 영상은 무음 반복과 멈춤/재생 버튼을 제공합니다. 자동 재생 거부 시 직접 재생할 수 있고, 로드 오류나 동작 줄이기 설정에는 포스터를 사용합니다. 무단 영상 다운로드/YouTube 재호스팅을 하지 않습니다.
+- 원본 CI 마스터, 현장 프로젝터 가독성 및 전체 화면의 기기별 지원은 별도 확인 대상입니다.
