@@ -10,7 +10,8 @@ export default defineConfig({
     fs: { strict: true, allow: [projectDirectory] },
   },
   test: {
-    environment: 'node',
-    include: ['src/**/*.test.tsx'],
+    environment: 'jsdom',
+    include: ['src/**/*.test.{ts,tsx}'],
+    setupFiles: ['./src/test-setup.ts'],
   },
 });

@@ -1,0 +1,15 @@
+{
+  "package": "@orderthan31/hangyeol-core",
+  "version": "0.0.1",
+  "mode": "canonical-token-only",
+  "sourceSha256": "c05f2de9c8f44026cd87bd3f9f336e29d281e93ddc205ac7edee6ed15e544e7f",
+  "omitted": "Tailwind @theme utility registration only; canonical @layer base blocks preserved verbatim",
+  "assetSha256": {
+    "Pretendard-Regular.woff2": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63",
+    "Pretendard-Medium.woff2": "d03481330eeba0659ab5b87f25ceb504a35de377dd90a0d0aba2982eb2d05e2c",
+    "Pretendard-SemiBold.woff2": "c863f76a7de5c1ddc1ed8b2fa794964530774592c4f31407a84e2a2ae93f17f0",
+    "Pretendard-Bold.woff2": "4609c3356e536fafe38f4add0daeceb3d8595d3057bce13c428c33ddbd43d362",
+    "LICENSE": "d31ddd9f2bed32fd7e302a205cf2380ba0de6529152d239ef99cfb6f261bfc04",
+    "provenance.json": "3ca94ffbe6da16753984622184cc4d9765ba77c1cc617c5a5f5eda754b16fbee"
+  }
+}

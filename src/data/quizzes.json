@@ -1,0 +1,841 @@
+[
+  {
+    "id": "saints",
+    "title": "성인 퀴즈",
+    "description": "성인들의 삶과 선택에서 신앙의 발자취를 찾아봐요.",
+    "questions": [
+      {
+        "id": "saints-01",
+        "type": "multiple-choice",
+        "question": "한국인 최초의 가톨릭 사제는 누구일까요?",
+        "choices": [
+          "성 정하상 바오로",
+          "성 김대건 안드레아",
+          "성 베드로",
+          "성 프란치스코 하비에르",
+          "성 요한 보스코"
+        ],
+        "answer": "성 김대건 안드레아",
+        "answerIndex": 1,
+        "explanation": "김대건 안드레아 성인은 한국인 최초로 사제품을 받은 사제입니다.",
+        "sources": [
+          {
+            "label": "Vatican News 한국 순교 성인 소개 · The priest",
+            "url": "https://www.vaticannews.va/en/saints/09/20/sts--andrew-kim-taegon--paul--chong-hasang-and-companions--korea.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-02",
+        "type": "multiple-choice",
+        "question": "작은형제회를 세우고 가난한 삶으로 그리스도를 따른 아시시의 성인은?",
+        "choices": [
+          "성 도미니코",
+          "성 베네딕토",
+          "성 이냐시오 데 로욜라",
+          "성 프란치스코",
+          "성 아우구스티노"
+        ],
+        "answer": "성 프란치스코",
+        "answerIndex": 3,
+        "explanation": "아시시의 프란치스코 성인은 작은형제회를 세웠고, 가난을 그리스도를 따르는 길로 받아들였습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 아시시의 성 프란치스코 (2010-01-27) · 작은형제회 창립·가난의 영성",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100127.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-03",
+        "type": "multiple-choice",
+        "question": "아시시의 산 다미아노에서 자매들과 함께 가난의 삶을 산 성녀는?",
+        "choices": [
+          "성녀 클라라",
+          "성녀 모니카",
+          "성녀 체칠리아",
+          "성녀 아녜스",
+          "성녀 엘리사벳"
+        ],
+        "answer": "성녀 클라라",
+        "answerIndex": 0,
+        "explanation": "클라라 성녀는 산 다미아노 공동체에서 자매들과 함께 가난과 하느님께 대한 신뢰를 실천했습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 아시시의 성녀 클라라 (2010-09-15) · 산 다미아노 공동체",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100915.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "saints-04",
+        "type": "multiple-choice",
+        "question": "하느님께 대한 신뢰와 사랑의 ‘작은 길’로 알려진 성녀는?",
+        "choices": [
+          "성녀 마르타",
+          "성녀 스콜라스티카",
+          "성녀 모니카",
+          "성녀 카타리나",
+          "아기 예수의 성녀 데레사"
+        ],
+        "answer": "아기 예수의 성녀 데레사",
+        "answerIndex": 4,
+        "explanation": "아기 예수의 데레사 성녀가 보여 준 작은 길의 중심은 하느님께 대한 신뢰와 사랑입니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 아기 예수의 성녀 데레사 (2011-04-06) · little way of trust and love",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2011/documents/hf_ben-xvi_aud_20110406.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-05",
+        "type": "multiple-choice",
+        "question": "자신의 신앙 여정을 담은 「고백록」을 쓴 성인은?",
+        "choices": [
+          "성 예로니모",
+          "성 토마스 아퀴나스",
+          "성 아우구스티노",
+          "성 요한 보스코",
+          "성 프란치스코 하비에르"
+        ],
+        "answer": "성 아우구스티노",
+        "answerIndex": 2,
+        "explanation": "「고백록」은 아우구스티노 성인이 하느님을 찬미하며 자신의 영적 여정을 돌아본 작품입니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · Confessions",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "saints-06",
+        "type": "multiple-choice",
+        "question": "수도 생활을 위한 「규칙서」를 남긴 누르시아의 성인은?",
+        "choices": [
+          "성 베네딕토",
+          "성 마르코",
+          "성 바오로",
+          "성 안드레아",
+          "성 루카"
+        ],
+        "answer": "성 베네딕토",
+        "answerIndex": 0,
+        "explanation": "누르시아의 베네딕토 성인이 남긴 규칙서는 기도와 일상의 실천을 함께 강조합니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 베네딕토 (2008-04-09) · Rule",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080409.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "saints-07",
+        "type": "multiple-choice",
+        "question": "마태오 복음 9장에서 세관에 앉아 있다가 예수님의 부르심을 받은 사람은?",
+        "choices": [
+          "성 필립보",
+          "성 야고보",
+          "성 베드로",
+          "성 마태오",
+          "성 토마스"
+        ],
+        "answer": "성 마태오",
+        "answerIndex": 3,
+        "explanation": "마태오는 세관에 앉아 있다가 예수님의 부르심을 받고 일어나 그분을 따랐습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 마태오 (2006-08-30) · 마태 9,9 해설",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060830.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-08",
+        "type": "multiple-choice",
+        "question": "부활하신 예수님을 뵙고 그분을 자신의 주님이며 하느님으로 고백한 사도는?",
+        "choices": [
+          "성 마티아",
+          "성 토마스",
+          "성 바르톨로메오",
+          "성 마태오",
+          "성 시몬"
+        ],
+        "answer": "성 토마스",
+        "answerIndex": 1,
+        "explanation": "토마스 사도는 부활하신 예수님 앞에서 주님과 하느님을 알아보는 신앙을 고백했습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 토마스 사도 (2006-09-27) · 요한 20,27-29 해설",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060927.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-09",
+        "type": "multiple-choice",
+        "question": "다마스쿠스로 가던 길에 부활하신 그리스도를 만나 삶이 바뀐 사도는?",
+        "choices": [
+          "성 요한",
+          "성 야고보",
+          "성 바오로",
+          "성 유다 타대오",
+          "성 마티아"
+        ],
+        "answer": "성 바오로",
+        "answerIndex": 2,
+        "explanation": "바오로 사도는 다마스쿠스로 가는 길에서 그리스도를 만난 뒤 삶의 방향이 바뀌었습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 바오로의 회심 (2008-09-03) · 다마스쿠스에서의 회심",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080903.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-10",
+        "type": "multiple-choice",
+        "question": "베드로 사도가 예수님을 따르기 전 하던 일은 무엇일까요?",
+        "choices": [
+          "목수",
+          "세리",
+          "양치기",
+          "군인",
+          "어부"
+        ],
+        "answer": "어부",
+        "answerIndex": 4,
+        "explanation": "베드로는 형제 안드레아와 마찬가지로 갈릴래아 호수에서 고기를 잡던 어부였습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 베드로 (2006-05-17) · 베드로의 가족과 생업",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060517.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-11",
+        "type": "ox",
+        "question": "성 정하상 바오로는 사제가 아니라 평신도로 신앙을 증언했다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "정하상 바오로 성인은 평신도로서 한국 신자들을 위해 힘쓰며 신앙을 증언했습니다.",
+        "sources": [
+          {
+            "label": "Vatican News 한국 순교 성인 소개 · The lay apostle",
+            "url": "https://www.vaticannews.va/en/saints/09/20/sts--andrew-kim-taegon--paul--chong-hasang-and-companions--korea.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-12",
+        "type": "ox",
+        "question": "아기 예수의 성녀 데레사는 가르멜 수도회 수녀였다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "아기 예수의 데레사 성녀는 리지외의 가르멜 수도원에 들어가 수도 생활을 했습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 아기 예수의 성녀 데레사 (2011-04-06) · Carmel of Lisieux / Carmelite",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2011/documents/hf_ben-xvi_aud_20110406.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-13",
+        "type": "ox",
+        "question": "성 베네딕토는 기도하는 사람에게 일상의 책임은 중요하지 않다고 가르쳤다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "베네딕토 성인은 기도가 실천으로 이어져야 한다고 보았습니다. 기도와 일상의 책임은 떨어져 있지 않습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 베네딕토 (2008-04-09) · 기도와 일상의 의무",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080409.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "saints-14",
+        "type": "ox",
+        "question": "성녀 클라라는 부유한 신분과 재산을 그대로 누리는 삶을 선택했다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "클라라 성녀는 부유한 집안의 지위와 재산을 내려놓고 겸손과 가난의 길을 선택했습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 아시시의 성녀 클라라 (2010-09-15) · 귀족 신분과 재산의 포기",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100915.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-15",
+        "type": "ox",
+        "question": "성 안드레아와 성 베드로는 형제이다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "안드레아는 시몬 베드로의 형제입니다. 두 사람 모두 어부였습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 베드로 (2006-05-17) · Andrew, the brother of Simon",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060517.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-16",
+        "type": "short-answer",
+        "question": "성 아우구스티노의 어머니인 성녀의 이름은?",
+        "answer": "모니카",
+        "acceptedAnswers": [
+          "모니카",
+          "성녀 모니카",
+          "모니카 성녀"
+        ],
+        "explanation": "모니카 성녀는 아들 아우구스티노에게 신앙으로 큰 영향을 주었습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · 어머니 Monica",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-17",
+        "type": "short-answer",
+        "question": "밀라노에서 성 아우구스티노에게 세례를 준 주교 성인은?",
+        "answer": "암브로시오",
+        "acceptedAnswers": [
+          "암브로시오",
+          "성 암브로시오",
+          "암브로시오 성인"
+        ],
+        "explanation": "밀라노의 암브로시오 주교는 아우구스티노에게 세례를 주었습니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 성 아우구스티노 (2008-01-09) · 밀라노의 세례",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2008/documents/hf_ben-xvi_aud_20080109.html"
+          }
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "id": "saints-18",
+        "type": "short-answer",
+        "question": "성모 마리아와 함께 나자렛에서 예수님을 기른 양부 성인은?",
+        "answer": "요셉",
+        "acceptedAnswers": [
+          "요셉",
+          "성 요셉",
+          "요셉 성인"
+        ],
+        "explanation": "요셉 성인은 예수님의 양부로서 성모 마리아와 함께 성가정의 일상을 살았습니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 104항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-19",
+        "type": "short-answer",
+        "question": "요한 복음 20장에서 부활하신 예수님을 만나 사도들에게 소식을 전한 성녀는?",
+        "answer": "마리아 막달레나",
+        "acceptedAnswers": [
+          "마리아 막달레나",
+          "성녀 마리아 막달레나",
+          "막달라 마리아",
+          "마리아 막달레나 성녀",
+          "막달레나"
+        ],
+        "explanation": "마리아 막달레나 성녀는 부활하신 주님을 만나 그 소식을 전한 증인입니다.",
+        "sources": [
+          {
+            "label": "교황청 일반 알현: 복음을 섬긴 여성들 (2007-02-14) · 요한 20,1.11-18 해설",
+            "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2007/documents/hf_ben-xvi_aud_20070214.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "saints-20",
+        "type": "short-answer",
+        "question": "요르단강에서 예수님께 세례를 베푼 성인은?",
+        "answer": "세례자 요한",
+        "acceptedAnswers": [
+          "세례자 요한",
+          "성 요한 세례자",
+          "성 세례자 요한",
+          "요한 세례자",
+          "세례 요한"
+        ],
+        "explanation": "예수님은 공생활을 시작하시며 요르단강에서 세례자 요한에게 세례를 받으셨습니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 254항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      }
+    ]
+  },
+  {
+    "id": "church",
+    "title": "성당 상식 퀴즈",
+    "description": "미사와 성사, 기도와 순례의 의미를 함께 알아봐요.",
+    "questions": [
+      {
+        "id": "church-01",
+        "type": "multiple-choice",
+        "question": "가톨릭교회의 성사는 모두 몇 가지일까요?",
+        "choices": [
+          "3가지",
+          "5가지",
+          "7가지",
+          "9가지",
+          "12가지"
+        ],
+        "answer": "7가지",
+        "answerIndex": 2,
+        "explanation": "교회의 일곱 성사는 세례, 견진, 성체, 고해, 병자, 성품, 혼인성사입니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 224항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-02",
+        "type": "multiple-choice",
+        "question": "세례성사의 핵심 예식에서 몸을 담그거나 머리에 붓는 것은?",
+        "choices": [
+          "물",
+          "포도주",
+          "향유",
+          "소금",
+          "밀가루"
+        ],
+        "answer": "물",
+        "answerIndex": 0,
+        "explanation": "세례는 물에 담그거나 머리에 물을 부으며 성부와 성자와 성령의 이름으로 거행합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 256항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-03",
+        "type": "multiple-choice",
+        "question": "그리스도교 입문 성사 세 가지를 바르게 묶은 것은?",
+        "choices": [
+          "세례·고해·혼인",
+          "견진·성품·병자",
+          "고해·성체·성품",
+          "세례·견진·성체",
+          "혼인·병자·견진"
+        ],
+        "answer": "세례·견진·성체",
+        "answerIndex": 3,
+        "explanation": "세례로 새로 태어나고, 견진으로 굳세어지며, 성체로 양육됩니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 251항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "church-04",
+        "type": "multiple-choice",
+        "question": "미사를 이루는 두 주요 부분은?",
+        "choices": [
+          "독서 전례와 행렬 전례",
+          "말씀 전례와 성찬 전례",
+          "성가 전례와 공지 전례",
+          "고해 전례와 혼인 전례",
+          "묵주 전례와 파견 전례"
+        ],
+        "answer": "말씀 전례와 성찬 전례",
+        "answerIndex": 1,
+        "explanation": "말씀 전례와 성찬 전례는 서로 연결되어 하나의 예배를 이룹니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 277항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-05",
+        "type": "multiple-choice",
+        "question": "성체성사를 거행하는 데 필요한 빵과 술의 재료는?",
+        "choices": [
+          "쌀떡과 포도주",
+          "보리빵과 사과주",
+          "밀빵과 맥주",
+          "쌀떡과 매실주",
+          "밀로 만든 빵과 포도로 만든 포도주"
+        ],
+        "answer": "밀로 만든 빵과 포도로 만든 포도주",
+        "answerIndex": 4,
+        "explanation": "교회는 성체성사에 밀로 만든 빵과 포도로 만든 포도주를 사용합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 279항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "church-06",
+        "type": "multiple-choice",
+        "question": "예수님께서 성체성사를 제정하신 때는?",
+        "choices": [
+          "베들레헴에서 태어나셨을 때",
+          "요르단강에서 세례받으셨을 때",
+          "사도들과 나누신 최후의 만찬",
+          "광야에서 유혹받으셨을 때",
+          "갈릴래아에서 어부들을 부르셨을 때"
+        ],
+        "answer": "사도들과 나누신 최후의 만찬",
+        "answerIndex": 2,
+        "explanation": "예수님은 수난 전날 사도들과 나누신 최후의 만찬에서 성체성사를 제정하셨습니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 272-273항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-07",
+        "type": "multiple-choice",
+        "question": "전례주년에서 ‘축일 중의 축일’로 기념하는 예수님 부활의 대축일은?",
+        "choices": [
+          "주님 부활 대축일",
+          "주님 성탄 대축일",
+          "성모 승천 대축일",
+          "모든 성인 대축일",
+          "주님 공현 대축일"
+        ],
+        "answer": "주님 부활 대축일",
+        "answerIndex": 0,
+        "explanation": "주님 부활 대축일은 전례주년의 절정을 이루며 예수님의 부활을 기념합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 241항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-08",
+        "type": "multiple-choice",
+        "question": "성부·성자·성령께서 한 분 하느님이시라는 신비는?",
+        "choices": [
+          "성인들의 통공",
+          "육신의 부활",
+          "죄의 용서",
+          "삼위일체",
+          "성모 승천"
+        ],
+        "answer": "삼위일체",
+        "answerIndex": 3,
+        "explanation": "교회는 성부·성자·성령의 세 위격이 한 분 하느님이심을 고백합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 44·48항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-09",
+        "type": "multiple-choice",
+        "question": "남양성모성지는 누구께 봉헌된 성지일까요?",
+        "choices": [
+          "성 김대건 안드레아",
+          "성모 마리아",
+          "성 요셉",
+          "성 베네딕토",
+          "성 바오로"
+        ],
+        "answer": "성모 마리아",
+        "answerIndex": 1,
+        "explanation": "수원교구는 남양성모성지를 순교자들을 현양하며 성모 마리아께 봉헌한 성지로 소개합니다.",
+        "sources": [
+          {
+            "label": "천주교 수원교구 남양성모성지 소개 · 성지 소개 첫 문단",
+            "url": "https://www.casuwon.or.kr/holyland/intro/12"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-10",
+        "type": "multiple-choice",
+        "question": "예수님께서 직접 가르쳐 주신, 하늘에 계신 아버지께 바치는 기도는?",
+        "choices": [
+          "성모송",
+          "영광송",
+          "사도신경",
+          "수호천사 기도",
+          "주님의 기도"
+        ],
+        "answer": "주님의 기도",
+        "answerIndex": 4,
+        "explanation": "주님의 기도는 예수님께서 제자들에게 직접 가르쳐 주신 기도입니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 580항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-11",
+        "type": "ox",
+        "question": "성모 마리아께 드리는 공경은 하느님께 드리는 흠숭과 같다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "성모님께 드리는 특별한 공경은 오직 삼위일체 하느님께 드리는 흠숭과 본질적으로 다릅니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 198항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "church-12",
+        "type": "ox",
+        "question": "유효하게 받은 세례성사는 일생에 한 번만 받는다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "세례성사는 지워지지 않는 인호를 남기므로 반복해서 받지 않습니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 227항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-13",
+        "type": "ox",
+        "question": "가톨릭교회는 성체 안에 그리스도께서 참으로 현존하신다고 믿는다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "성체 안에는 그리스도께서 참으로, 실제로, 실체적으로 현존하십니다. 단순한 상징만은 아닙니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 282항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "church-14",
+        "type": "ox",
+        "question": "병자성사는 숨을 거두기 직전에만 받을 수 있다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "병이나 노쇠로 죽음의 위험에 놓이기 시작한 신자는 병자성사를 받을 수 있습니다. 임종 직전에만 한정되지 않습니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 316항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
+        "id": "church-15",
+        "type": "ox",
+        "question": "그리스도인은 성당 건물 안에서만 하느님께 예배할 수 있다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "새 계약의 예배는 어느 한 장소에만 묶이지 않습니다. 다만 공동체가 모여 전례를 거행할 장소는 필요합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 244항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "id": "church-16",
+        "type": "short-answer",
+        "question": "축성된 성체를 모셔 두는 성당 안의 장소는?",
+        "answer": "감실",
+        "acceptedAnswers": [
+          "감실",
+          "성체 감실"
+        ],
+        "explanation": "감실에는 성체가 모셔져 있습니다. 교회는 감실에 계신 성체께 흠숭을 드리도록 권고합니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 286항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-17",
+        "type": "short-answer",
+        "question": "기도 끝에서 ‘그대로 이루어지소서’라는 동의를 나타내는 말은?",
+        "answer": "아멘",
+        "acceptedAnswers": [
+          "아멘",
+          "Amen",
+          "amen"
+        ],
+        "explanation": "아멘은 바친 기도의 내용에 동의하고 그것이 이루어지기를 바라는 응답입니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 598항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-18",
+        "type": "short-answer",
+        "question": "세례 후 지은 죄를 뉘우쳐 고백하고 사제의 사죄를 받는 성사는?",
+        "answer": "고해성사",
+        "acceptedAnswers": [
+          "고해성사",
+          "고해 성사",
+          "화해성사",
+          "화해 성사"
+        ],
+        "explanation": "고해성사는 회개하는 이의 행위와 사제의 사죄를 통해 하느님과 화해하는 성사입니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 296-297·302항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-19",
+        "type": "short-answer",
+        "question": "성탄을 앞두고 주님의 오심을 기다리는 전례 시기는?",
+        "answer": "대림 시기",
+        "acceptedAnswers": [
+          "대림 시기",
+          "대림",
+          "대림시기",
+          "대림절"
+        ],
+        "explanation": "대림 시기에 교회는 하느님께서 아드님의 오심을 준비하신 긴 기다림을 되새깁니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 102항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "church-20",
+        "type": "short-answer",
+        "question": "성령의 특별한 은총으로 세례의 은총을 굳세게 하는 성사는?",
+        "answer": "견진성사",
+        "acceptedAnswers": [
+          "견진성사",
+          "견진 성사",
+          "견진"
+        ],
+        "explanation": "견진성사는 세례의 은총을 굳세게 하며 그리스도교 신앙을 증언할 힘을 줍니다.",
+        "sources": [
+          {
+            "label": "교황청 「가톨릭 교회 교리서 요약」 · 266·268항",
+            "url": "https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html"
+          }
+        ],
+        "difficulty": "medium"
+      }
+    ]
+  }
+]

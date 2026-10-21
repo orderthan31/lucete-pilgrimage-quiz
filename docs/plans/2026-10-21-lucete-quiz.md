@@ -15,6 +15,9 @@
 - Repository: orderthan31/lucete-pilgrimage-quiz. Work directly on main in this new empty repository; do not create a forced worktree.
 - Event title: 2026 루체테 성지순례. Organizer display: 영통영덕성당 루체테. Destination: 남양성모성지.
 - Projector presentation is primary; mobile layouts also work. No participant phone-answer service.
+- Presentation grammar (explicit user correction): a full-screen PPT/Flash-quiz-style stage, not a conventional website. Remove GNB, footer, scrolling marketing sections and below-the-fold category cards. One scene per viewport: title/category selection → ready → question → deliberate answer reveal → completion. Landing places CI, event title, destination and both start actions directly over the media-ready stage. A compact in-stage presenter utility/control cluster is not a site-wide navigation bar.
+- Use the byte-verified Hangyeol Silver tokens and original-color Lucete CI; do not recolor or retrace the supplied profile mark. The CI is a screenshot-derived raster, not an original vector master.
+- Primary slide-fit gates: 1920×1080 and 1280×720, with title/start choices and question/reveal controls visible without document scrolling. Recompose for phones rather than shrinking the whole desktop stage. Do not hide overflowing content to manufacture a fit. Honor reduced motion; keep question text readable over a still/subdued backdrop. An unavailable Namyang video remains a missing required asset, not a completed fallback.
 - Two categories: Catholic saints (20 questions), church knowledge (20 questions).
 - Mix five-option multiple-choice, OX, and short-answer questions in each category. Proposed initial distribution per category: 10 multiple-choice, 5 OX, 5 short-answer. This distribution is adjustable content, not a user-confirmed requirement.
 - About one minute per question is an operating guideline, not a mandatory auto-advance timer.
@@ -56,8 +59,8 @@ Files: package.json, package-lock.json, index.html, vite.config.ts, src/main.tsx
 
 Files: src/App.tsx, src/components/*, src/hooks/*, src/data/types.ts, src/styles.css, src/**/*.test.tsx, vite.config.ts, tsconfig*.json, vercel.json.
 1. Add failing tests for navigation, reveal gating, recovery and invalid stored values.
-2. Build elegant restrained landing, category intro, question, answer/explanation, and category-complete screens.
-3. Projector-first layout: large high-contrast Korean text, five choices as 2-column rows with final full-width row; mobile stacks all choices. No video behind quiz questions.
+2. Build title/menu, category-ready, question, answer/explanation and completion as full-viewport stage scenes. Do not reuse the rejected website GNB/hero/scrolling-cards/footer structure. Start actions belong inside the title slide; presenter utilities remain compact and in-stage.
+3. Projector-first layout: large high-contrast Korean text and a deliberate five-choice arrangement that fits the 16:9 scene, with mobile recomposition. Preserve one-slide continuity across states; keep question backgrounds still/subdued for legibility. Verify the longest prompt, choice set and revealed explanation rather than only the title scene.
 4. Answer reveal is explicit and separate from option selection. Show no answer/source/accepted-answer text before reveal in the rendered question screen. Sources may appear after reveal.
 5. Support Space/Right for reveal then next; Left for previous; F for fullscreen when available. Ignore shortcuts on interactive controls and modified key combinations; avoid double-advance on key repeat.
 6. Save per-category position locally with validation and a version. Reload must hide answers. Offer a clearly labeled resume/reset flow; don't accidentally restart a saved run.
