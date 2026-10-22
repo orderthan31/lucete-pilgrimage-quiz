@@ -45,7 +45,11 @@ npm run dev
 
 ## Vercel
 
-Vite 프로젝트로 import하고 Install `npm ci`, Build `npm run build`, Output `dist`, Node 24.x를 사용하세요. `vercel.json`의 `/index.html` rewrite가 직접 중첩 주소 접속과 새로고침을 지원합니다. 배포 후 `/quiz/saints` 및 실제 문제 ID 주소에 직접 접속해 확인하세요. 실제 Vercel 배포는 이 작업 범위 밖입니다.
+Vite 프로젝트로 import하고 Install `npm ci`, Build `npm run build`, Output `dist`, Node 24.x를 사용하세요. 배포 기준 주소는 `https://lucete-pilgrimage-quiz.vercel.app/`입니다. `vercel.json`의 `/index.html` rewrite가 직접 중첩 주소 접속과 새로고침을 지원합니다. 기본 검수는 구현·테스트·빌드 → GitHub main push → 해당 Vercel 배포 확인 순서이며, 상시 5176 미리보기는 중지 상태를 유지합니다.
+
+## 링크 공유 메타데이터
+
+한국어 제목·설명·canonical, Open Graph와 Twitter large-image 카드가 정적 `index.html`에 포함됩니다. 카카오톡용 OG JPEG는 1200×630, Twitter JPEG는 1200×600이며 실제 루체테 CI를 사용합니다. 브라우저 파비콘·Apple 터치 아이콘·애플리케이션 아이콘도 동일 CI에서 생성합니다. 원본 CI는 수정하지 않습니다. 자산 경로·재생성·검증·카카오 캐시 주의사항은 `docs/social-sharing.md`를 확인하세요.
 
 ## 콘텐츠 편집
 

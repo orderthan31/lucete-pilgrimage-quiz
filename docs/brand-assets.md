@@ -12,6 +12,10 @@
 - 파생 파일 SHA-256: `5d6dc81b64c07161b1c418f26939a6ed35311235a3fefed2a849030c7ccf51ed`
 - 원본 캡처 SHA-256: `f549dab13e4a504816baf095baa8bc20b4594ba2e18ef22f341206dba7301fef`
 
+## 링크 공유·아이콘 파생 자산
+
+`public/social/`의 OG/Twitter 카드, `public/icons/`, `public/favicon.ico`와 `public/favicon.svg`는 위 CI를 비율·색 그대로 리사이즈·합성한 자산입니다. CI 내부 문양이나 글자를 새로 그리지 않습니다. 카드의 행사명은 로컬 Pretendard로 별도 조판합니다. 상세 규격과 재생성 절차는 `docs/social-sharing.md`, 파일별 해시와 레이아웃 검증 기록은 `public/social/assets-manifest.json`에 유지합니다.
+
 ## 사용 기준과 한계
 
 - 이 파일은 원본 벡터 마스터가 아니라 캡처 기반 파생 이미지다.
