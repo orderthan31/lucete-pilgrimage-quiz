@@ -17,6 +17,17 @@ export function validateContent(value: unknown): value is Category[] {
         if (!Array.isArray(q.choices) || q.choices.length !== (q.type === 'ox' ? 2 : 5) || q.choices.some((a: unknown) => typeof a !== 'string' || !a.trim()) || new Set(q.choices).size !== q.choices.length || !Number.isInteger(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= q.choices.length || q.choices[q.answerIndex] !== q.answer) return false;
         if (q.type === 'ox' && (q.choices[0] !== 'O' || q.choices[1] !== 'X')) return false;
       } else return false;
+      if (q.hint !== undefined) {
+        const hint = q.hint;
+        if (!hint || typeof hint !== 'object' || Array.isArray(hint) || q.type === 'ox') return false;
+        if (hint.kind === 'eliminate') {
+          if (q.type !== 'multiple-choice' || !Array.isArray(hint.eliminatedIndices) || hint.eliminatedIndices.length !== 2 || new Set(hint.eliminatedIndices).size !== 2 || hint.eliminatedIndices.some((n: unknown) => typeof n !== 'number' || !Number.isInteger(n) || n < 0 || n >= q.choices.length || n === q.answerIndex)) return false;
+        } else if (hint.kind === 'text') {
+          if (typeof hint.text !== 'string' || !hint.text.trim() || hint.text.includes(q.answer)) return false;
+        } else if (hint.kind === 'options') {
+          if (q.type !== 'short-answer' || !Array.isArray(hint.choices) || hint.choices.length !== 3 || hint.choices.some((choice: unknown) => typeof choice !== 'string' || !choice.trim()) || new Set(hint.choices).size !== 3 || !hint.choices.includes(q.answer) || hint.choices.filter((choice: string) => q.acceptedAnswers.includes(choice)).length !== 1) return false;
+        } else return false;
+      }
     }
     if (new Set(c.questions.map((q: { type: string }) => q.type)).size !== 3) return false;
   }

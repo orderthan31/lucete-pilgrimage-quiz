@@ -12,6 +12,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "validate:content": "node scripts/validate-content.mjs",
+    "docs:export": "node scripts/export-presenter-documents.mjs",
+    "test:docs": "node --test scripts/presenter-documents.test.mjs",
     "theme:sync": "node scripts/sync-hangyeol-tokens.mjs"
   },
   "dependencies": {

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { categories as defaultCategories, contentUnavailable } from './data/content';
 import type { Category } from './data/types';
+import { hintSummary } from './data/hints';
 import { saveProgress } from './progress';
 
 function StageBackground() {
@@ -39,6 +40,7 @@ function StageBackground() {
 export default function App({ categories = defaultCategories }: { categories?: Category[] }) {
   const [path, setPath] = useState(window.location.pathname);
   const [revealed, setRevealed] = useState(false);
+  const [hintRevealed, setHintRevealed] = useState(false);
   const [notice, setNotice] = useState('');
   const [fullscreen, setFullscreen] = useState(!!document.fullscreenElement);
   const [modal, setModal] = useState<'overview' | 'help' | null>(null);
@@ -51,20 +53,22 @@ export default function App({ categories = defaultCategories }: { categories?: C
   const isCategoryEntry = !!category && segments.length === 2;
   const index = isCategoryEntry ? 0 : category && segments[2] === 'question' ? category.questions.findIndex(q => q.id === segments[3]) : -1;
   const question = category?.questions[index];
+  const hint = question?.hint;
+  const eliminated = hintRevealed && hint?.kind === 'eliminate' ? hint.eliminatedIndices : [];
   const isHome = path === '/';
   const isQuestion = !!question && (isCategoryEntry || segments.length === 4);
   const isComplete = !!category && segments[2] === 'complete' && segments.length === 3;
 
   const navigate = (next: string, replace = false) => {
     if (replace) window.history.replaceState(null, '', next); else window.history.pushState(null, '', next);
-    setPath(next); setRevealed(false); setModal(null);
+    setPath(next); setRevealed(false); setHintRevealed(false); setModal(null);
   };
   const questionPath = (c: Category, n: number) => `/quiz/${c.id}/question/${c.questions[n].id}`;
   const persist = (c: Category, n: number, completed = false) => {
     if (!saveProgress(c, n, completed)) setNotice('이 브라우저에서는 진행 위치를 저장할 수 없어요. 창을 닫거나 새로고침하면 위치가 사라질 수 있어요.');
   };
   const goQuestion = (c: Category, n: number) => { persist(c, n); navigate(questionPath(c, n)); };
-  const reveal = () => setRevealed(true);
+  const reveal = () => { setHintRevealed(false); setRevealed(true); };
   const advance = () => {
     if (!category || !isQuestion) return;
     if (!revealed) reveal();
@@ -79,7 +83,7 @@ export default function App({ categories = defaultCategories }: { categories?: C
     } catch { setNotice('전체 화면을 열 수 없어요. 브라우저 메뉴의 전체 화면 기능을 사용해 주세요.'); }
   };
   useEffect(() => {
-    const back = () => { setPath(window.location.pathname); setRevealed(false); setModal(null); };
+    const back = () => { setPath(window.location.pathname); setRevealed(false); setHintRevealed(false); setModal(null); };
     const full = () => setFullscreen(!!document.fullscreenElement);
     window.addEventListener('popstate', back); document.addEventListener('fullscreenchange', full);
     return () => { window.removeEventListener('popstate', back); document.removeEventListener('fullscreenchange', full); };
@@ -147,8 +151,14 @@ export default function App({ categories = defaultCategories }: { categories?: C
         <div className="question-body" key={`${question.id}-${revealed}`}>
           <h1 className="question-title" ref={heading} tabIndex={-1}>{question.question}</h1>
           {!revealed && question.type !== 'short-answer' && <ol className={`choices ${question.type === 'ox' ? 'ox-choices' : ''}`} aria-label="보기">
-            {question.choices?.map((choice, n) => <li key={choice}>{question.type === 'multiple-choice' && <span className="choice-number">{n + 1}</span>}<span>{choice}</span></li>)}
+            {question.choices?.map((choice, n) => <li key={choice} className={eliminated.includes(n) ? 'is-eliminated' : undefined}>{question.type === 'multiple-choice' && <span className="choice-number">{n + 1}</span>}<span className="choice-label">{choice}</span>{eliminated.includes(n) && <span className="choice-state">제외</span>}</li>)}
           </ol>}
+          {!revealed && hint && <section id="question-hint" role="region" aria-label="힌트" hidden={!hintRevealed} className={hint.kind === 'eliminate' ? 'sr-only' : 'hint-panel'}>
+            {hintRevealed && (hint.kind === 'eliminate' ? <p>{hintSummary(question)}</p> : <>
+              <h2>힌트</h2>
+              {hint.kind === 'text' ? <p>{hint.text}</p> : <ol className="hint-options" aria-label="이름 보기">{hint.choices.map((choice, n) => <li key={choice}><span className="hint-option-number">{n + 1}</span><span>{choice}</span></li>)}</ol>}
+            </>)}
+          </section>}
           {revealed && <section className="answer" aria-labelledby="answer-heading">
             <h2 id="answer-heading" ref={answerHeading} tabIndex={-1}>정답 · {question.answer}</h2>
             <div className="answer-reading" tabIndex={0} role="region" aria-label="정답 해설">
@@ -160,10 +170,10 @@ export default function App({ categories = defaultCategories }: { categories?: C
         </div>
         <div className="presenter-actions">
           <button className="secondary" disabled={index === 0} onClick={() => goQuestion(category, index - 1)}>← 이전 문제</button>
-          <div className="question-tools"><button className="quiet" onClick={() => setModal('overview')}>문제 목록</button></div>
+          <div className="question-tools"><button className="quiet" onClick={() => setModal('overview')}>문제 목록</button>{!revealed && hint && <button className="quiet hint-toggle" aria-expanded={hintRevealed} aria-controls="question-hint" onClick={() => setHintRevealed(!hintRevealed)}>{hintRevealed ? '힌트 숨기기' : '힌트 보기'}</button>}</div>
           <button className="primary" onClick={advance}>{!revealed ? '정답 공개' : index === category.questions.length - 1 ? '종료' : '다음 문제'}</button>
         </div>
-        <p className="sr-only" aria-live="polite">{revealed ? '정답과 해설을 공개했습니다.' : `${index + 1}번 문제. 정답은 아직 공개되지 않았습니다.`}</p>
+        <p className="sr-only" aria-live="polite">{revealed ? '정답과 해설을 공개했습니다.' : `${index + 1}번 문제. 정답은 아직 공개되지 않았습니다.${hintRevealed ? ` 힌트: ${hintSummary(question)}` : ''}`}</p>
       </section> : isComplete && category ? <section className="scene completion-scene content-panel">
         <p className="scene-kicker">{category.title}</p>
         <h1 ref={heading} tabIndex={-1}>퀴즈 종료</h1>
@@ -177,7 +187,7 @@ export default function App({ categories = defaultCategories }: { categories?: C
 
       </> : modal === 'help' ? <>
         <div className="dialog-heading"><h2 id="dialog-title">조작법</h2><button className="quiet" onClick={() => setModal(null)}>닫기 ×</button></div>
-        <ul className="help-list"><li>Space / → : 정답 공개 · 다음 문제</li><li>← : 이전 문제</li><li>F : 전체 화면</li></ul>
+        <ul className="help-list"><li>Space / → : 정답 공개 · 다음 문제</li><li>← : 이전 문제</li><li>F : 전체 화면</li><li>힌트 보기 : 힌트가 있는 문제에서 수동 공개</li></ul>
         <a className="media-credit" href="/media/credits.html" target="_blank" rel="noreferrer">사진 출처</a>
       </> : null}
     </dialog>

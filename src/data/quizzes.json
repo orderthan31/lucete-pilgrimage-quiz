@@ -27,6 +27,76 @@
         "difficulty": "easy"
       },
       {
+        "id": "saints-10",
+        "type": "multiple-choice",
+        "question": "베드로 사도가 예수님을 따르기 전 하던 일은 무엇일까요?",
+        "choices": [
+          "목수",
+          "세리",
+          "양치기",
+          "군인",
+          "어부"
+        ],
+        "answer": "어부",
+        "answerIndex": 4,
+        "explanation": "베드로는 형제 안드레아와 마찬가지로 갈릴래아 호수에서 고기를 잡던 어부였습니다.",
+        "sources": [
+          {
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18-20",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/4"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-18",
+        "type": "short-answer",
+        "question": "성모 마리아와 함께 나자렛에서 예수님을 기른 양부 성인은?",
+        "answer": "요셉",
+        "acceptedAnswers": [
+          "요셉",
+          "성 요셉",
+          "요셉 성인"
+        ],
+        "explanation": "요셉 성인은 예수님의 양부로서 성모 마리아와 함께 성가정의 일상을 살았습니다.",
+        "sources": [
+          {
+            "label": "한국천주교주교회의 「아버지의 마음으로」 · 도입부·1항(요셉과 성가정)",
+            "url": "https://cbck.or.kr/notice/20210030"
+          },
+          {
+            "label": "한국천주교주교회의 성경 · 루카 2,4-5.39-40.48-52",
+            "url": "https://bible.cbck.or.kr/Knb/Lk/2"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-20",
+        "type": "short-answer",
+        "question": "요르단강에서 예수님께 세례를 베푼 성인은?",
+        "answer": "세례자 요한",
+        "acceptedAnswers": [
+          "세례자 요한",
+          "성 요한 세례자",
+          "성 세례자 요한",
+          "요한 세례자",
+          "세례 요한"
+        ],
+        "explanation": "예수님은 공생활을 시작하시며 요르단강에서 세례자 요한에게 세례를 받으셨습니다.",
+        "sources": [
+          {
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 3장 · 마태 3,13-17",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/3"
+          },
+          {
+            "label": "한국천주교주교회의 · 가톨릭 교회 교리서 · 535항 「예수님의 세례」",
+            "url": "https://cbck.or.kr/Documents/Catechism/Read/535"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
         "id": "saints-02",
         "type": "multiple-choice",
         "question": "작은형제회를 세우고 가난한 삶으로 그리스도를 따른 아시시의 성인은?",
@@ -47,28 +117,6 @@
           }
         ],
         "difficulty": "easy"
-      },
-      {
-        "id": "saints-03",
-        "type": "multiple-choice",
-        "question": "아시시의 산 다미아노에서 자매들과 함께 가난의 삶을 산 성녀는?",
-        "choices": [
-          "성녀 클라라",
-          "성녀 모니카",
-          "성녀 체칠리아",
-          "성녀 아녜스",
-          "성녀 엘리사벳"
-        ],
-        "answer": "성녀 클라라",
-        "answerIndex": 0,
-        "explanation": "클라라 성녀는 산 다미아노 공동체에서 자매들과 함께 가난과 하느님께 대한 신뢰를 실천했습니다.",
-        "sources": [
-          {
-            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 3문단(산 다미아노·가난)",
-            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
-          }
-        ],
-        "difficulty": "medium"
       },
       {
         "id": "saints-04",
@@ -115,6 +163,25 @@
         "difficulty": "medium"
       },
       {
+        "id": "saints-13",
+        "type": "ox",
+        "question": "성 베네딕토는 기도하는 사람에게 일상의 책임은 중요하지 않다고 가르쳤다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "베네딕토 성인은 기도가 실천으로 이어져야 한다고 보았습니다. 기도와 일상의 책임은 떨어져 있지 않습니다.",
+        "sources": [
+          {
+            "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 2문단",
+            "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
+          }
+        ],
+        "difficulty": "medium"
+      },
+      {
         "id": "saints-06",
         "type": "multiple-choice",
         "question": "수도 생활을 위한 「규칙서」를 남긴 누르시아의 성인은?",
@@ -141,28 +208,6 @@
         "difficulty": "medium"
       },
       {
-        "id": "saints-07",
-        "type": "multiple-choice",
-        "question": "마태오 복음 9장에서 세관에 앉아 있다가 예수님의 부르심을 받은 사람은?",
-        "choices": [
-          "성 필립보",
-          "성 야고보",
-          "성 베드로",
-          "성 마태오",
-          "성 토마스"
-        ],
-        "answer": "성 마태오",
-        "answerIndex": 3,
-        "explanation": "마태오는 세관에 앉아 있다가 예수님의 부르심을 받고 일어나 그분을 따랐습니다.",
-        "sources": [
-          {
-            "label": "한국천주교주교회의 · 성경 마태오 복음서 9장 · 마태 9,9",
-            "url": "https://bible.cbck.or.kr/Knb/Mt/9"
-          }
-        ],
-        "difficulty": "easy"
-      },
-      {
         "id": "saints-08",
         "type": "multiple-choice",
         "question": "부활하신 예수님을 뵙고 그분을 자신의 주님이며 하느님으로 고백한 사도는?",
@@ -180,6 +225,25 @@
           {
             "label": "한국천주교주교회의 · 성경 요한 복음서 20장 · 요한 20,26-29; 특히 28절",
             "url": "https://bible.cbck.or.kr/Knb/Jn/20"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-14",
+        "type": "ox",
+        "question": "성녀 클라라는 부유한 신분과 재산을 그대로 누리는 삶을 선택했다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "X",
+        "answerIndex": 1,
+        "explanation": "클라라 성녀는 귀족 집안의 지위와 재산을 내려놓고 겸손과 가난의 길을 선택했습니다.",
+        "sources": [
+          {
+            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 1~4문단(출가·가난의 특전)",
+            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
           }
         ],
         "difficulty": "easy"
@@ -211,28 +275,6 @@
         "difficulty": "easy"
       },
       {
-        "id": "saints-10",
-        "type": "multiple-choice",
-        "question": "베드로 사도가 예수님을 따르기 전 하던 일은 무엇일까요?",
-        "choices": [
-          "목수",
-          "세리",
-          "양치기",
-          "군인",
-          "어부"
-        ],
-        "answer": "어부",
-        "answerIndex": 4,
-        "explanation": "베드로는 형제 안드레아와 마찬가지로 갈릴래아 호수에서 고기를 잡던 어부였습니다.",
-        "sources": [
-          {
-            "label": "한국천주교주교회의 · 성경 마태오 복음서 4장 · 마태 4,18-20",
-            "url": "https://bible.cbck.or.kr/Knb/Mt/4"
-          }
-        ],
-        "difficulty": "easy"
-      },
-      {
         "id": "saints-11",
         "type": "ox",
         "question": "성 정하상 바오로는 사제가 아니라 평신도로 신앙을 증언했다.",
@@ -251,63 +293,6 @@
           {
             "label": "한국천주교주교회의 매일미사 · 2026-09-20 — 평신도 정하상 소개",
             "url": "https://missa.cbck.or.kr/DailyMissa/20260920"
-          }
-        ],
-        "difficulty": "easy"
-      },
-      {
-        "id": "saints-12",
-        "type": "ox",
-        "question": "아기 예수의 성녀 데레사는 가르멜 수도회 수녀였다.",
-        "choices": [
-          "O",
-          "X"
-        ],
-        "answer": "O",
-        "answerIndex": 0,
-        "explanation": "아기 예수의 데레사 성녀는 리지외의 가르멜 수도원에 들어가 수도 생활을 했습니다.",
-        "sources": [
-          {
-            "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 5·6항(리지외 가르멜 수도원)",
-            "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
-          }
-        ],
-        "difficulty": "easy"
-      },
-      {
-        "id": "saints-13",
-        "type": "ox",
-        "question": "성 베네딕토는 기도하는 사람에게 일상의 책임은 중요하지 않다고 가르쳤다.",
-        "choices": [
-          "O",
-          "X"
-        ],
-        "answer": "X",
-        "answerIndex": 1,
-        "explanation": "베네딕토 성인은 기도가 실천으로 이어져야 한다고 보았습니다. 기도와 일상의 책임은 떨어져 있지 않습니다.",
-        "sources": [
-          {
-            "label": "툿찡 포교 베네딕도 수녀회 서울 수녀원 · 성 베네딕도 수도규칙 — 소개 2문단",
-            "url": "https://benedict.or.kr/%ec%88%98%eb%85%80%ec%9b%90-%ec%86%8c%ea%b0%9c/%ec%84%b1-%eb%b2%a0%eb%84%a4%eb%94%95%eb%8f%84-%ec%88%98%eb%8f%84%ea%b7%9c%ec%b9%99/"
-          }
-        ],
-        "difficulty": "medium"
-      },
-      {
-        "id": "saints-14",
-        "type": "ox",
-        "question": "성녀 클라라는 부유한 신분과 재산을 그대로 누리는 삶을 선택했다.",
-        "choices": [
-          "O",
-          "X"
-        ],
-        "answer": "X",
-        "answerIndex": 1,
-        "explanation": "클라라 성녀는 귀족 집안의 지위와 재산을 내려놓고 겸손과 가난의 길을 선택했습니다.",
-        "sources": [
-          {
-            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 1~4문단(출가·가난의 특전)",
-            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
           }
         ],
         "difficulty": "easy"
@@ -332,65 +317,33 @@
         "difficulty": "easy"
       },
       {
-        "id": "saints-16",
-        "type": "short-answer",
-        "question": "성 아우구스티노의 어머니인 성녀의 이름은?",
-        "answer": "모니카",
-        "acceptedAnswers": [
-          "모니카",
+        "id": "saints-03",
+        "type": "multiple-choice",
+        "question": "아시시의 산 다미아노에서 자매들과 함께 가난의 삶을 산 성녀는?",
+        "choices": [
+          "성녀 클라라",
           "성녀 모니카",
-          "모니카 성녀"
+          "성녀 체칠리아",
+          "성녀 아녜스",
+          "성녀 엘리사벳"
         ],
-        "explanation": "모니카 성녀는 아들 아우구스티노에게 신앙으로 큰 영향을 주었습니다.",
+        "answer": "성녀 클라라",
+        "answerIndex": 0,
+        "explanation": "클라라 성녀는 산 다미아노 공동체에서 자매들과 함께 가난과 하느님께 대한 신뢰를 실천했습니다.",
         "sources": [
           {
-            "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 모니카 성녀 소개",
-            "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
+            "label": "서울대교구 가톨릭 굿뉴스 · 성녀 클라라 — 생애 3문단(산 다미아노·가난)",
+            "url": "https://maria.catholic.or.kr/sa_ho/list/view.asp?menugubun=saint&ctxtSaintId=2559&Orggubun=101&curpage=&PSIZE=20"
           }
         ],
-        "difficulty": "easy"
-      },
-      {
-        "id": "saints-17",
-        "type": "short-answer",
-        "question": "밀라노에서 성 아우구스티노에게 세례를 준 주교 성인은?",
-        "answer": "암브로시오",
-        "acceptedAnswers": [
-          "암브로시오",
-          "성 암브로시오",
-          "암브로시오 성인"
-        ],
-        "explanation": "밀라노의 암브로시오 주교는 아우구스티노에게 세례를 주었습니다.",
-        "sources": [
-          {
-            "label": "천주교 수원교구 수원주보 · 성 아우구스티노 — 2024-08-23, 본문 2·3문단",
-            "url": "https://www.casuwon.or.kr/journal/jubo/view/1047"
-          }
-        ],
-        "difficulty": "hard"
-      },
-      {
-        "id": "saints-18",
-        "type": "short-answer",
-        "question": "성모 마리아와 함께 나자렛에서 예수님을 기른 양부 성인은?",
-        "answer": "요셉",
-        "acceptedAnswers": [
-          "요셉",
-          "성 요셉",
-          "요셉 성인"
-        ],
-        "explanation": "요셉 성인은 예수님의 양부로서 성모 마리아와 함께 성가정의 일상을 살았습니다.",
-        "sources": [
-          {
-            "label": "한국천주교주교회의 「아버지의 마음으로」 · 도입부·1항(요셉과 성가정)",
-            "url": "https://cbck.or.kr/notice/20210030"
-          },
-          {
-            "label": "한국천주교주교회의 성경 · 루카 2,4-5.39-40.48-52",
-            "url": "https://bible.cbck.or.kr/Knb/Lk/2"
-          }
-        ],
-        "difficulty": "easy"
+        "difficulty": "medium",
+        "hint": {
+          "kind": "eliminate",
+          "eliminatedIndices": [
+            1,
+            4
+          ]
+        }
       },
       {
         "id": "saints-19",
@@ -414,26 +367,92 @@
         "difficulty": "medium"
       },
       {
-        "id": "saints-20",
+        "id": "saints-16",
         "type": "short-answer",
-        "question": "요르단강에서 예수님께 세례를 베푼 성인은?",
-        "answer": "세례자 요한",
+        "question": "성 아우구스티노의 어머니인 성녀의 이름은?",
+        "answer": "모니카",
         "acceptedAnswers": [
-          "세례자 요한",
-          "성 요한 세례자",
-          "성 세례자 요한",
-          "요한 세례자",
-          "세례 요한"
+          "모니카",
+          "성녀 모니카",
+          "모니카 성녀"
         ],
-        "explanation": "예수님은 공생활을 시작하시며 요르단강에서 세례자 요한에게 세례를 받으셨습니다.",
+        "explanation": "모니카 성녀는 아들 아우구스티노에게 신앙으로 큰 영향을 주었습니다.",
         "sources": [
           {
-            "label": "한국천주교주교회의 · 성경 마태오 복음서 3장 · 마태 3,13-17",
-            "url": "https://bible.cbck.or.kr/Knb/Mt/3"
-          },
+            "label": "한국천주교주교회의 매일미사 · 2026-08-28 — 모니카 성녀 소개",
+            "url": "https://missa.cbck.or.kr/DailyMissa/20260828"
+          }
+        ],
+        "difficulty": "easy",
+        "hint": {
+          "kind": "text",
+          "text": "이름은 ‘모’로 시작해요."
+        }
+      },
+      {
+        "id": "saints-12",
+        "type": "ox",
+        "question": "아기 예수의 성녀 데레사는 가르멜 수도회 수녀였다.",
+        "choices": [
+          "O",
+          "X"
+        ],
+        "answer": "O",
+        "answerIndex": 0,
+        "explanation": "아기 예수의 데레사 성녀는 리지외의 가르멜 수도원에 들어가 수도 생활을 했습니다.",
+        "sources": [
           {
-            "label": "한국천주교주교회의 · 가톨릭 교회 교리서 · 535항 「예수님의 세례」",
-            "url": "https://cbck.or.kr/Documents/Catechism/Read/535"
+            "label": "한국천주교주교회의 「사랑으로 이끄는 신뢰」 · 5·6항(리지외 가르멜 수도원)",
+            "url": "https://www.cbck.or.kr/Documents/Pope/20240048?gb=title&pope=P0266&type=B0006"
+          }
+        ],
+        "difficulty": "easy"
+      },
+      {
+        "id": "saints-17",
+        "type": "short-answer",
+        "question": "밀라노에서 성 아우구스티노에게 세례를 준 주교 성인은?",
+        "answer": "암브로시오",
+        "acceptedAnswers": [
+          "암브로시오",
+          "성 암브로시오",
+          "암브로시오 성인"
+        ],
+        "explanation": "밀라노의 암브로시오 주교는 아우구스티노에게 세례를 주었습니다.",
+        "sources": [
+          {
+            "label": "천주교 수원교구 수원주보 · 성 아우구스티노 — 2024-08-23, 본문 2·3문단",
+            "url": "https://www.casuwon.or.kr/journal/jubo/view/1047"
+          }
+        ],
+        "difficulty": "hard",
+        "hint": {
+          "kind": "options",
+          "choices": [
+            "베네딕토",
+            "암브로시오",
+            "프란치스코"
+          ]
+        }
+      },
+      {
+        "id": "saints-07",
+        "type": "multiple-choice",
+        "question": "마태오 복음 9장에서 세관에 앉아 있다가 예수님의 부르심을 받은 사람은?",
+        "choices": [
+          "성 필립보",
+          "성 야고보",
+          "성 베드로",
+          "성 마태오",
+          "성 토마스"
+        ],
+        "answer": "성 마태오",
+        "answerIndex": 3,
+        "explanation": "마태오는 세관에 앉아 있다가 예수님의 부르심을 받고 일어나 그분을 따랐습니다.",
+        "sources": [
+          {
+            "label": "한국천주교주교회의 · 성경 마태오 복음서 9장 · 마태 9,9",
+            "url": "https://bible.cbck.or.kr/Knb/Mt/9"
           }
         ],
         "difficulty": "easy"
@@ -513,7 +532,14 @@
             "url": "https://cbck.or.kr/documents/catechism/read/1212"
           }
         ],
-        "difficulty": "medium"
+        "difficulty": "medium",
+        "hint": {
+          "kind": "eliminate",
+          "eliminatedIndices": [
+            1,
+            4
+          ]
+        }
       },
       {
         "id": "church-04",
@@ -792,7 +818,11 @@
             "url": "https://cbck.or.kr/documents/catechism/read/1418"
           }
         ],
-        "difficulty": "easy"
+        "difficulty": "easy",
+        "hint": {
+          "kind": "text",
+          "text": "이름은 ‘감’으로 시작해요."
+        }
       },
       {
         "id": "church-17",
@@ -878,7 +908,11 @@
             "url": "https://cbck.or.kr/documents/catechism/read/1303"
           }
         ],
-        "difficulty": "medium"
+        "difficulty": "medium",
+        "hint": {
+          "kind": "text",
+          "text": "성사의 이름은 ‘견’으로 시작해요."
+        }
       }
     ]
   }
