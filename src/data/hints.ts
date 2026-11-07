@@ -7,7 +7,7 @@ export function hintSummary(question: Question): string {
   if (hint.kind === 'text') return hint.text;
   if (hint.kind === 'options') return `이름 보기: ${hint.choices.join(' / ')}`;
   const choices = question.choices ?? [];
-  const remaining = choices.flatMap((choice, index) => hint.eliminatedIndices.includes(index) ? [] : [`${index + 1}번 ${choice}`]);
-  const removed = hint.eliminatedIndices.map(index => `${index + 1}번 ${choices[index]}`);
+  const remaining = choices.flatMap((_choice, index) => hint.eliminatedIndices.includes(index) ? [] : [`${index + 1}번`]);
+  const removed = hint.eliminatedIndices.map(index => `${index + 1}번`);
   return `제외할 보기: ${removed.join(' / ')}. 남은 보기: ${remaining.join(' / ')}.`;
 }

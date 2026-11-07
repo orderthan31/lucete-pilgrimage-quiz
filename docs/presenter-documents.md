@@ -18,11 +18,11 @@ node scripts/export-presenter-documents.mjs --output /private/path/presenter
 - `church-presenter.html`, `church-presenter.md`: 성당 퀴즈 진행자 자료
 - `manifest.json`: 원본 SHA-256, 문항 수 및 순서별 ID, 글꼴/내보내기 코드/힌트 도우미 해시, 각 생성물의 바이트 수와 SHA-256
 
-현재 원본은 각 범주 20문항이다. 문항 번호와 출력 개수는 `src/data/quizzes.json`의 실제 배열 순서와 길이로 계산한다. 원문 문제, 모든 원문 보기, 선택적 힌트, 표준 정답, `acceptedAnswers`의 모든 인정 답안, 원문 해설을 보존한다. 힌트가 없으면 `힌트 없음`, 별도 인정 답안이 없으면 `별도 표기 없음`으로 표시한다. 설명은 임의로 요약하거나 수정하지 않는다. 시간 제한이나 채점 기능은 없다.
+현재 원본은 각 범주 20문항이며, 전체 40문항에 힌트가 있다. 문항 번호와 출력 개수는 `src/data/quizzes.json`의 실제 배열 순서와 길이로 계산한다. 원문 문제, 모든 원문 보기, 힌트, 표준 정답, `acceptedAnswers`의 모든 인정 답안, 원문 해설을 보존한다. 웹·콘텐츠 검사·문서 생성 모두 `requireHints: true`로 검증하므로 힌트가 하나라도 빠지면 배포용 데이터를 사용하거나 문서를 생성하지 않는다. 별도 인정 답안이 없으면 `별도 표기 없음`으로 표시한다. 설명은 임의로 요약하거나 수정하지 않는다. 시간 제한이나 채점 기능은 없다.
 
 ## 모바일 HTML / 인쇄
 
-각 HTML은 로컬 `public/fonts/hangyeol/`의 Pretendard Regular/Bold WOFF2를 데이터 URL로 내장한 독립 파일이다. 원본 글꼴 라이선스도 HTML 주석에 포함한다. 외부 CSS, 자바스크립트, 네트워크 글꼴 요청이 없으므로 파일을 내려받아 오프라인으로 열 수 있다. 320px·390px 화면에서는 단일 열로 읽고, 정답과 힌트는 별도 조작 없이 표시한다. PDF도 정답이 항상 표시되는 진행자 자료이다.
+각 HTML은 로컬 `public/fonts/hangyeol/`의 Pretendard Regular/Bold WOFF2를 데이터 URL로 내장한 독립 파일이다. 원본 글꼴 라이선스도 표시되지 않는 HTML template 안에 원문 그대로 포함한다. 외부 CSS, 자바스크립트, 네트워크 글꼴 요청이 없으므로 파일을 내려받아 오프라인으로 열 수 있다. 320px·390px 화면에서는 단일 열로 읽고, 정답과 힌트는 별도 조작 없이 표시한다. PDF도 정답이 항상 표시되는 진행자 자료이다.
 
 인쇄 CSS는 110 × 180mm, 여백 9mm, 문항별 페이지 나눔을 적용한다. 표지만 있는 첫 페이지 없이 첫 문항부터 시작한다. 브라우저 인쇄 시 배경 그래픽을 허용하고 머리글/바닥글을 끈다. 내용이 크게 길어지는 향후 원본 변경은 페이지 넘침 검사를 다시 수행한다. 작은 크기의 PDF는 확대해서 읽을 수 있고, HTML은 화면 폭에 맞게 다시 줄바꿈한다.
 
@@ -54,6 +54,6 @@ pdftotext -layout exports/presenter/saints-presenter.pdf -
 
 Node 24의 네이티브 타입 제거로 웹과 같은 `src/data/hints.ts`의 `hintSummary(question): string`과 `src/data/validation.ts`의 콘텐츠 검증기를 직접 가져온다. 두 모듈은 Node에서 불러올 수 있는 순수 코드여야 하며 브라우저/번들러 전용 의존성은 없어야 한다. 누락이나 로드 오류가 있으면 대체 문구를 만들지 않고 실패한다. 최종 문서 생성에서는 manifest의 `hintFormatter.source`가 `src/data/hints.ts`인지 확인한다.
 
-지원 힌트는 `text`의 `text`, 객관식 `eliminate`의 `eliminatedIndices`(0부터 시작), 주관식 `options`의 `choices`이다. 제거 힌트는 원문 보기를 삭제하지 않고 힌트란에서만 표시한다. OX 힌트, 정답 제거, 범위 밖 인덱스, 중복 문항 ID 등은 거부한다.
+지원 힌트는 `text`의 `text`, 객관식 `eliminate`의 `eliminatedIndices`(0부터 시작), 주관식 `options`의 `choices`이다. 제거 힌트는 원문 보기를 삭제하지 않고 힌트란에서 제외·유지할 원래 보기 번호를 표시한다. OX에는 정답을 직접 적지 않은 `text` 단서만 허용하며 두 선택지는 그대로 둔다. 힌트 누락, OX 정답 문자 노출, 정답 보기 제거, 범위 밖 인덱스, 중복 문항 ID 등은 거부한다.
 
 `node:test`는 원본 순서/현재 문항 수, 모든 필수 내용과 인정 답안, 힌트 형식, HTML 이스케이프, 오프라인/인쇄 설정, CLI 인수, 공개 경로 차단, 실제 생성 결과의 해시와 재현성을 검사한다. 전체 앱 테스트나 빌드는 실행하지 않는다. PDF 육안 검사는 별도 단계이며 테스트 통과만으로 페이지 적합성을 보장하지 않는다.

@@ -187,7 +187,7 @@ export default function App({ categories = defaultCategories }: { categories?: C
 
       </> : modal === 'help' ? <>
         <div className="dialog-heading"><h2 id="dialog-title">조작법</h2><button className="quiet" onClick={() => setModal(null)}>닫기 ×</button></div>
-        <ul className="help-list"><li>Space / → : 정답 공개 · 다음 문제</li><li>← : 이전 문제</li><li>F : 전체 화면</li><li>힌트 보기 : 힌트가 있는 문제에서 수동 공개</li></ul>
+        <ul className="help-list"><li>Space / → : 정답 공개 · 다음 문제</li><li>← : 이전 문제</li><li>F : 전체 화면</li><li>힌트 보기 : 정답과 별도로 수동 공개</li></ul>
         <a className="media-credit" href="/media/credits.html" target="_blank" rel="noreferrer">사진 출처</a>
       </> : null}
     </dialog>

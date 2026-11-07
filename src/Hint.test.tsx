@@ -7,6 +7,7 @@ import { progressKey } from './progress';
 const hintFixture = () => {
   const data = structuredClone(fixture);
   Object.assign(data[0].questions[0], { hint: { kind: 'eliminate', eliminatedIndices: [0, 3] } });
+  Object.assign(data[0].questions[1], { hint: { kind: 'text', text: '문장 속 두 대상의 관계를 구분해 보세요.' } });
   Object.assign(data[0].questions[2], { hint: { kind: 'text', text: '이름의 첫 글자를 떠올려 보세요.' } });
   Object.assign(data[0].questions[5], { hint: { kind: 'options', choices: ['후보 하나', '숨겨진 단답', '후보 셋'] } });
   return data;
@@ -73,12 +74,21 @@ describe('optional presenter hints', () => {
     expect(screen.getByRole('heading', { name: '정답 · 숨겨진 단답' })).toBeTruthy();
     expect(screen.queryByText('이름의 첫 글자를 떠올려 보세요.')).toBeNull();
   });
-  it('does not offer irrelevant hint controls on OX and unhinted questions', () => {
+  it('reveals a manual OX clue without removing either choice or revealing the answer', () => {
     open(2);
-    expect(screen.queryByRole('button', { name: /힌트/ })).toBeNull();
+    expect(screen.queryByText('문장 속 두 대상의 관계를 구분해 보세요.')).toBeNull();
+    revealHint();
+    expect(screen.getByRole('region', { name: '힌트' }).textContent).toContain('문장 속 두 대상의 관계를 구분해 보세요.');
+    expect(within(screen.getByRole('list', { name: '보기' })).getAllByRole('listitem').map(element => element.textContent)).toEqual(['O', 'X']);
+    expect(screen.queryByRole('heading', { name: /^정답 ·/ })).toBeNull();
+    expect(screen.queryByText('공개 뒤에만 보이는 해설 2')).toBeNull();
     revealAnswer();
-    fireEvent.click(screen.getByRole('button', { name: '다음 문제' }));
-    expect(screen.getByRole('button', { name: '힌트 보기' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: '정답 · O' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: /힌트/ })).toBeNull();
+  });
+  it('still handles an unhinted legacy fixture without irrelevant controls', () => {
+    open(4);
+    expect(screen.queryByRole('button', { name: /힌트/ })).toBeNull();
   });
   it('resets the hint on explicit same-question jumps, previous navigation, popstate and refresh', () => {
     const app = open(3);

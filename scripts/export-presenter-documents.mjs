@@ -15,7 +15,7 @@ const markdown = (value) => String(value).replace(/[\\`*_{}\[\]<>#|]/g, '\\$&').
 
 export function validateCategories(categories) {
   if (!Array.isArray(categories) || categories.length !== 2 || new Set(categories.map((c) => c.id)).size !== 2 || categories.some((c) => !['saints', 'church'].includes(c.id))) throw new Error('Expected saints and church categories');
-  if (!validateContent(categories)) throw new Error('Invalid production quiz content or hint');
+  if (!validateContent(categories, { requireHints: true })) throw new Error('Invalid production quiz content or hint');
   return categories;
 }
 
@@ -122,8 +122,9 @@ export async function exportDocuments({ output = join(ROOT, 'exports/presenter')
     hintFormatter: { source: 'src/data/hints.ts', sha256: hintModuleHash },
     fonts: fonts.map(({ name, data }) => ({ name, sha256: sha256(data) })),
     fontLicenseSha256: sha256(license),
-    categories: categories.map((c) => ({ id: c.id, count: c.questions.length, questionIds: c.questions.map((q) => q.id) })),
+    categories: categories.map((c) => ({ id: c.id, count: c.questions.length, hintCount: c.questions.filter((q) => q.hint).length, questionIds: c.questions.map((q) => q.id) })),
     totalQuestions: categories.reduce((n, c) => n + c.questions.length, 0),
+    totalHints: categories.reduce((n, c) => n + c.questions.filter((q) => q.hint).length, 0),
     artifacts: [...artifacts].map(([file, bytes]) => ({ file, bytes: bytes.length, sha256: sha256(bytes) })),
   };
   artifacts.set('manifest.json', Buffer.from(`${JSON.stringify(manifest, null, 2)}\n`));

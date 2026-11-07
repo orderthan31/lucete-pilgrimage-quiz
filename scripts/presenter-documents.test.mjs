@@ -26,7 +26,7 @@ test('source coverage: both categories, 20 questions each, original order and co
 
 test('all optional hints, absent hints, original choices and canonical answer', () => {
   assert.equal(hintSummary(fixture), '힌트 없음');
-  assert.equal(hintSummary({ ...fixture, hint: { kind: 'eliminate', eliminatedIndices: [0, 2] } }), '제외할 보기: 1번 첫째 / 3번 셋째. 남은 보기: 2번 정답.');
+  assert.equal(hintSummary({ ...fixture, hint: { kind: 'eliminate', eliminatedIndices: [0, 2] } }), '제외할 보기: 1번 / 3번. 남은 보기: 2번.');
   assert.equal(hintSummary({ ...fixture, hint: { kind: 'text', text: '내용' } }), '내용');
   assert.equal(hintSummary({ ...fixture, hint: { kind: 'options', choices: ['하나', '둘'] } }), '이름 보기: 하나 / 둘');
   const html = renderHTML({ title: '검사', questions: [fixture] }, fonts, () => '공유 힌트');
@@ -49,7 +49,7 @@ test('HTML escaping, offline font, mobile viewport, print page and spoiler label
   for (const label of ['진행자 전용 · 정답 포함', '문제', '힌트', '정답', '해설']) assert.ok(html.includes(label));
 });
 
-test('reject malformed input, answer removal, OX hints, duplicates and unknown categories', () => {
+test('reject malformed input, answer removal, invalid OX hints, duplicates and unknown categories', () => {
   const wrap = (q) => [{ id: 'saints', title: '성인', questions: [q] }, { id: 'church', title: '성당', questions: [{ ...fixture, id: 'other' }] }];
   for (const q of [
     { ...fixture, hint: { kind: 'eliminate', eliminatedIndices: [1] } },
@@ -68,6 +68,18 @@ test('CLI rejects incomplete/unknown arguments and enables optional PDF', () => 
   assert.equal(parseArgs(['--pdf', '--output', '/private-documents']).pdf, true);
   assert.throws(() => parseArgs(['--output']), /incomplete/);
   assert.throws(() => parseArgs(['--unknown']), /Unknown/);
+});
+
+test('production documents require complete hints and accept OX clues but not O/X answers', () => {
+  assert.equal(validateCategories(categories), categories);
+  const missing = structuredClone(categories);
+  delete missing[0].questions[0].hint;
+  assert.throws(() => validateCategories(missing), /Invalid/);
+  for (const text of ['정답은 O입니다.', '정답은 X입니다.']) {
+    const broken = structuredClone(categories);
+    broken[0].questions.find((q) => q.type === 'ox').hint = { kind: 'text', text };
+    assert.throws(() => validateCategories(broken), /Invalid/);
+  }
 });
 
 test('public/dist and symlink destinations cannot receive answer documents', async () => {
@@ -92,6 +104,8 @@ test('real export is deterministic with exact hashes/counts, private artifacts a
     assert.equal(first.manifest.hintFormatter.source, 'src/data/hints.ts');
     assert.equal(first.manifest.hintFormatter.sha256, sha256(await readFile(join(ROOT, 'src/data/hints.ts'))));
     assert.equal(first.manifest.totalQuestions, categories.reduce((n, c) => n + c.questions.length, 0));
+    assert.equal(first.manifest.totalHints, first.manifest.totalQuestions);
+    assert.ok(first.manifest.categories.every((c) => c.hintCount === c.count));
     assert.deepEqual(first.manifest.categories.map((c) => c.questionIds), categories.map((c) => c.questions.map((q) => q.id)));
     for (const file of first.files) assert.deepEqual(await readFile(join(first.output, file)), await readFile(join(second.output, file)));
     for (const artifact of first.manifest.artifacts) {
